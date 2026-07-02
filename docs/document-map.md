@@ -51,6 +51,26 @@ graph TD
     CTO -.governs.-> EPA
     CTO -.governs.-> TI
     CTO -.governs.-> CBC
+
+    DocsReadme --> OSReadme[docs/operating-system/README.md]
+    OSReadme --> Daily[operating-system/daily-operating-system.md]
+    OSReadme --> WeeklyR[operating-system/weekly-review.md]
+    OSReadme --> MonthlyB[operating-system/monthly-board-meeting.md]
+    OSReadme --> QuarterlyR[operating-system/quarterly-review.md]
+    OSReadme --> AnnualR[operating-system/annual-review.md]
+    OSReadme --> Sprint[operating-system/sprint-planning.md]
+    OSReadme --> KM[operating-system/knowledge-management.md]
+    OSReadme --> TaskP[operating-system/task-prioritization.md]
+    OSReadme --> TimeB[operating-system/time-blocking.md]
+    OSReadme --> DeepW[operating-system/deep-work.md]
+    OSReadme --> RevS[operating-system/revision-strategy.md]
+    OSReadme --> Reflect[operating-system/reflection-system.md]
+
+    Daily --> WeeklyR --> MonthlyB --> QuarterlyR --> AnnualR
+    TaskP --> TimeB --> Daily
+    TimeB --> DeepW
+    Daily --> Reflect --> RevS
+    CTO -.governs.-> OSReadme
 ```
 
 ## Reading the Map
@@ -62,5 +82,5 @@ graph TD
 ## Next Steps
 
 - Add a subgraph for `resources/` (glossary, abbreviation guide) once expanded.
-- Add a subgraph for `docs/operating-system/` once created (Phase 3).
-- Revisit the "split into per-module diagrams" threshold once real project and prompt-library nodes are added (Phases 5–7).
+- This map now has ~30 nodes — approaching the split threshold noted below. Revisit splitting into per-module diagrams once `docs/engineering-standards/` (Phase 4) adds another cluster.
+- Revisit the "split into per-module diagrams" threshold (~25 nodes) once real project and prompt-library nodes are added (Phases 5–7).
