@@ -211,6 +211,7 @@ graph TD
 
 - Add a subgraph for `resources/` (glossary, abbreviation guide) once expanded.
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 - Add a diagram for `docs/learning-system/`, `docs/career-system/` once those are created (deferred — not part of the original 10-phase roadmap's explicit folder list, revisit if department docs' forward-references to them turn into real content).
 - Add diagrams for Templates, Prompt Library, and Project Library as Phases 5–7 complete.
@@ -250,3 +251,8 @@ graph TD
 - `templates/` (50 files), `trackers/` (14 files), and `prompts/` (104 files) are deliberately **not** diagrammed here — all three are flat, mutually-independent reusable-file collections better served by their own README indexes than an unreadable 168-node combined graph. This is a considered, repeated exception to the "every module gets a diagram" pattern, not an oversight.
 - Add a diagram for `docs/learning-system/`, `docs/career-system/` once those are created (deferred — not part of the original 10-phase roadmap's explicit folder list, revisit if department docs' forward-references to them turn into real content).
 - The Project Library diagram above shows blueprint-stage dependencies only — revisit and expand once real implementation work creates actual code-level dependencies between projects.
+=======
+- `templates/` (50 files) and `trackers/` (14 files) are deliberately **not** diagrammed here — they're flat, mutually-independent reusable files better served by their own README indexes (`templates/README.md`, `trackers/README.md`) than a 64-node Mermaid graph. This is a considered exception to the "every module gets a diagram" pattern, not an oversight.
+- Add a diagram for `docs/learning-system/`, `docs/career-system/` once those are created (deferred — not part of the original 10-phase roadmap's explicit folder list, revisit if department docs' forward-references to them turn into real content).
+- Add diagrams for the Prompt Library and Project Library as Phases 6–7 complete (these have real internal structure worth diagramming, unlike templates/trackers).
+
