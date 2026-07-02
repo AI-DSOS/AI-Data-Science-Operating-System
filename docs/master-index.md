@@ -90,11 +90,11 @@ Every Markdown file in the repository must have a line here. This is a flat list
 
 ## templates/
 
-*Not started. Target: 50 files across trackers, project templates, review templates, career templates, prompt templates.*
+**50 templates, indexed in full in [`templates/README.md`](../templates/README.md).** Grouped: Project Blueprint (15), Learning System (5), Interview/Assessment (4), Career System (8), Operating System/Review (5), Engineering/Code (8), Governance (5).
 
 ## trackers/
 
-*Not started. Target categories: daily, weekly, monthly, learning, coding, project, git, GitHub, reading, portfolio, interview, confidence, habit, KPI dashboard.*
+**14 trackers, indexed in full in [`trackers/README.md`](../trackers/README.md).** Daily, weekly, monthly, learning, coding, project, git, GitHub, reading, portfolio, interview, confidence, habit, KPI dashboard.
 
 ## playbooks/
 
