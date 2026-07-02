@@ -74,14 +74,16 @@ v1.0 is defined in `AGENTS.md` Section 2 as reaching **all five** targets below 
 | Documentation site | Deployed (MkDocs) | Config scaffolded, pushed to GitHub, not yet Pages-deployed | ~20% |
 =======
 | Markdown documents | ~100 | 111 | 111% (target exceeded — see note) |
+=======
+| Markdown documents | ~100 | 216 | 216% (target exceeded — see note) |
 | Production-grade projects | 25 | 0 | 0% |
 | Reusable templates | 50 | 50 | 100% |
-| Prompt library files | 100+ | 0 | 0% |
+| Prompt library files | 100+ | 104 | 104% |
 | Documentation site | Deployed (MkDocs) | Config scaffolded, pushed to GitHub, not yet Pages-deployed | ~20% |
 
-*Current Markdown count (111): the 45 from Phases 1–4, plus 50 templates + `templates/README.md` (51) + 14 trackers + `trackers/README.md` (15) = 45 + 51 + 15 = 111.*
+*Current Markdown count (216): the 111 from Phases 1–5, plus `prompts/README.md` + 104 prompts (105) = 111 + 105 = 216.*
 
-*Note on exceeding the ~100 target: the "~100 Markdown documents" target was set before the 50-template and 14-tracker counts were fully scoped out; templates and trackers are individually short (compressed frontmatter, fill-in-the-blank bodies), so document *count* now exceeds 100 while total content volume is still well short of a mature 100-substantial-document repo. Treat the ~100 target as informational going forward rather than a hard ceiling — the five v1.0 targets collectively (not the document count alone) define done, per AGENTS.md Section 2.*
+*Note on the ~100 target: as flagged in Phase 5, templates/trackers/prompts are individually short by design, so raw document count is a poor single-number proxy for "how done" DSOS is. The five v1.0 targets collectively define done, per AGENTS.md Section 2 — with this phase, 2 of the 5 (templates, prompts) are now fully met.*
 
 
 *Current Markdown count (257): the 249 from Phases 1–7, plus `docs/career-system/README.md` + 7 strategy documents (8) = 249 + 8 = 257.*
@@ -116,6 +118,8 @@ v1.0 is defined in `AGENTS.md` Section 2 as reaching **all five** targets below 
 | `docs/` | 48 | 40 from Phases 1–4, plus `career-system/README.md` + 7 strategy docs |
 | `prompts/` | 105 | `README.md` + 104 prompts across 12 categories — **target exceeded (104/100+)** |
 =======
+=======
+| `prompts/` | 105 | `README.md` + 104 prompts across 12 categories — **target exceeded (104/100+)** |
 | `templates/` | 51 | `README.md` + 50 templates across 7 categories — **target met (50/50)** |
 | `trackers/` | 15 | `README.md` + 14 trackers matching the original scope's Trackers list exactly |
 | `playbooks/` | 0 | Not started |
@@ -155,7 +159,7 @@ Phases per `AGENTS.md` Section 10.
 | 8. Career System | **Complete** — 7 strategy documents (Resume Framework, LinkedIn Strategy, GitHub Strategy, Portfolio Strategy, Networking Plan, Conference Preparation, Technical Writing Guide), explicitly layered above the templates/trackers already built in Phase 5 |
 =======
 | 5. Templates (50) | **Complete** — 50/50 templates across 7 categories, plus 14 trackers (a related deliverable pulled forward since so many earlier documents forward-referenced both) |
-| 6. Prompt Library (100+) | Not started |
+| 6. Prompt Library (100+) | **Complete** — 104 prompts across 12 categories (Learning, Projects, Code Reviews, Architecture Reviews, Mock Interviews, Debugging, System Design, Technical Writing, Career Planning, Research, Documentation, Repository Maintenance) |
 | 7. Project Library (25) | Not started |
 | 8. Career System | Not started |
 | 9. Documentation Site | Not started |
@@ -194,9 +198,9 @@ Phase 3: Operating System is complete. Move to **Phase 4: Engineering Standards*
 - Markdown document count (257) continues to climb past the informal ~100 target — fifth consecutive phase to note it; this pattern is now fully established as expected.
 =======
 
-- The Markdown document count (111) now exceeds the informal "~100" target — flagged above as expected and not a problem, since the five v1.0 targets collectively define done, not document count alone.
-- No templates have been used yet (no real project, review, or tracker has been instantiated from a copy) — usefulness is unverified until Phase 7 (projects) and ongoing operating-system use put them to work.
-- `templates/README.md` and `trackers/README.md` are the two largest single-file indexes in the repo now — worth checking they stay accurate as templates are added/removed in later phases.
+- Markdown document count (216) continues to climb past the informal ~100 target — third consecutive phase to flag this; treat it as confirmed expected behavior at this point, not a recurring surprise.
+- No prompts have real usage data yet — like Phase 5's templates, their usefulness is unverified until they're actually used in practice (Phase 7 projects, ongoing operating-system cadence).
+- Two Vaagai-specific prompts exist (`research/market-research-elder-care.md`, `research/competitor-analysis-vaagai.md`, `projects/vaagai-technical-poc.md`) — worth confirming at the next Quarterly Review whether Vaagai warrants its own prompt subfolder as that venture grows, per `docs/operating-system/quarterly-review.md`'s system-check agenda item.
 - The MkDocs site is configured and the repo is pushed to GitHub, but Pages deployment status hasn't been confirmed.
 
 ## Next Steps
@@ -225,3 +229,6 @@ Phase 7: Project Library blueprints are complete; a large amount of real impleme
 Phase 8: Career System is complete. Per `AGENTS.md` Section 10, the remaining phases are **9: Documentation Site** (wire the growing nav into `mkdocs.yml`, confirm GitHub Pages deployment) and **10: v1.0 Hardening** (full quality-gate sweep). Real project implementation (flagged repeatedly since Phase 7) remains the largest open-ended item outside the phase sequence itself.
 =======
 Phase 5: Templates (and the pulled-forward Trackers deliverable) is complete. Move to **Phase 6: Prompt Library (100+)** — reusable prompts across learning, projects, code reviews, architecture reviews, mock interviews, debugging, system design, technical writing, career planning, research, documentation, and repository maintenance.
+=======
+
+Phase 6: Prompt Library is complete — two of five v1.0 targets now fully met (templates, prompts). Move to **Phase 7: Project Library (25)** — the largest remaining phase, and the one every other phase has been building toward (engineering standards, templates, and prompts all exist specifically to support it).
