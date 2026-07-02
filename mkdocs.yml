@@ -1,0 +1,48 @@
+site_name: AI Data Science Operating System (DSOS)
+site_description: A single source of truth for a complete Data Science / ML / AI Engineering career transformation.
+site_author: Arulkumaran
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.top
+    - search.suggest
+    - content.code.copy
+
+nav:
+  - Home: README.md
+  - Governance:
+      - Agent Rules (AGENTS.md): AGENTS.md
+  - Docs:
+      - Overview: docs/README.md
+      - Master Index: docs/master-index.md
+      - Document Map: docs/document-map.md
+      - Changelog: docs/CHANGELOG.md
+      - Progress:
+          - Overview: docs/progress/README.md
+          - v1.0 Scorecard: docs/progress/v1-scorecard.md
+  - Resources:
+      - Overview: resources/README.md
+      - Glossary: resources/glossary.md
+
+# Additional nav sections (Departments, Operating System, Engineering Standards,
+# Templates, Prompts, Trackers, Playbooks, Projects, Career System) are added
+# here as each Phase in AGENTS.md Section 10 completes. Keep this file in sync
+# with docs/master-index.md.
+
+markdown_extensions:
+  - tables
+  - toc:
+      permalink: true
+  - admonition
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
