@@ -53,6 +53,19 @@ Every Markdown file in the repository must have a line here. This is a flat list
 | `docs/departments/technical-interviewer.md` | Department spec — mock interviews, readiness scoring |
 | `docs/departments/career-brand-coach.md` | Department spec — resume, LinkedIn, GitHub, recruiter tracking |
 | `docs/departments/cto.md` | Department spec — governance, prioritization, quality gates |
+| `docs/operating-system/README.md` | Index and cadence map for the 11 operating-system documents |
+| `docs/operating-system/daily-operating-system.md` | Weekday/Sunday time structure and daily logging |
+| `docs/operating-system/weekly-review.md` | Weekly CTO-run checkpoint across all departments |
+| `docs/operating-system/monthly-board-meeting.md` | Monthly formal reporting + scorecard reconciliation |
+| `docs/operating-system/quarterly-review.md` | Quarterly wide-lens roadmap and trajectory check |
+| `docs/operating-system/annual-review.md` | Annual full-system and career-outcome review |
+| `docs/operating-system/sprint-planning.md` | How modules/phases/project milestones get scoped before starting |
+| `docs/operating-system/knowledge-management.md` | Process rules for keeping index/map/glossary/changelog accurate |
+| `docs/operating-system/task-prioritization.md` | Default priority order across bootcamp, projects, career, Vaagai |
+| `docs/operating-system/time-blocking.md` | Default weekly time-block map |
+| `docs/operating-system/deep-work.md` | What qualifies as protected deep-focus time and why |
+| `docs/operating-system/revision-strategy.md` | How mastered concepts get revisited so they don't decay |
+| `docs/operating-system/reflection-system.md` | Lightweight sustainability/fit checks on the system itself |
 
 ## prompts/
 

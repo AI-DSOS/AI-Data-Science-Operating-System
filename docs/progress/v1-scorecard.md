@@ -25,20 +25,20 @@ v1.0 is defined in `AGENTS.md` Section 2 as reaching **all five** targets below 
 
 | Asset | Target | Current | % Complete |
 |---|---|---|---|
-| Markdown documents | ~100 | 17 | 17% |
+| Markdown documents | ~100 | 29 | 29% |
 | Production-grade projects | 25 | 0 | 0% |
 | Reusable templates | 50 | 0 | 0% |
 | Prompt library files | 100+ | 0 | 0% |
 | Documentation site | Deployed (MkDocs) | Config scaffolded, pushed to GitHub, not yet Pages-deployed | ~20% |
 
-*Current Markdown count (17): the 11 from Phase 1, plus `docs/departments/README.md` and the 5 department specs (`learning-mentor.md`, `enterprise-project-architect.md`, `technical-interviewer.md`, `career-brand-coach.md`, `cto.md`).*
+*Current Markdown count (29): the 17 from Phases 1–2, plus `docs/operating-system/README.md` and its 11 operating-system documents (daily, weekly, monthly, quarterly, annual, sprint planning, knowledge management, task prioritization, time blocking, deep work, revision strategy, reflection system).*
 
 ## Breakdown by Category
 
 | Folder | Files present | Notes |
 |---|---|---|
 | Root | 2 (`AGENTS.md`, `README.md`) | Plus `mkdocs.yml` (non-Markdown) |
-| `docs/` | 12 | 6 from Phase 1, plus `departments/README.md` + 5 department specs |
+| `docs/` | 24 | 12 from Phases 1–2, plus `operating-system/README.md` + 11 operating-system docs |
 | `prompts/` | 0 | Not started |
 | `templates/` | 0 | Not started |
 | `trackers/` | 0 | Not started |
@@ -57,7 +57,7 @@ Phases per `AGENTS.md` Section 10.
 |---|---|
 | 1. Foundation | **Complete** — AGENTS.md, README.md, docs/README.md, master-index.md, document-map.md, CHANGELOG.md, progress tracking, resources/glossary.md skeleton, mkdocs.yml, and doc-site deploy workflow all in place |
 | 2. Departments | **Complete** — all 5 department specs drafted (Learning Mentor, Enterprise Project Architect, Technical Interviewer, Career & Personal Brand Coach, CTO), each with mission, responsibilities, KPIs, workflows, decision/escalation rules |
-| 3. Operating System | Not started |
+| 3. Operating System | **Complete** — all 11 documents drafted (daily, weekly, monthly, quarterly, annual, sprint planning, knowledge management, task prioritization, time blocking, deep work, revision strategy, reflection system), cross-referenced to the departments they serve |
 | 4. Engineering Standards | Not started |
 | 5. Templates (50) | Not started |
 | 6. Prompt Library (100+) | Not started |
@@ -68,11 +68,11 @@ Phases per `AGENTS.md` Section 10.
 
 ## Gaps / Known Risks
 
-- Every department doc references templates, prompt files, and trackers that don't exist yet (Phases 5–6) — this is expected sequencing, not a defect, but flagged so the referenced links aren't mistaken for broken ones.
-- `docs/operating-system/monthly-board-meeting.md`, referenced by the CTO department's monthly workflow, doesn't exist yet — a Phase 3 dependency.
-- `docs/learning-system/` doesn't exist yet, referenced by the Learning Mentor department — a Phase 3 dependency.
-- The MkDocs site is configured and the repo is pushed to GitHub, but Pages deployment status hasn't been confirmed — worth checking once Actions has had a chance to run.
+- `docs/operating-system/monthly-board-meeting.md` names a `docs/operating-system/board-minutes/` folder to be created on first real use — intentionally deferred, not a defect.
+- `journal/README.md` is referenced by `reflection-system.md` as creatable "anytime" — still open, low priority.
+- Several operating-system docs reference `templates/` (Weekly Review, Monthly Board Meeting, Quarterly Review, Sprint Planning templates) that don't exist yet — expected, Phase 5 dependency.
+- The MkDocs site is configured and the repo is pushed to GitHub, but Pages deployment status hasn't been confirmed.
 
 ## Next Steps
 
-Phase 2: Departments is complete. Move to **Phase 3: Operating System** — daily/weekly/monthly/quarterly/annual review docs and sprint planning in `docs/operating-system/`, which several department workflows already depend on.
+Phase 3: Operating System is complete. Move to **Phase 4: Engineering Standards** — Python, Git, SQL, MLOps, testing, security, and related standards in `docs/engineering-standards/`, which the Enterprise Project Architect department depends on for its "Decision Rules" and "Checklists."
