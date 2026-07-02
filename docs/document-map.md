@@ -40,6 +40,17 @@ graph TD
 
     README --> MasterIndex
     README --> Scorecard
+
+    DocsReadme --> DeptReadme[docs/departments/README.md]
+    DeptReadme --> LM[departments/learning-mentor.md]
+    DeptReadme --> EPA[departments/enterprise-project-architect.md]
+    DeptReadme --> TI[departments/technical-interviewer.md]
+    DeptReadme --> CBC[departments/career-brand-coach.md]
+    DeptReadme --> CTO[departments/cto.md]
+    CTO -.governs.-> LM
+    CTO -.governs.-> EPA
+    CTO -.governs.-> TI
+    CTO -.governs.-> CBC
 ```
 
 ## Reading the Map
@@ -50,6 +61,6 @@ graph TD
 
 ## Next Steps
 
-- Add a subgraph for `resources/` (glossary, abbreviation guide) once created.
-- Add a subgraph per department once `docs/departments/` exists (Phase 2).
+- Add a subgraph for `resources/` (glossary, abbreviation guide) once expanded.
+- Add a subgraph for `docs/operating-system/` once created (Phase 3).
 - Revisit the "split into per-module diagrams" threshold once real project and prompt-library nodes are added (Phases 5–7).

@@ -47,6 +47,12 @@ Every Markdown file in the repository must have a line here. This is a flat list
 | `docs/CHANGELOG.md` | Dated log of module-by-module changes |
 | `docs/progress/README.md` | Index and purpose of the `docs/progress/` folder |
 | `docs/progress/v1-scorecard.md` | Running progress count against v1.0 targets |
+| `docs/departments/README.md` | Index and shared context for the 5 departments |
+| `docs/departments/learning-mentor.md` | Department spec — teaching, roadmaps, bootcamp tracking |
+| `docs/departments/enterprise-project-architect.md` | Department spec — the 25-project portfolio, architecture |
+| `docs/departments/technical-interviewer.md` | Department spec — mock interviews, readiness scoring |
+| `docs/departments/career-brand-coach.md` | Department spec — resume, LinkedIn, GitHub, recruiter tracking |
+| `docs/departments/cto.md` | Department spec — governance, prioritization, quality gates |
 
 ## prompts/
 

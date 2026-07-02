@@ -19,6 +19,10 @@ Every module ends with one entry here (per `AGENTS.md` Section 5, rule 6). Newes
 
 ## Entries
 
+### 2026-07-02 — Phase 2: Departments
+
+Created `docs/departments/README.md` and the 5 department specs: `learning-mentor.md`, `enterprise-project-architect.md`, `technical-interviewer.md`, `career-brand-coach.md`, `cto.md`. Each follows the full department template from `AGENTS.md` Section 4 (mission, responsibilities, KPIs, daily/weekly/monthly workflows, inputs/outputs, decision rules, escalation rules, templates, prompt files, checklists). Updated `docs/master-index.md`, `docs/progress/v1-scorecard.md`, and `docs/document-map.md` accordingly. Content also incorporated: repo was pushed to `github.com/AI-DSOS/AI-Data-Science-Operating-System` by Arulkumaran between Phase 1 and Phase 2.
+
 ### 2026-07-02 — Phase 1: Foundation (part 2)
 
 Added root `README.md`, `docs/document-map.md`, `docs/CHANGELOG.md` (this file), `resources/README.md`, `resources/glossary.md`, `.github/README.md`, `.github/workflows/deploy-docs.yml`, and `mkdocs.yml`. Closes out the remaining Phase 1: Foundation deliverables flagged in the previous scorecard update. Updated `docs/master-index.md` and `docs/progress/v1-scorecard.md` accordingly.

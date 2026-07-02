@@ -25,20 +25,20 @@ v1.0 is defined in `AGENTS.md` Section 2 as reaching **all five** targets below 
 
 | Asset | Target | Current | % Complete |
 |---|---|---|---|
-| Markdown documents | ~100 | 11 | 11% |
+| Markdown documents | ~100 | 17 | 17% |
 | Production-grade projects | 25 | 0 | 0% |
 | Reusable templates | 50 | 0 | 0% |
 | Prompt library files | 100+ | 0 | 0% |
-| Documentation site | Deployed (MkDocs) | Config scaffolded, not deployed | ~20% |
+| Documentation site | Deployed (MkDocs) | Config scaffolded, pushed to GitHub, not yet Pages-deployed | ~20% |
 
-*Current Markdown count (11): `AGENTS.md`, `README.md`, `docs/README.md`, `docs/master-index.md`, `docs/document-map.md`, `docs/CHANGELOG.md`, `docs/progress/README.md`, `docs/progress/v1-scorecard.md` (this file), `resources/README.md`, `resources/glossary.md`, `.github/README.md`. Non-Markdown infra files (`mkdocs.yml`, `.github/workflows/deploy-docs.yml`) are tracked separately and don't count toward the Markdown target.*
+*Current Markdown count (17): the 11 from Phase 1, plus `docs/departments/README.md` and the 5 department specs (`learning-mentor.md`, `enterprise-project-architect.md`, `technical-interviewer.md`, `career-brand-coach.md`, `cto.md`).*
 
 ## Breakdown by Category
 
 | Folder | Files present | Notes |
 |---|---|---|
 | Root | 2 (`AGENTS.md`, `README.md`) | Plus `mkdocs.yml` (non-Markdown) |
-| `docs/` | 6 | `README.md`, `master-index.md`, `document-map.md`, `CHANGELOG.md`, `progress/README.md`, `progress/v1-scorecard.md` |
+| `docs/` | 12 | 6 from Phase 1, plus `departments/README.md` + 5 department specs |
 | `prompts/` | 0 | Not started |
 | `templates/` | 0 | Not started |
 | `trackers/` | 0 | Not started |
@@ -56,7 +56,7 @@ Phases per `AGENTS.md` Section 10.
 | Phase | Status |
 |---|---|
 | 1. Foundation | **Complete** — AGENTS.md, README.md, docs/README.md, master-index.md, document-map.md, CHANGELOG.md, progress tracking, resources/glossary.md skeleton, mkdocs.yml, and doc-site deploy workflow all in place |
-| 2. Departments | Not started |
+| 2. Departments | **Complete** — all 5 department specs drafted (Learning Mentor, Enterprise Project Architect, Technical Interviewer, Career & Personal Brand Coach, CTO), each with mission, responsibilities, KPIs, workflows, decision/escalation rules |
 | 3. Operating System | Not started |
 | 4. Engineering Standards | Not started |
 | 5. Templates (50) | Not started |
@@ -68,10 +68,11 @@ Phases per `AGENTS.md` Section 10.
 
 ## Gaps / Known Risks
 
-- `resources/abbreviation-guide.md` and `resources/reference-library.md` are named in `resources/README.md` as future splits but not yet created — not a Phase 1 blocker (folded into `glossary.md` for now), revisit once the glossary passes ~30 entries.
-- `.github/ISSUE_TEMPLATE/` and `.github/PULL_REQUEST_TEMPLATE.md` are named in `.github/README.md` as open items — not a Phase 1 blocker, worth adding before external contributors (if any) touch the repo.
-- The MkDocs site is configured (`mkdocs.yml`, `deploy-docs.yml`) but not yet deployed — there is no live URL until this repo is pushed to GitHub with Pages enabled.
+- Every department doc references templates, prompt files, and trackers that don't exist yet (Phases 5–6) — this is expected sequencing, not a defect, but flagged so the referenced links aren't mistaken for broken ones.
+- `docs/operating-system/monthly-board-meeting.md`, referenced by the CTO department's monthly workflow, doesn't exist yet — a Phase 3 dependency.
+- `docs/learning-system/` doesn't exist yet, referenced by the Learning Mentor department — a Phase 3 dependency.
+- The MkDocs site is configured and the repo is pushed to GitHub, but Pages deployment status hasn't been confirmed — worth checking once Actions has had a chance to run.
 
 ## Next Steps
 
-Phase 1: Foundation is complete. Move to **Phase 2: Departments** — draft the 5 department specs (`docs/departments/*.md`: Learning Mentor, Enterprise Project Architect, Technical Interviewer, Career & Personal Brand Coach, CTO) per `AGENTS.md` Section 4.
+Phase 2: Departments is complete. Move to **Phase 3: Operating System** — daily/weekly/monthly/quarterly/annual review docs and sprint planning in `docs/operating-system/`, which several department workflows already depend on.
