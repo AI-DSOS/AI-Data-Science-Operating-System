@@ -86,7 +86,7 @@ Every Markdown file in the repository must have a line here. This is a flat list
 
 ## prompts/
 
-*Not started. Target: 100+ files across learning, projects, code review, architecture review, mock interviews, debugging, system design, technical writing, career planning, research, documentation, repository maintenance.*
+**104 prompts across 12 categories, indexed in full in [`prompts/README.md`](../prompts/README.md).** Learning (10), Projects (10), Code Reviews (8), Architecture Reviews (8), Mock Interviews (10), Debugging (8), System Design (8), Technical Writing (8), Career Planning (10), Research (8), Documentation (8), Repository Maintenance (8).
 
 ## templates/
 
