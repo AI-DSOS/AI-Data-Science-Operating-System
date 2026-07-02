@@ -59,6 +59,16 @@ v1.0 is defined in `AGENTS.md` Section 2 as reaching **all five** targets below 
 | Documentation site | Deployed (MkDocs) | Config scaffolded, pushed to GitHub, not yet Pages-deployed | ~20% |
 
 *Current Markdown count (249): the 216 from Phases 1–6, plus `projects/README.md` + 3 tier READMEs + 25 project READMEs (29) = 216 + 33 = 249.*
+=======
+| Markdown documents | ~100 | 111 | 111% (target exceeded — see note) |
+| Production-grade projects | 25 | 0 | 0% |
+| Reusable templates | 50 | 50 | 100% |
+| Prompt library files | 100+ | 0 | 0% |
+| Documentation site | Deployed (MkDocs) | Config scaffolded, pushed to GitHub, not yet Pages-deployed | ~20% |
+
+*Current Markdown count (111): the 45 from Phases 1–4, plus 50 templates + `templates/README.md` (51) + 14 trackers + `trackers/README.md` (15) = 45 + 51 + 15 = 111.*
+
+*Note on exceeding the ~100 target: the "~100 Markdown documents" target was set before the 50-template and 14-tracker counts were fully scoped out; templates and trackers are individually short (compressed frontmatter, fill-in-the-blank bodies), so document *count* now exceeds 100 while total content volume is still well short of a mature 100-substantial-document repo. Treat the ~100 target as informational going forward rather than a hard ceiling — the five v1.0 targets collectively (not the document count alone) define done, per AGENTS.md Section 2.*
 
 *Note on the "25 projects" target: as scoped explicitly in `projects/README.md`, this phase delivered 25 fully-specified project blueprints (business problem, architecture, tech stack, honest status), not 25 fully-implemented production systems. 3 projects carry substantial real prior work (Project 01 backfilled from a completed engagement, Project 21 has a working prototype, Project 22 is a substantially-built package); 2 more (Projects 18–19) are the existing flagship projects with real architecture already scoped. The remaining 20 are blueprint-only, pending actual implementation — tracked honestly rather than marked "done" prematurely, consistent with the honest-reporting standard the repo itself enforces (`docs/engineering-standards/machine-learning.md`).*
 
@@ -82,6 +92,7 @@ v1.0 is defined in `AGENTS.md` Section 2 as reaching **all five** targets below 
 =======
 =======
 | `prompts/` | 105 | `README.md` + 104 prompts across 12 categories — **target exceeded (104/100+)** |
+=======
 | `templates/` | 51 | `README.md` + 50 templates across 7 categories — **target met (50/50)** |
 | `trackers/` | 15 | `README.md` + 14 trackers matching the original scope's Trackers list exactly |
 | `playbooks/` | 0 | Not started |
@@ -114,6 +125,10 @@ Phases per `AGENTS.md` Section 10.
 | 5. Templates (50) | **Complete** — 50/50 templates across 7 categories, plus 14 trackers (a related deliverable pulled forward since so many earlier documents forward-referenced both) |
 | 6. Prompt Library (100+) | **Complete** — 104 prompts across 12 categories (Learning, Projects, Code Reviews, Architecture Reviews, Mock Interviews, Debugging, System Design, Technical Writing, Career Planning, Research, Documentation, Repository Maintenance) |
 | 7. Project Library (25) | **Blueprints complete, implementation ongoing** — all 25 projects scoped and documented across 3 tiers; 3 carry substantial prior real-world work, 2 are the existing flagship projects, 20 remain to be implemented |
+=======
+| 5. Templates (50) | **Complete** — 50/50 templates across 7 categories, plus 14 trackers (a related deliverable pulled forward since so many earlier documents forward-referenced both) |
+| 6. Prompt Library (100+) | Not started |
+| 7. Project Library (25) | Not started |
 | 8. Career System | Not started |
 | 9. Documentation Site | Not started |
 | 10. v1.0 Hardening | Not started |
@@ -144,6 +159,11 @@ Phase 3: Operating System is complete. Move to **Phase 4: Engineering Standards*
 - **The most important gap in the whole repo right now:** 20 of 25 projects are blueprint-only with no real implementation. This phase should not be read as "projects done" — see `projects/README.md`'s explicit scope note. Real implementation is a separate, much larger, ongoing effort.
 - Projects 21 (multi-agent QA POC) and 22 (`nhecf` package) exist as real, substantial work outside this repository and haven't been migrated in yet — this is low-effort, high-value work worth prioritizing before writing new code elsewhere.
 - Markdown document count (249) continues to climb past the informal ~100 target — now clearly established as expected, not a recurring surprise; this is the fourth consecutive phase to note it.
+=======
+
+- The Markdown document count (111) now exceeds the informal "~100" target — flagged above as expected and not a problem, since the five v1.0 targets collectively define done, not document count alone.
+- No templates have been used yet (no real project, review, or tracker has been instantiated from a copy) — usefulness is unverified until Phase 7 (projects) and ongoing operating-system use put them to work.
+- `templates/README.md` and `trackers/README.md` are the two largest single-file indexes in the repo now — worth checking they stay accurate as templates are added/removed in later phases.
 - The MkDocs site is configured and the repo is pushed to GitHub, but Pages deployment status hasn't been confirmed.
 
 ## Next Steps
@@ -153,10 +173,11 @@ Phase 5: Templates (and the pulled-forward Trackers deliverable) is complete. Mo
 Phase 6: Prompt Library is complete — two of five v1.0 targets now fully met (templates, prompts). Move to **Phase 7: Project Library (25)** — the largest remaining phase, and the one every other phase has been building toward (engineering standards, templates, and prompts all exist specifically to support it).
 =======
 Phase 5: Templates (and the pulled-forward Trackers deliverable) is complete. Move to **Phase 6: Prompt Library (100+)** — reusable prompts across learning, projects, code reviews, architecture reviews, mock interviews, debugging, system design, technical writing, career planning, research, documentation, and repository maintenance.
-
 =======
 
 Phase 7: Project Library blueprints are complete; a large amount of real implementation work remains open-ended (not phase-gated the way documentation phases were). Reasonable next moves, in rough priority order:
 1. Migrate Projects 21 and 22 (existing real work) into the new `projects/` structure — fastest path to a second and third genuinely "complete" project.
 2. Implement Project 02 (Credit Card Fraud Detection) — it's a dependency for Projects 09 and 20.
 3. Move to **Phase 8: Career System** (resume framework, LinkedIn strategy, recruiter tracker) in parallel, since it doesn't block on project implementation the way Phase 9 (Documentation Site) navigation does.
+=======
+Phase 5: Templates (and the pulled-forward Trackers deliverable) is complete. Move to **Phase 6: Prompt Library (100+)** — reusable prompts across learning, projects, code reviews, architecture reviews, mock interviews, debugging, system design, technical writing, career planning, research, documentation, and repository maintenance.
