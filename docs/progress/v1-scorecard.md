@@ -87,6 +87,16 @@ v1.0 is defined in `AGENTS.md` Section 2 as reaching **all five** targets below 
 | Reusable templates | 50 | 50 | 100% |
 | Prompt library files | 100+ | 104 | 104% |
 | Documentation site | Deployed (MkDocs) | **Build tested and verified working (exit 0, zero warnings, 51 pages); scoped to docs/ only; GitHub Pages enablement unconfirmed** | ~80% |
+=======
+| Markdown documents | ~100 | 111 | 111% (target exceeded — see note) |
+| Production-grade projects | 25 | 0 | 0% |
+| Reusable templates | 50 | 50 | 100% |
+| Prompt library files | 100+ | 0 | 0% |
+| Documentation site | Deployed (MkDocs) | Config scaffolded, pushed to GitHub, not yet Pages-deployed | ~20% |
+
+*Current Markdown count (111): the 45 from Phases 1–4, plus 50 templates + `templates/README.md` (51) + 14 trackers + `trackers/README.md` (15) = 45 + 51 + 15 = 111.*
+
+*Note on exceeding the ~100 target: the "~100 Markdown documents" target was set before the 50-template and 14-tracker counts were fully scoped out; templates and trackers are individually short (compressed frontmatter, fill-in-the-blank bodies), so document *count* now exceeds 100 while total content volume is still well short of a mature 100-substantial-document repo. Treat the ~100 target as informational going forward rather than a hard ceiling — the five v1.0 targets collectively (not the document count alone) define done, per AGENTS.md Section 2.*
 
 *Current Markdown count (258): the 257 from Phases 1–8, plus `docs/documentation-site.md` (1) = 258. (`docs/index.md` was created then removed during this phase once `docs/README.md` was confirmed to auto-serve as the site homepage — net one new file overall, not two.)*
 
@@ -133,6 +143,7 @@ v1.0 is defined in `AGENTS.md` Section 2 as reaching **all five** targets below 
 =======
 | `docs/` | 49 | 48 from Phases 1–8, plus `documentation-site.md` |
 | `prompts/` | 105 | `README.md` + 104 prompts across 12 categories — **target exceeded (104/100+)** |
+=======
 | `templates/` | 51 | `README.md` + 50 templates across 7 categories — **target met (50/50)** |
 | `trackers/` | 15 | `README.md` + 14 trackers matching the original scope's Trackers list exactly |
 | `playbooks/` | 0 | Not started |
@@ -185,6 +196,19 @@ Phases per `AGENTS.md` Section 10.
 - `docs/operating-system/monthly-board-meeting.md` names a `docs/operating-system/board-minutes/` folder to be created on first real use — intentionally deferred, not a defect.
 - `journal/README.md` is referenced by `reflection-system.md` as creatable "anytime" — still open, low priority.
 - Several operating-system docs reference `templates/` (Weekly Review, Monthly Board Meeting, Quarterly Review, Sprint Planning templates) that don't exist yet — expected, Phase 5 dependency.
+=======
+| 5. Templates (50) | **Complete** — 50/50 templates across 7 categories, plus 14 trackers (a related deliverable pulled forward since so many earlier documents forward-referenced both) |
+| 6. Prompt Library (100+) | Not started |
+| 7. Project Library (25) | Not started |
+| 8. Career System | Not started |
+| 9. Documentation Site | Not started |
+| 10. v1.0 Hardening | Not started |
+
+## Gaps / Known Risks
+
+- The Markdown document count (111) now exceeds the informal "~100" target — flagged above as expected and not a problem, since the five v1.0 targets collectively define done, not document count alone.
+- No templates have been used yet (no real project, review, or tracker has been instantiated from a copy) — usefulness is unverified until Phase 7 (projects) and ongoing operating-system use put them to work.
+- `templates/README.md` and `trackers/README.md` are the two largest single-file indexes in the repo now — worth checking they stay accurate as templates are added/removed in later phases.
 - The MkDocs site is configured and the repo is pushed to GitHub, but Pages deployment status hasn't been confirmed.
 ## Next Steps
 Phase 4: Engineering Standards is complete. Move to **Phase 5: Templates (50)** — the reusable Markdown templates that nearly every document created so far (departments, operating system, engineering standards) has been forward-referencing.
@@ -232,7 +256,6 @@ Phase 7: Project Library blueprints are complete; a large amount of real impleme
 Phase 5: Templates (and the pulled-forward Trackers deliverable) is complete. Move to **Phase 6: Prompt Library (100+)** — reusable prompts across learning, projects, code reviews, architecture reviews, mock interviews, debugging, system design, technical writing, career planning, research, documentation, and repository maintenance.
 =======
 Phase 6: Prompt Library is complete — two of five v1.0 targets now fully met (templates, prompts). Move to **Phase 7: Project Library (25)** — the largest remaining phase, and the one every other phase has been building toward (engineering standards, templates, and prompts all exist specifically to support it).
-
 =======
 Phase 7: Project Library blueprints are complete; a large amount of real implementation work remains open-ended (not phase-gated the way documentation phases were). Reasonable next moves, in rough priority order:
 1. Migrate Projects 21 and 22 (existing real work) into the new `projects/` structure — fastest path to a second and third genuinely "complete" project.
@@ -245,3 +268,5 @@ Phase 5: Templates (and the pulled-forward Trackers deliverable) is complete. Mo
 =======
 
 Phase 9: Documentation Site is complete and tested, pending the one manual GitHub Pages step. Only **Phase 10: v1.0 Hardening** remains on the roadmap — a full quality-gate sweep (per `AGENTS.md` Section 7) across all 258 documents before tagging v1.0. Real project implementation (Projects 02, 21, 22 as the highest-priority candidates) remains the largest open-ended item outside the phase sequence.
+=======
+Phase 5: Templates (and the pulled-forward Trackers deliverable) is complete. Move to **Phase 6: Prompt Library (100+)** — reusable prompts across learning, projects, code reviews, architecture reviews, mock interviews, debugging, system design, technical writing, career planning, research, documentation, and repository maintenance.
