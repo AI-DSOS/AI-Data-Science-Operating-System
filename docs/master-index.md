@@ -66,6 +66,22 @@ Every Markdown file in the repository must have a line here. This is a flat list
 | `docs/operating-system/deep-work.md` | What qualifies as protected deep-focus time and why |
 | `docs/operating-system/revision-strategy.md` | How mastered concepts get revisited so they don't decay |
 | `docs/operating-system/reflection-system.md` | Lightweight sustainability/fit checks on the system itself |
+| `docs/engineering-standards/README.md` | Index of the 15 engineering standards documents |
+| `docs/engineering-standards/python.md` | Python style, typing, dependency management |
+| `docs/engineering-standards/sql.md` | SQL formatting, naming, migrations |
+| `docs/engineering-standards/jupyter.md` | Notebook location, naming, graduation to `src/` |
+| `docs/engineering-standards/fastapi.md` | API structure, validation, versioning, health checks |
+| `docs/engineering-standards/docker.md` | Base images, multi-stage builds, non-root, `.dockerignore` |
+| `docs/engineering-standards/machine-learning.md` | Baselines, train/test discipline, honest metric reporting |
+| `docs/engineering-standards/mlops.md` | Tracking, registry, serving, monitoring, drift, retraining |
+| `docs/engineering-standards/git-github-workflow.md` | Branch strategy, commit messages, code review, GitHub conventions |
+| `docs/engineering-standards/testing.md` | Unit, data, model, and integration testing |
+| `docs/engineering-standards/logging.md` | Structured logging, levels, correlation IDs, no secrets |
+| `docs/engineering-standards/documentation.md` | Code-level docs — docstrings, project READMEs, ADRs |
+| `docs/engineering-standards/naming-conventions.md` | Code-level naming — Python, SQL, model artifacts, env vars |
+| `docs/engineering-standards/folder-structure.md` | Standard project-level folder layout |
+| `docs/engineering-standards/security.md` | Secrets, input validation, least privilege, PII handling |
+| `docs/engineering-standards/performance-and-scalability.md` | Baselines, latency targets, stateless design, batch vs. real-time |
 
 ## prompts/
 
