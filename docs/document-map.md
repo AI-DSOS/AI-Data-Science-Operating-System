@@ -170,3 +170,8 @@ graph LR
 - Add a diagram for `docs/learning-system/`, `docs/career-system/` once those are created (deferred — not part of the original 10-phase roadmap's explicit folder list, revisit if department docs' forward-references to them turn into real content).
 - Add diagrams for the Prompt Library and Project Library as Phases 6–7 complete (these have real internal structure worth diagramming, unlike templates/trackers).
 (Phase 5: Templates (50) + Trackers (14))
+=======
+- `templates/` (50 files) and `trackers/` (14 files) are deliberately **not** diagrammed here — they're flat, mutually-independent reusable files better served by their own README indexes (`templates/README.md`, `trackers/README.md`) than a 64-node Mermaid graph. This is a considered exception to the "every module gets a diagram" pattern, not an oversight.
+- Add a diagram for `docs/learning-system/`, `docs/career-system/` once those are created (deferred — not part of the original 10-phase roadmap's explicit folder list, revisit if department docs' forward-references to them turn into real content).
+- Add diagrams for the Prompt Library and Project Library as Phases 6–7 complete (these have real internal structure worth diagramming, unlike templates/trackers).
+(Phase 5: Templates (50) + Trackers (14))
