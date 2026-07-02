@@ -59,6 +59,26 @@ graph TD
     CTO -.governs.-> EPA
     CTO -.governs.-> TI
     CTO -.governs.-> CBC
+
+    DocsReadme --> OSReadme[docs/operating-system/README.md]
+    OSReadme --> Daily[operating-system/daily-operating-system.md]
+    OSReadme --> WeeklyR[operating-system/weekly-review.md]
+    OSReadme --> MonthlyB[operating-system/monthly-board-meeting.md]
+    OSReadme --> QuarterlyR[operating-system/quarterly-review.md]
+    OSReadme --> AnnualR[operating-system/annual-review.md]
+    OSReadme --> Sprint[operating-system/sprint-planning.md]
+    OSReadme --> KM[operating-system/knowledge-management.md]
+    OSReadme --> TaskP[operating-system/task-prioritization.md]
+    OSReadme --> TimeB[operating-system/time-blocking.md]
+    OSReadme --> DeepW[operating-system/deep-work.md]
+    OSReadme --> RevS[operating-system/revision-strategy.md]
+    OSReadme --> Reflect[operating-system/reflection-system.md]
+
+    Daily --> WeeklyR --> MonthlyB --> QuarterlyR --> AnnualR
+    TaskP --> TimeB --> Daily
+    TimeB --> DeepW
+    Daily --> Reflect --> RevS
+    CTO -.governs.-> OSReadme
 ```
 
 ### Operating System
@@ -139,5 +159,9 @@ graph LR
 ## Next Steps
 
 - Add a subgraph for `resources/` (glossary, abbreviation guide) once expanded.
+
 - Add a diagram for `docs/learning-system/`, `docs/career-system/` once those are created (deferred — not part of the original 10-phase roadmap's explicit folder list, revisit if department docs' forward-references to them turn into real content).
 - Add diagrams for Templates, Prompt Library, and Project Library as Phases 5–7 complete.
+=======
+- This map now has ~30 nodes — approaching the split threshold noted below. Revisit splitting into per-module diagrams once `docs/engineering-standards/` (Phase 4) adds another cluster.
+- Revisit the "split into per-module diagrams" threshold (~25 nodes) once real project and prompt-library nodes are added (Phases 5–7).

@@ -1,3 +1,4 @@
+
 ---
 title: AI Data Science Operating System (DSOS)
 purpose: Human-facing entry point to the repository — what DSOS is, how it's organized, and where to start.
@@ -48,3 +49,7 @@ Live progress against these numbers is tracked in [`docs/progress/v1-scorecard.m
 ## Status
 
 DSOS is in **Phase 1: Foundation**. See [`docs/progress/v1-scorecard.md`](docs/progress/v1-scorecard.md) for current counts and [`docs/CHANGELOG.md`](docs/CHANGELOG.md) for what's changed, module by module.
+=======
+# AI-Data-Science-Operating-System
+Data Science
+

@@ -23,6 +23,8 @@ Every module ends with one entry here (per `AGENTS.md` Section 5, rule 6). Newes
 
 Created `docs/engineering-standards/README.md` and 15 standards documents, grouping the 19 originally-named areas: `python.md`, `sql.md`, `jupyter.md`, `fastapi.md`, `docker.md`, `machine-learning.md`, `mlops.md`, `git-github-workflow.md` (Git + GitHub + Branch Strategy + Commit Messages + Code Review), `testing.md`, `logging.md`, `documentation.md`, `naming-conventions.md`, `folder-structure.md`, `security.md`, `performance-and-scalability.md`. Each document distinguishes its code-level scope from the repository-level equivalents already governed by `AGENTS.md` (naming, documentation, folder structure). Split `docs/document-map.md` into per-module Mermaid diagrams (Foundation, Departments, Operating System, Engineering Standards) now that the single-graph node count passed the ~25-node threshold flagged in Phase 3's entry. Updated `docs/master-index.md` and `docs/progress/v1-scorecard.md` accordingly.
 
+=======
+
 ### 2026-07-02 — Phase 3: Operating System
 
 Created `docs/operating-system/README.md` and 11 documents: `daily-operating-system.md`, `weekly-review.md`, `monthly-board-meeting.md`, `quarterly-review.md`, `annual-review.md`, `sprint-planning.md`, `knowledge-management.md`, `task-prioritization.md`, `time-blocking.md`, `deep-work.md`, `revision-strategy.md`, `reflection-system.md`. Documents are explicitly built around real constraints: a fixed Synechron workday, evening/Sunday bootcamp study windows, the August 15, 2026 readiness deadline, and Vaagai as a Sunday-reserve-only activity per the CTO department's priority order. Updated `docs/master-index.md`, `docs/progress/v1-scorecard.md`, and `docs/document-map.md` accordingly.
