@@ -14,6 +14,7 @@ last_updated: 2026-07-02
 - [Scope of This Phase — Read This First](#scope-of-this-phase-read-this-first)
 =======
 - [Scope of This Phase — Read This First](#scope-of-this-phase--read-this-first)
+=======
 - [The Three Tiers](#the-three-tiers)
 - [Status Legend](#status-legend)
 - [Full Project Index](#full-project-index)
