@@ -19,6 +19,19 @@ last_updated: 2026-07-02
 
 `docs/` holds every core knowledge document that isn't a template, prompt, tracker, playbook, or project — i.e. the "read this to understand how DSOS works" layer of the repository. This includes department specs, the operating system (daily/weekly/monthly/quarterly rhythms), engineering standards, the learning system, the career system, and the knowledge-management artifacts that keep the whole repo navigable.
 
+**This file also serves as the MkDocs site homepage** (`docs_dir` is `docs/`, and MkDocs treats a folder's `README.md` as its index page automatically). See [`documentation-site.md`](documentation-site.md) for why the site is scoped to `docs/` only.
+
+### On GitHub Only (Not Part of This Site)
+
+| Item | Where |
+|---|---|
+| `AGENTS.md` — governance rules for AI agents working in this repo | [View on GitHub](https://github.com/AI-DSOS/AI-Data-Science-Operating-System/blob/main/AGENTS.md) |
+| `templates/` — 50 reusable templates | [View on GitHub](https://github.com/AI-DSOS/AI-Data-Science-Operating-System/tree/main/templates) |
+| `trackers/` — 14 reusable trackers | [View on GitHub](https://github.com/AI-DSOS/AI-Data-Science-Operating-System/tree/main/trackers) |
+| `prompts/` — 104 reusable prompts | [View on GitHub](https://github.com/AI-DSOS/AI-Data-Science-Operating-System/tree/main/prompts) |
+| `projects/` — the 25-project library | [View on GitHub](https://github.com/AI-DSOS/AI-Data-Science-Operating-System/tree/main/projects) |
+| `resources/` — glossary and reference material | [View on GitHub](https://github.com/AI-DSOS/AI-Data-Science-Operating-System/tree/main/resources) |
+
 ## Subfolders
 
 | Folder | Contents | Status |

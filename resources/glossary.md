@@ -13,7 +13,7 @@ last_updated: 2026-07-02
 - [Overview](#overview)
 - [Repository Terms](#repository-terms)
 - [Machine Learning Terms](#machine-learning-terms)
-- [Investment Banking / FinTech Terms](#investment-banking--fintech-terms)
+- [Investment Banking / FinTech Terms](#investment-banking-fintech-terms)
 - [Next Steps](#next-steps)
 
 ## Overview
