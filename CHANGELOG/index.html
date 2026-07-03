@@ -1,0 +1,2821 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A single source of truth for a complete Data Science / ML / AI Engineering career transformation.">
+      
+      
+        <meta name="author" content="Arulkumaran">
+      
+      
+      
+        <link rel="prev" href="../document-map/">
+      
+      
+        <link rel="next" href="../progress/v1-scorecard/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>DSOS Changelog - AI Data Science Operating System (DSOS)</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#table-of-contents" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="AI Data Science Operating System (DSOS)" class="md-header__button md-logo" aria-label="AI Data Science Operating System (DSOS)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AI Data Science Operating System (DSOS)
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              DSOS Changelog
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../master-index/" class="md-tabs__link">
+          
+  
+  
+  Governance
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../departments/" class="md-tabs__link">
+          
+  
+  
+  Departments
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../operating-system/" class="md-tabs__link">
+          
+  
+  
+  Operating System
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../engineering-standards/" class="md-tabs__link">
+          
+  
+  
+  Engineering Standards
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../career-system/" class="md-tabs__link">
+          
+  
+  
+  Career System
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../progress/" class="md-tabs__link">
+          
+  
+  
+  Progress
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../documentation-site/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  About This Site
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="AI Data Science Operating System (DSOS)" class="md-nav__button md-logo" aria-label="AI Data Science Operating System (DSOS)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    AI Data Science Operating System (DSOS)
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Governance
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Governance
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../master-index/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Master Index
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../document-map/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Document Map
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Table of Contents
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entries
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Entries">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2026-07-02-phase-7-project-library-25-blueprints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-07-02 — Phase 7: Project Library (25 blueprints)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2026-07-02-phase-6-prompt-library-104" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-07-02 — Phase 6: Prompt Library (104)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2026-07-02-phase-5-templates-50-trackers-14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-07-02 — Phase 5: Templates (50) + Trackers (14)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2026-07-02-phase-8-career-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-07-02 — Phase 8: Career System
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2026-07-02-phase-7-project-library-25-blueprints_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-07-02 — Phase 7: Project Library (25 blueprints)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2026-07-02-phase-6-prompt-library-104_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-07-02 — Phase 6: Prompt Library (104)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2026-07-02-phase-5-templates-50-trackers-14_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-07-02 — Phase 5: Templates (50) + Trackers (14)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2026-07-02-phase-9-documentation-site" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-07-02 — Phase 9: Documentation Site
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2026-07-02-phase-8-career-system_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-07-02 — Phase 8: Career System
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2026-07-02-phase-7-project-library-25-blueprints_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-07-02 — Phase 7: Project Library (25 blueprints)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2026-07-02-phase-6-prompt-library-104_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-07-02 — Phase 6: Prompt Library (104)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2026-07-02-phase-5-templates-50-trackers-14_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-07-02 — Phase 5: Templates (50) + Trackers (14)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2026-07-02-phase-4-engineering-standards" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-07-02 — Phase 4: Engineering Standards
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2026-07-02-phase-3-operating-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-07-02 — Phase 3: Operating System
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2026-07-02-phase-2-departments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-07-02 — Phase 2: Departments
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2026-07-02-phase-1-foundation-part-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-07-02 — Phase 1: Foundation (part 2)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2026-07-02-phase-1-foundation-part-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-07-02 — Phase 1: Foundation (part 1)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../progress/v1-scorecard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    v1.0 Scorecard
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Departments
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Departments
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../departments/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../departments/learning-mentor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Learning Mentor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../departments/enterprise-project-architect/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Enterprise Project Architect
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../departments/technical-interviewer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Technical Interviewer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../departments/career-brand-coach/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Career & Personal Brand Coach
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../departments/cto/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CTO
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operating System
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Operating System
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../operating-system/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../operating-system/daily-operating-system/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Daily Operating System
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../operating-system/weekly-review/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Weekly Review
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../operating-system/monthly-board-meeting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Monthly Board Meeting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../operating-system/quarterly-review/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quarterly Review
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../operating-system/annual-review/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Annual Review
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../operating-system/sprint-planning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sprint Planning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../operating-system/knowledge-management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Knowledge Management
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../operating-system/task-prioritization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Task Prioritization
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../operating-system/time-blocking/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Time Blocking
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../operating-system/deep-work/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deep Work
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../operating-system/revision-strategy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Revision Strategy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../operating-system/reflection-system/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reflection System
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Engineering Standards
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Engineering Standards
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../engineering-standards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../engineering-standards/python/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../engineering-standards/sql/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SQL
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../engineering-standards/jupyter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jupyter
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../engineering-standards/fastapi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FastAPI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../engineering-standards/docker/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Docker
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../engineering-standards/machine-learning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Machine Learning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../engineering-standards/mlops/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MLOps
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../engineering-standards/git-github-workflow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Git, GitHub & Code Review
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../engineering-standards/testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../engineering-standards/logging/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Logging
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../engineering-standards/documentation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Documentation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../engineering-standards/naming-conventions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Naming Conventions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../engineering-standards/folder-structure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Folder Structure
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../engineering-standards/security/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Security
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../engineering-standards/performance-and-scalability/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Performance & Scalability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Career System
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Career System
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../career-system/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../career-system/resume-framework/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Resume Framework
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../career-system/linkedin-strategy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LinkedIn Strategy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../career-system/github-strategy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GitHub Strategy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../career-system/portfolio-strategy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Portfolio Strategy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../career-system/networking-plan/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Networking Plan
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../career-system/conference-preparation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Conference Preparation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../career-system/technical-writing-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Technical Writing Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Progress
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Progress
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../progress/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../progress/v1-scorecard/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    v1.0 Scorecard
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../documentation-site/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About This Site
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Table of Contents
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entries
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Entries">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2026-07-02-phase-7-project-library-25-blueprints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-07-02 — Phase 7: Project Library (25 blueprints)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2026-07-02-phase-6-prompt-library-104" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-07-02 — Phase 6: Prompt Library (104)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2026-07-02-phase-5-templates-50-trackers-14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-07-02 — Phase 5: Templates (50) + Trackers (14)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2026-07-02-phase-8-career-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-07-02 — Phase 8: Career System
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2026-07-02-phase-7-project-library-25-blueprints_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-07-02 — Phase 7: Project Library (25 blueprints)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2026-07-02-phase-6-prompt-library-104_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-07-02 — Phase 6: Prompt Library (104)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2026-07-02-phase-5-templates-50-trackers-14_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-07-02 — Phase 5: Templates (50) + Trackers (14)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2026-07-02-phase-9-documentation-site" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-07-02 — Phase 9: Documentation Site
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2026-07-02-phase-8-career-system_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-07-02 — Phase 8: Career System
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2026-07-02-phase-7-project-library-25-blueprints_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-07-02 — Phase 7: Project Library (25 blueprints)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2026-07-02-phase-6-prompt-library-104_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-07-02 — Phase 6: Prompt Library (104)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2026-07-02-phase-5-templates-50-trackers-14_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-07-02 — Phase 5: Templates (50) + Trackers (14)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2026-07-02-phase-4-engineering-standards" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-07-02 — Phase 4: Engineering Standards
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2026-07-02-phase-3-operating-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-07-02 — Phase 3: Operating System
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2026-07-02-phase-2-departments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-07-02 — Phase 2: Departments
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2026-07-02-phase-1-foundation-part-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-07-02 — Phase 1: Foundation (part 2)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2026-07-02-phase-1-foundation-part-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2026-07-02 — Phase 1: Foundation (part 1)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Changelog</h1>
+
+<h2 id="table-of-contents">Table of Contents<a class="headerlink" href="#table-of-contents" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#entries">Entries</a></li>
+</ul>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p>Every module ends with one entry here (per <code>AGENTS.md</code> Section 5, rule 6). Newest entries on top. Entries are short — what changed and why, not a full diff.</p>
+<h2 id="entries">Entries<a class="headerlink" href="#entries" title="Permanent link">&para;</a></h2>
+<p>=======</p>
+<h3 id="2026-07-02-phase-7-project-library-25-blueprints">2026-07-02 — Phase 7: Project Library (25 blueprints)<a class="headerlink" href="#2026-07-02-phase-7-project-library-25-blueprints" title="Permanent link">&para;</a></h3>
+<p>Created <code>projects/README.md</code>, 3 tier READMEs (<code>tier-1-foundational/</code>, <code>tier-2-intermediate/</code>, <code>tier-3-advanced/</code>), and 25 project blueprint READMEs (business problem, architecture, tech stack, honest status per <code>docs/engineering-standards/machine-learning.md</code>'s reporting standard). <strong>Scope explicitly stated in <code>projects/README.md</code>:</strong> these are 25 fully-specified blueprints, not 25 fully-implemented systems. Three projects carry substantial real prior work (Project 01 backfilled from a completed engagement with an honest ROC-AUC ~0.65 result; Project 21, the multi-agent QA POC prototype; Project 22, the <code>nhecf</code> regulatory-reporting package); Projects 18–19 are the existing flagship projects with real architecture already scoped; the remaining 20 are blueprint-only. Added a Project Library dependency diagram to <code>docs/document-map.md</code> — the first of the three large reusable-file phases (templates, trackers, prompts, now projects) to get a real diagram, since projects have genuine dependency structure worth showing. Updated <code>docs/master-index.md</code> and <code>docs/progress/v1-scorecard.md</code>, flagging the blueprint-vs-implementation gap as the most important open item in the repo.</p>
+<h3 id="2026-07-02-phase-6-prompt-library-104">2026-07-02 — Phase 6: Prompt Library (104)<a class="headerlink" href="#2026-07-02-phase-6-prompt-library-104" title="Permanent link">&para;</a></h3>
+<p>Created <code>prompts/README.md</code> and 104 prompts across 12 categories (Learning x10, Projects x10, Code Reviews x8, Architecture Reviews x8, Mock Interviews x10, Debugging x8, System Design x8, Technical Writing x8, Career Planning x10, Research x8, Documentation x8, Repository Maintenance x8) — exceeding the v1.0 "100+ prompt library" target. Each prompt is a short, copy-paste-ready instruction with <code>{variables}</code> and a "Use When" pointer back to the department or operating-system moment it serves; several explicitly tie to real context (IB/FinTech mock-interview framing, the Vaagai venture, the Krish Naik bootcamp phases). Updated <code>docs/master-index.md</code> and <code>docs/progress/v1-scorecard.md</code> — two of five v1.0 targets (templates, prompts) are now fully met.</p>
+<h3 id="2026-07-02-phase-5-templates-50-trackers-14">2026-07-02 — Phase 5: Templates (50) + Trackers (14)<a class="headerlink" href="#2026-07-02-phase-5-templates-50-trackers-14" title="Permanent link">&para;</a></h3>
+<p>Created <code>templates/README.md</code> and 50 templates across 7 categories (Project Blueprint x15, Learning System x5, Interview/Assessment x4, Career System x8, Operating System/Review x5, Engineering/Code x8, Governance x5) — meeting the v1.0 "50 reusable templates" target exactly. Pulled forward <code>trackers/README.md</code> and 14 trackers (matching the original scope's Trackers list exactly: daily, weekly, monthly, learning, coding, project, git, GitHub, reading, portfolio, interview, confidence, habit, KPI dashboard) since nearly every document from Phases 2–4 forward-referenced both <code>templates/</code> and <code>trackers/</code>. All templates are intentionally compact (compressed frontmatter, fill-in-the-blank bodies) per the compression allowance in <code>AGENTS.md</code> Section 6. Updated <code>docs/master-index.md</code> and <code>docs/progress/v1-scorecard.md</code>; flagged that total Markdown document count (111) now exceeds the informal ~100 target, which is expected given template/tracker file count and not indicative of a problem.</p>
+<h3 id="2026-07-02-phase-8-career-system">2026-07-02 — Phase 8: Career System<a class="headerlink" href="#2026-07-02-phase-8-career-system" title="Permanent link">&para;</a></h3>
+<p>Created <code>docs/career-system/README.md</code> and 7 strategy documents: <code>resume-framework.md</code>, <code>linkedin-strategy.md</code>, <code>github-strategy.md</code>, <code>portfolio-strategy.md</code>, <code>networking-plan.md</code>, <code>conference-preparation.md</code>, <code>technical-writing-guide.md</code>. Explicitly layered above the Phase 5 templates (<code>templates/resume-template.md</code> etc.) and the Phase 2 department doc (<code>docs/departments/career-brand-coach.md</code>) — this phase answers "why this approach" where templates answer "what does the artifact look like" and the department doc answers "who does this, how often." Noted in <code>docs/career-system/README.md</code> that Case Study Template, Recruiter Tracker, and Interview Tracker (also named in the original Career System scope) were already delivered in Phase 5 rather than duplicated here. Added a Career System diagram to <code>docs/document-map.md</code>. Updated <code>docs/master-index.md</code> and <code>docs/progress/v1-scorecard.md</code>.</p>
+<h3 id="2026-07-02-phase-7-project-library-25-blueprints_1">2026-07-02 — Phase 7: Project Library (25 blueprints)<a class="headerlink" href="#2026-07-02-phase-7-project-library-25-blueprints_1" title="Permanent link">&para;</a></h3>
+<p>Created <code>projects/README.md</code>, 3 tier READMEs (<code>tier-1-foundational/</code>, <code>tier-2-intermediate/</code>, <code>tier-3-advanced/</code>), and 25 project blueprint READMEs (business problem, architecture, tech stack, honest status per <code>docs/engineering-standards/machine-learning.md</code>'s reporting standard). <strong>Scope explicitly stated in <code>projects/README.md</code>:</strong> these are 25 fully-specified blueprints, not 25 fully-implemented systems. Three projects carry substantial real prior work (Project 01 backfilled from a completed engagement with an honest ROC-AUC ~0.65 result; Project 21, the multi-agent QA POC prototype; Project 22, the <code>nhecf</code> regulatory-reporting package); Projects 18–19 are the existing flagship projects with real architecture already scoped; the remaining 20 are blueprint-only. Added a Project Library dependency diagram to <code>docs/document-map.md</code> — the first of the three large reusable-file phases (templates, trackers, prompts, now projects) to get a real diagram, since projects have genuine dependency structure worth showing. Updated <code>docs/master-index.md</code> and <code>docs/progress/v1-scorecard.md</code>, flagging the blueprint-vs-implementation gap as the most important open item in the repo.</p>
+<h3 id="2026-07-02-phase-6-prompt-library-104_1">2026-07-02 — Phase 6: Prompt Library (104)<a class="headerlink" href="#2026-07-02-phase-6-prompt-library-104_1" title="Permanent link">&para;</a></h3>
+<p>Created <code>prompts/README.md</code> and 104 prompts across 12 categories (Learning x10, Projects x10, Code Reviews x8, Architecture Reviews x8, Mock Interviews x10, Debugging x8, System Design x8, Technical Writing x8, Career Planning x10, Research x8, Documentation x8, Repository Maintenance x8) — exceeding the v1.0 "100+ prompt library" target. Each prompt is a short, copy-paste-ready instruction with <code>{variables}</code> and a "Use When" pointer back to the department or operating-system moment it serves; several explicitly tie to real context (IB/FinTech mock-interview framing, the Vaagai venture, the Krish Naik bootcamp phases). Updated <code>docs/master-index.md</code> and <code>docs/progress/v1-scorecard.md</code> — two of five v1.0 targets (templates, prompts) are now fully met.</p>
+<h3 id="2026-07-02-phase-5-templates-50-trackers-14_1">2026-07-02 — Phase 5: Templates (50) + Trackers (14)<a class="headerlink" href="#2026-07-02-phase-5-templates-50-trackers-14_1" title="Permanent link">&para;</a></h3>
+<p>Created <code>templates/README.md</code> and 50 templates across 7 categories (Project Blueprint x15, Learning System x5, Interview/Assessment x4, Career System x8, Operating System/Review x5, Engineering/Code x8, Governance x5) — meeting the v1.0 "50 reusable templates" target exactly. Pulled forward <code>trackers/README.md</code> and 14 trackers (matching the original scope's Trackers list exactly: daily, weekly, monthly, learning, coding, project, git, GitHub, reading, portfolio, interview, confidence, habit, KPI dashboard) since nearly every document from Phases 2–4 forward-referenced both <code>templates/</code> and <code>trackers/</code>. All templates are intentionally compact (compressed frontmatter, fill-in-the-blank bodies) per the compression allowance in <code>AGENTS.md</code> Section 6. Updated <code>docs/master-index.md</code> and <code>docs/progress/v1-scorecard.md</code>; flagged that total Markdown document count (111) now exceeds the informal ~100 target, which is expected given template/tracker file count and not indicative of a problem.</p>
+<h3 id="2026-07-02-phase-9-documentation-site">2026-07-02 — Phase 9: Documentation Site<a class="headerlink" href="#2026-07-02-phase-9-documentation-site" title="Permanent link">&para;</a></h3>
+<p>First attempt set <code>docs_dir: .</code> (repo root) so the MkDocs site could cover every top-level folder — <strong>untested and wrong</strong>: MkDocs hard-errors when <code>docs_dir</code> equals the config file's own directory. A follow-up attempt reached for a plugin (<code>mkdocs-same-dir</code>) that looked like the standard fix; installed and tested, it turned out to be for an unrelated tool ("ProperDocs"), not real MkDocs — caught the same way, by running the build rather than trusting the package name. The actual fix — <code>docs_dir: docs</code>, MkDocs' real default, used explicitly — was verified with three real local builds (<code>pip install mkdocs mkdocs-material pymdown-extensions</code> + <code>mkdocs build --strict</code>) until it returned exit code 0 with zero warnings across 51 built pages. Along the way: resolved a <code>README.md</code>/<code>index.md</code> homepage conflict (kept <code>README.md</code>, MkDocs auto-serves it as index), set <code>validation.links.not_found: ignore</code> after confirming <code>warn</code> still fails <code>--strict</code>, and fixed two broken TOC anchors (headings containing <code>/</code> generate single-hyphen slugs, not double) in <code>docs/progress/v1-scorecard.md</code>, <code>projects/README.md</code>, and <code>resources/glossary.md</code>. Final site scope: <code>docs/</code> (49 files, full nav detail) is on the site; <code>AGENTS.md</code>, root <code>README.md</code>, <code>templates/</code>, <code>trackers/</code>, <code>prompts/</code>, <code>projects/</code>, <code>resources/</code> are GitHub-only, linked clearly from the homepage — a real, documented tradeoff, not a hidden limitation. <code>docs/documentation-site.md</code> records the full account, including the false starts, deliberately. Updated <code>docs/master-index.md</code> and <code>docs/progress/v1-scorecard.md</code> — Documentation Site target moved from ~20% to ~80%, the remaining gap being GitHub Pages enablement, which requires admin access this environment doesn't have.</p>
+<h3 id="2026-07-02-phase-8-career-system_1">2026-07-02 — Phase 8: Career System<a class="headerlink" href="#2026-07-02-phase-8-career-system_1" title="Permanent link">&para;</a></h3>
+<p>Created <code>docs/career-system/README.md</code> and 7 strategy documents: <code>resume-framework.md</code>, <code>linkedin-strategy.md</code>, <code>github-strategy.md</code>, <code>portfolio-strategy.md</code>, <code>networking-plan.md</code>, <code>conference-preparation.md</code>, <code>technical-writing-guide.md</code>. Explicitly layered above the Phase 5 templates (<code>templates/resume-template.md</code> etc.) and the Phase 2 department doc (<code>docs/departments/career-brand-coach.md</code>) — this phase answers "why this approach" where templates answer "what does the artifact look like" and the department doc answers "who does this, how often." Noted in <code>docs/career-system/README.md</code> that Case Study Template, Recruiter Tracker, and Interview Tracker (also named in the original Career System scope) were already delivered in Phase 5 rather than duplicated here. Added a Career System diagram to <code>docs/document-map.md</code>. Updated <code>docs/master-index.md</code> and <code>docs/progress/v1-scorecard.md</code>.</p>
+<h3 id="2026-07-02-phase-7-project-library-25-blueprints_2">2026-07-02 — Phase 7: Project Library (25 blueprints)<a class="headerlink" href="#2026-07-02-phase-7-project-library-25-blueprints_2" title="Permanent link">&para;</a></h3>
+<p>Created <code>projects/README.md</code>, 3 tier READMEs (<code>tier-1-foundational/</code>, <code>tier-2-intermediate/</code>, <code>tier-3-advanced/</code>), and 25 project blueprint READMEs (business problem, architecture, tech stack, honest status per <code>docs/engineering-standards/machine-learning.md</code>'s reporting standard). <strong>Scope explicitly stated in <code>projects/README.md</code>:</strong> these are 25 fully-specified blueprints, not 25 fully-implemented systems. Three projects carry substantial real prior work (Project 01 backfilled from a completed engagement with an honest ROC-AUC ~0.65 result; Project 21, the multi-agent QA POC prototype; Project 22, the <code>nhecf</code> regulatory-reporting package); Projects 18–19 are the existing flagship projects with real architecture already scoped; the remaining 20 are blueprint-only. Added a Project Library dependency diagram to <code>docs/document-map.md</code> — the first of the three large reusable-file phases (templates, trackers, prompts, now projects) to get a real diagram, since projects have genuine dependency structure worth showing. Updated <code>docs/master-index.md</code> and <code>docs/progress/v1-scorecard.md</code>, flagging the blueprint-vs-implementation gap as the most important open item in the repo.</p>
+<h3 id="2026-07-02-phase-6-prompt-library-104_2">2026-07-02 — Phase 6: Prompt Library (104)<a class="headerlink" href="#2026-07-02-phase-6-prompt-library-104_2" title="Permanent link">&para;</a></h3>
+<p>Created <code>prompts/README.md</code> and 104 prompts across 12 categories (Learning x10, Projects x10, Code Reviews x8, Architecture Reviews x8, Mock Interviews x10, Debugging x8, System Design x8, Technical Writing x8, Career Planning x10, Research x8, Documentation x8, Repository Maintenance x8) — exceeding the v1.0 "100+ prompt library" target. Each prompt is a short, copy-paste-ready instruction with <code>{variables}</code> and a "Use When" pointer back to the department or operating-system moment it serves; several explicitly tie to real context (IB/FinTech mock-interview framing, the Vaagai venture, the Krish Naik bootcamp phases). Updated <code>docs/master-index.md</code> and <code>docs/progress/v1-scorecard.md</code> — two of five v1.0 targets (templates, prompts) are now fully met.</p>
+<h3 id="2026-07-02-phase-5-templates-50-trackers-14_2">2026-07-02 — Phase 5: Templates (50) + Trackers (14)<a class="headerlink" href="#2026-07-02-phase-5-templates-50-trackers-14_2" title="Permanent link">&para;</a></h3>
+<p>Created <code>templates/README.md</code> and 50 templates across 7 categories (Project Blueprint x15, Learning System x5, Interview/Assessment x4, Career System x8, Operating System/Review x5, Engineering/Code x8, Governance x5) — meeting the v1.0 "50 reusable templates" target exactly. Pulled forward <code>trackers/README.md</code> and 14 trackers (matching the original scope's Trackers list exactly: daily, weekly, monthly, learning, coding, project, git, GitHub, reading, portfolio, interview, confidence, habit, KPI dashboard) since nearly every document from Phases 2–4 forward-referenced both <code>templates/</code> and <code>trackers/</code>. All templates are intentionally compact (compressed frontmatter, fill-in-the-blank bodies) per the compression allowance in <code>AGENTS.md</code> Section 6. Updated <code>docs/master-index.md</code> and <code>docs/progress/v1-scorecard.md</code>; flagged that total Markdown document count (111) now exceeds the informal ~100 target, which is expected given template/tracker file count and not indicative of a problem.</p>
+<h3 id="2026-07-02-phase-4-engineering-standards">2026-07-02 — Phase 4: Engineering Standards<a class="headerlink" href="#2026-07-02-phase-4-engineering-standards" title="Permanent link">&para;</a></h3>
+<p>Created <code>docs/engineering-standards/README.md</code> and 15 standards documents, grouping the 19 originally-named areas: <code>python.md</code>, <code>sql.md</code>, <code>jupyter.md</code>, <code>fastapi.md</code>, <code>docker.md</code>, <code>machine-learning.md</code>, <code>mlops.md</code>, <code>git-github-workflow.md</code> (Git + GitHub + Branch Strategy + Commit Messages + Code Review), <code>testing.md</code>, <code>logging.md</code>, <code>documentation.md</code>, <code>naming-conventions.md</code>, <code>folder-structure.md</code>, <code>security.md</code>, <code>performance-and-scalability.md</code>. Each document distinguishes its code-level scope from the repository-level equivalents already governed by <code>AGENTS.md</code> (naming, documentation, folder structure). Split <code>docs/document-map.md</code> into per-module Mermaid diagrams (Foundation, Departments, Operating System, Engineering Standards) now that the single-graph node count passed the ~25-node threshold flagged in Phase 3's entry. Updated <code>docs/master-index.md</code> and <code>docs/progress/v1-scorecard.md</code> accordingly.</p>
+<p>=======</p>
+<h3 id="2026-07-02-phase-3-operating-system">2026-07-02 — Phase 3: Operating System<a class="headerlink" href="#2026-07-02-phase-3-operating-system" title="Permanent link">&para;</a></h3>
+<p>Created <code>docs/operating-system/README.md</code> and 11 documents: <code>daily-operating-system.md</code>, <code>weekly-review.md</code>, <code>monthly-board-meeting.md</code>, <code>quarterly-review.md</code>, <code>annual-review.md</code>, <code>sprint-planning.md</code>, <code>knowledge-management.md</code>, <code>task-prioritization.md</code>, <code>time-blocking.md</code>, <code>deep-work.md</code>, <code>revision-strategy.md</code>, <code>reflection-system.md</code>. Documents are explicitly built around real constraints: a fixed Synechron workday, evening/Sunday bootcamp study windows, the August 15, 2026 readiness deadline, and Vaagai as a Sunday-reserve-only activity per the CTO department's priority order. Updated <code>docs/master-index.md</code>, <code>docs/progress/v1-scorecard.md</code>, and <code>docs/document-map.md</code> accordingly.</p>
+<h3 id="2026-07-02-phase-2-departments">2026-07-02 — Phase 2: Departments<a class="headerlink" href="#2026-07-02-phase-2-departments" title="Permanent link">&para;</a></h3>
+<p>Created <code>docs/departments/README.md</code> and the 5 department specs: <code>learning-mentor.md</code>, <code>enterprise-project-architect.md</code>, <code>technical-interviewer.md</code>, <code>career-brand-coach.md</code>, <code>cto.md</code>. Each follows the full department template from <code>AGENTS.md</code> Section 4 (mission, responsibilities, KPIs, daily/weekly/monthly workflows, inputs/outputs, decision rules, escalation rules, templates, prompt files, checklists). Updated <code>docs/master-index.md</code>, <code>docs/progress/v1-scorecard.md</code>, and <code>docs/document-map.md</code> accordingly. Content also incorporated: repo was pushed to <code>github.com/AI-DSOS/AI-Data-Science-Operating-System</code> by Arulkumaran between Phase 1 and Phase 2.</p>
+<h3 id="2026-07-02-phase-1-foundation-part-2">2026-07-02 — Phase 1: Foundation (part 2)<a class="headerlink" href="#2026-07-02-phase-1-foundation-part-2" title="Permanent link">&para;</a></h3>
+<p>Added root <code>README.md</code>, <code>docs/document-map.md</code>, <code>docs/CHANGELOG.md</code> (this file), <code>resources/README.md</code>, <code>resources/glossary.md</code>, <code>.github/README.md</code>, <code>.github/workflows/deploy-docs.yml</code>, and <code>mkdocs.yml</code>. Closes out the remaining Phase 1: Foundation deliverables flagged in the previous scorecard update. Updated <code>docs/master-index.md</code> and <code>docs/progress/v1-scorecard.md</code> accordingly.</p>
+<h3 id="2026-07-02-phase-1-foundation-part-1">2026-07-02 — Phase 1: Foundation (part 1)<a class="headerlink" href="#2026-07-02-phase-1-foundation-part-1" title="Permanent link">&para;</a></h3>
+<p>Created <code>AGENTS.md</code> (repository governance file for AI agents), <code>docs/README.md</code>, <code>docs/progress/README.md</code>, <code>docs/progress/v1-scorecard.md</code>, and <code>docs/master-index.md</code>. Established the Markdown frontmatter standard, folder structure, naming conventions, and quality gates that govern all future modules.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.tabs", "navigation.top", "navigation.sections", "search.suggest", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

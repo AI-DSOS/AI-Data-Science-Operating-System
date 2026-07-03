@@ -1,0 +1,3592 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A single source of truth for a complete Data Science / ML / AI Engineering career transformation.">
+      
+      
+        <meta name="author" content="Arulkumaran">
+      
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../../documentation-site/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>DSOS v1.0 Scorecard - AI Data Science Operating System (DSOS)</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#table-of-contents" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="AI Data Science Operating System (DSOS)" class="md-header__button md-logo" aria-label="AI Data Science Operating System (DSOS)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AI Data Science Operating System (DSOS)
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              DSOS v1.0 Scorecard
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../master-index/" class="md-tabs__link">
+          
+  
+  
+  Governance
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../departments/" class="md-tabs__link">
+          
+  
+  
+  Departments
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../operating-system/" class="md-tabs__link">
+          
+  
+  
+  Operating System
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../engineering-standards/" class="md-tabs__link">
+          
+  
+  
+  Engineering Standards
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../career-system/" class="md-tabs__link">
+          
+  
+  
+  Career System
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+  Progress
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../documentation-site/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  About This Site
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="AI Data Science Operating System (DSOS)" class="md-nav__button md-logo" aria-label="AI Data Science Operating System (DSOS)" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    AI Data Science Operating System (DSOS)
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Governance
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Governance
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../master-index/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Master Index
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../document-map/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Document Map
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CHANGELOG/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Changelog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    v1.0 Scorecard
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    v1.0 Scorecard
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Table of Contents
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#headline-scorecard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Headline Scorecard
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#current-markdown-count-249-the-216-from-phases-16-plus-projectsreadmemd-3-tier-readmes-25-project-readmes-29-216-33-249" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Current Markdown count (249): the 216 from Phases 1–6, plus projects/README.md + 3 tier READMEs + 25 project READMEs (29) = 216 + 33 = 249.
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#markdown-documents-100-111-111-target-exceeded-see-note" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        | Markdown documents | ~100 | 111 | 111% (target exceeded — see note) |
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phase-5-templates-50-trackers-14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (Phase 5: Templates (50) + Trackers (14))
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="(Phase 5: Templates (50) + Trackers (14))">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#breakdown-by-category" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Breakdown by Category
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase Status
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gaps-known-risks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gaps / Known Risks
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#git-github-workflowmd-deliberately-combined-5-originally-separate-named-areas-git-github-branch-strategy-commit-messages-code-review-and-performance-and-scalabilitymd-combined-2-performance-scalability-documented-as-an-intentional-grouping-in-docsengineering-standardsreadmemd-not-a-scope-gap-but-worth-confirming-this-reads-clearly-once-reviewed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        git-github-workflow.md deliberately combined 5 originally-separate named areas (Git, GitHub, Branch Strategy, Commit Messages, Code Review) and performance-and-scalability.md combined 2 (Performance, Scalability) — documented as an intentional grouping in docs/engineering-standards/README.md, not a scope gap, but worth confirming this reads clearly once reviewed.
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="git-github-workflow.md deliberately combined 5 originally-separate named areas (Git, GitHub, Branch Strategy, Commit Messages, Code Review) and performance-and-scalability.md combined 2 (Performance, Scalability) — documented as an intentional grouping in docs/engineering-standards/README.md, not a scope gap, but worth confirming this reads clearly once reviewed.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next Steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phase-4-engineering-standards-is-complete-move-to-phase-5-templates-50-the-reusable-markdown-templates-that-nearly-every-document-created-so-far-departments-operating-system-engineering-standards-has-been-forward-referencing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 4: Engineering Standards is complete. Move to Phase 5: Templates (50) — the reusable Markdown templates that nearly every document created so far (departments, operating system, engineering standards) has been forward-referencing.
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phase-3-operating-system-is-complete-move-to-phase-4-engineering-standards-python-git-sql-mlops-testing-security-and-related-standards-in-docsengineering-standards-which-the-enterprise-project-architect-department-depends-on-for-its-decision-rules-and-checklists" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 3: Operating System is complete. Move to Phase 4: Engineering Standards — Python, Git, SQL, MLOps, testing, security, and related standards in docs/engineering-standards/, which the Enterprise Project Architect department depends on for its "Decision Rules" and "Checklists."
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#markdown-document-count-249-continues-to-climb-past-the-informal-100-target-now-clearly-established-as-expected-not-a-recurring-surprise-this-is-the-fourth-consecutive-phase-to-note-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Markdown document count (249) continues to climb past the informal ~100 target — now clearly established as expected, not a recurring surprise; this is the fourth consecutive phase to note it.
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#markdown-document-count-257-continues-to-climb-past-the-informal-100-target-fifth-consecutive-phase-to-note-it-this-pattern-is-now-fully-established-as-expected" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Markdown document count (257) continues to climb past the informal ~100 target — fifth consecutive phase to note it; this pattern is now fully established as expected.
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Markdown document count (257) continues to climb past the informal ~100 target — fifth consecutive phase to note it; this pattern is now fully established as expected.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#next-steps_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next Steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phase-5-templates-and-the-pulled-forward-trackers-deliverable-is-complete-move-to-phase-6-prompt-library-100-reusable-prompts-across-learning-projects-code-reviews-architecture-reviews-mock-interviews-debugging-system-design-technical-writing-career-planning-research-documentation-and-repository-maintenance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 5: Templates (and the pulled-forward Trackers deliverable) is complete. Move to Phase 6: Prompt Library (100+) — reusable prompts across learning, projects, code reviews, architecture reviews, mock interviews, debugging, system design, technical writing, career planning, research, documentation, and repository maintenance.
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Departments
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Departments
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../departments/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../departments/learning-mentor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Learning Mentor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../departments/enterprise-project-architect/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Enterprise Project Architect
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../departments/technical-interviewer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Technical Interviewer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../departments/career-brand-coach/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Career & Personal Brand Coach
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../departments/cto/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CTO
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operating System
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Operating System
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operating-system/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operating-system/daily-operating-system/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Daily Operating System
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operating-system/weekly-review/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Weekly Review
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operating-system/monthly-board-meeting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Monthly Board Meeting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operating-system/quarterly-review/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quarterly Review
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operating-system/annual-review/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Annual Review
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operating-system/sprint-planning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sprint Planning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operating-system/knowledge-management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Knowledge Management
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operating-system/task-prioritization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Task Prioritization
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operating-system/time-blocking/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Time Blocking
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operating-system/deep-work/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Deep Work
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operating-system/revision-strategy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Revision Strategy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../operating-system/reflection-system/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reflection System
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Engineering Standards
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Engineering Standards
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering-standards/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering-standards/python/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Python
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering-standards/sql/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SQL
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering-standards/jupyter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Jupyter
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering-standards/fastapi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FastAPI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering-standards/docker/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Docker
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering-standards/machine-learning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Machine Learning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering-standards/mlops/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MLOps
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering-standards/git-github-workflow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Git, GitHub & Code Review
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering-standards/testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering-standards/logging/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Logging
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering-standards/documentation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Documentation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering-standards/naming-conventions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Naming Conventions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering-standards/folder-structure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Folder Structure
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering-standards/security/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Security
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering-standards/performance-and-scalability/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Performance & Scalability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Career System
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Career System
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../career-system/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../career-system/resume-framework/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Resume Framework
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../career-system/linkedin-strategy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LinkedIn Strategy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../career-system/github-strategy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GitHub Strategy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../career-system/portfolio-strategy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Portfolio Strategy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../career-system/networking-plan/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Networking Plan
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../career-system/conference-preparation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Conference Preparation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../career-system/technical-writing-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Technical Writing Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Progress
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Progress
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    v1.0 Scorecard
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    v1.0 Scorecard
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Table of Contents
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#headline-scorecard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Headline Scorecard
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#current-markdown-count-249-the-216-from-phases-16-plus-projectsreadmemd-3-tier-readmes-25-project-readmes-29-216-33-249" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Current Markdown count (249): the 216 from Phases 1–6, plus projects/README.md + 3 tier READMEs + 25 project READMEs (29) = 216 + 33 = 249.
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#markdown-documents-100-111-111-target-exceeded-see-note" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        | Markdown documents | ~100 | 111 | 111% (target exceeded — see note) |
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phase-5-templates-50-trackers-14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (Phase 5: Templates (50) + Trackers (14))
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="(Phase 5: Templates (50) + Trackers (14))">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#breakdown-by-category" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Breakdown by Category
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase Status
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gaps-known-risks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gaps / Known Risks
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#git-github-workflowmd-deliberately-combined-5-originally-separate-named-areas-git-github-branch-strategy-commit-messages-code-review-and-performance-and-scalabilitymd-combined-2-performance-scalability-documented-as-an-intentional-grouping-in-docsengineering-standardsreadmemd-not-a-scope-gap-but-worth-confirming-this-reads-clearly-once-reviewed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        git-github-workflow.md deliberately combined 5 originally-separate named areas (Git, GitHub, Branch Strategy, Commit Messages, Code Review) and performance-and-scalability.md combined 2 (Performance, Scalability) — documented as an intentional grouping in docs/engineering-standards/README.md, not a scope gap, but worth confirming this reads clearly once reviewed.
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="git-github-workflow.md deliberately combined 5 originally-separate named areas (Git, GitHub, Branch Strategy, Commit Messages, Code Review) and performance-and-scalability.md combined 2 (Performance, Scalability) — documented as an intentional grouping in docs/engineering-standards/README.md, not a scope gap, but worth confirming this reads clearly once reviewed.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next Steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phase-4-engineering-standards-is-complete-move-to-phase-5-templates-50-the-reusable-markdown-templates-that-nearly-every-document-created-so-far-departments-operating-system-engineering-standards-has-been-forward-referencing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 4: Engineering Standards is complete. Move to Phase 5: Templates (50) — the reusable Markdown templates that nearly every document created so far (departments, operating system, engineering standards) has been forward-referencing.
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phase-3-operating-system-is-complete-move-to-phase-4-engineering-standards-python-git-sql-mlops-testing-security-and-related-standards-in-docsengineering-standards-which-the-enterprise-project-architect-department-depends-on-for-its-decision-rules-and-checklists" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 3: Operating System is complete. Move to Phase 4: Engineering Standards — Python, Git, SQL, MLOps, testing, security, and related standards in docs/engineering-standards/, which the Enterprise Project Architect department depends on for its "Decision Rules" and "Checklists."
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#markdown-document-count-249-continues-to-climb-past-the-informal-100-target-now-clearly-established-as-expected-not-a-recurring-surprise-this-is-the-fourth-consecutive-phase-to-note-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Markdown document count (249) continues to climb past the informal ~100 target — now clearly established as expected, not a recurring surprise; this is the fourth consecutive phase to note it.
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#markdown-document-count-257-continues-to-climb-past-the-informal-100-target-fifth-consecutive-phase-to-note-it-this-pattern-is-now-fully-established-as-expected" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Markdown document count (257) continues to climb past the informal ~100 target — fifth consecutive phase to note it; this pattern is now fully established as expected.
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Markdown document count (257) continues to climb past the informal ~100 target — fifth consecutive phase to note it; this pattern is now fully established as expected.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#next-steps_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next Steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phase-5-templates-and-the-pulled-forward-trackers-deliverable-is-complete-move-to-phase-6-prompt-library-100-reusable-prompts-across-learning-projects-code-reviews-architecture-reviews-mock-interviews-debugging-system-design-technical-writing-career-planning-research-documentation-and-repository-maintenance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 5: Templates (and the pulled-forward Trackers deliverable) is complete. Move to Phase 6: Prompt Library (100+) — reusable prompts across learning, projects, code reviews, architecture reviews, mock interviews, debugging, system design, technical writing, career planning, research, documentation, and repository maintenance.
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../documentation-site/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    About This Site
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Table of Contents
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#headline-scorecard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Headline Scorecard
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#current-markdown-count-249-the-216-from-phases-16-plus-projectsreadmemd-3-tier-readmes-25-project-readmes-29-216-33-249" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Current Markdown count (249): the 216 from Phases 1–6, plus projects/README.md + 3 tier READMEs + 25 project READMEs (29) = 216 + 33 = 249.
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#markdown-documents-100-111-111-target-exceeded-see-note" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        | Markdown documents | ~100 | 111 | 111% (target exceeded — see note) |
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phase-5-templates-50-trackers-14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        (Phase 5: Templates (50) + Trackers (14))
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="(Phase 5: Templates (50) + Trackers (14))">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#breakdown-by-category" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Breakdown by Category
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-status" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase Status
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gaps-known-risks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gaps / Known Risks
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#git-github-workflowmd-deliberately-combined-5-originally-separate-named-areas-git-github-branch-strategy-commit-messages-code-review-and-performance-and-scalabilitymd-combined-2-performance-scalability-documented-as-an-intentional-grouping-in-docsengineering-standardsreadmemd-not-a-scope-gap-but-worth-confirming-this-reads-clearly-once-reviewed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        git-github-workflow.md deliberately combined 5 originally-separate named areas (Git, GitHub, Branch Strategy, Commit Messages, Code Review) and performance-and-scalability.md combined 2 (Performance, Scalability) — documented as an intentional grouping in docs/engineering-standards/README.md, not a scope gap, but worth confirming this reads clearly once reviewed.
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="git-github-workflow.md deliberately combined 5 originally-separate named areas (Git, GitHub, Branch Strategy, Commit Messages, Code Review) and performance-and-scalability.md combined 2 (Performance, Scalability) — documented as an intentional grouping in docs/engineering-standards/README.md, not a scope gap, but worth confirming this reads clearly once reviewed.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next Steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phase-4-engineering-standards-is-complete-move-to-phase-5-templates-50-the-reusable-markdown-templates-that-nearly-every-document-created-so-far-departments-operating-system-engineering-standards-has-been-forward-referencing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 4: Engineering Standards is complete. Move to Phase 5: Templates (50) — the reusable Markdown templates that nearly every document created so far (departments, operating system, engineering standards) has been forward-referencing.
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phase-3-operating-system-is-complete-move-to-phase-4-engineering-standards-python-git-sql-mlops-testing-security-and-related-standards-in-docsengineering-standards-which-the-enterprise-project-architect-department-depends-on-for-its-decision-rules-and-checklists" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 3: Operating System is complete. Move to Phase 4: Engineering Standards — Python, Git, SQL, MLOps, testing, security, and related standards in docs/engineering-standards/, which the Enterprise Project Architect department depends on for its "Decision Rules" and "Checklists."
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#markdown-document-count-249-continues-to-climb-past-the-informal-100-target-now-clearly-established-as-expected-not-a-recurring-surprise-this-is-the-fourth-consecutive-phase-to-note-it" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Markdown document count (249) continues to climb past the informal ~100 target — now clearly established as expected, not a recurring surprise; this is the fourth consecutive phase to note it.
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#markdown-document-count-257-continues-to-climb-past-the-informal-100-target-fifth-consecutive-phase-to-note-it-this-pattern-is-now-fully-established-as-expected" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Markdown document count (257) continues to climb past the informal ~100 target — fifth consecutive phase to note it; this pattern is now fully established as expected.
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Markdown document count (257) continues to climb past the informal ~100 target — fifth consecutive phase to note it; this pattern is now fully established as expected.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#next-steps_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next Steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phase-5-templates-and-the-pulled-forward-trackers-deliverable-is-complete-move-to-phase-6-prompt-library-100-reusable-prompts-across-learning-projects-code-reviews-architecture-reviews-mock-interviews-debugging-system-design-technical-writing-career-planning-research-documentation-and-repository-maintenance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Phase 5: Templates (and the pulled-forward Trackers deliverable) is complete. Move to Phase 6: Prompt Library (100+) — reusable prompts across learning, projects, code reviews, architecture reviews, mock interviews, debugging, system design, technical writing, career planning, research, documentation, and repository maintenance.
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h2 id="table-of-contents">Table of Contents<a class="headerlink" href="#table-of-contents" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#headline-scorecard">Headline Scorecard</a></li>
+<li><a href="#breakdown-by-category">Breakdown by Category</a></li>
+<li><a href="#phase-status">Phase Status</a></li>
+<li><a href="#gaps-known-risks">Gaps / Known Risks</a></li>
+<li><a href="#next-steps">Next Steps</a></li>
+</ul>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p>v1.0 is defined in <code>AGENTS.md</code> Section 2 as reaching <strong>all five</strong> targets below <strong>and</strong> passing every quality gate in <code>AGENTS.md</code> Section 7 repo-wide. This document is the source of truth for "how far along are we" — an agent should not report a module complete without updating the counts here.</p>
+<h2 id="headline-scorecard">Headline Scorecard<a class="headerlink" href="#headline-scorecard" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Asset</th>
+<th>Target</th>
+<th>Current</th>
+<th>% Complete</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Markdown documents</td>
+<td>~100</td>
+<td>45</td>
+<td>45%</td>
+</tr>
+<tr>
+<td>=======</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Markdown documents</td>
+<td>~100</td>
+<td>29</td>
+<td>29%</td>
+</tr>
+<tr>
+<td>=======</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Markdown documents</td>
+<td>~100</td>
+<td>111</td>
+<td>111% (target exceeded — see note)</td>
+</tr>
+<tr>
+<td>(Phase 5: Templates (50) + Trackers (14))</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>=======</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Markdown documents</td>
+<td>~100</td>
+<td>111</td>
+<td>111% (target exceeded — see note)</td>
+</tr>
+<tr>
+<td>=======</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Markdown documents</td>
+<td>~100</td>
+<td>216</td>
+<td>216% (target exceeded — see note)</td>
+</tr>
+<tr>
+<td>Production-grade projects</td>
+<td>25</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>Reusable templates</td>
+<td>50</td>
+<td>50</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>Prompt library files</td>
+<td>100+</td>
+<td>104</td>
+<td>104%</td>
+</tr>
+<tr>
+<td>Documentation site</td>
+<td>Deployed (MkDocs)</td>
+<td>Config scaffolded, pushed to GitHub, not yet Pages-deployed</td>
+<td>~20%</td>
+</tr>
+<tr>
+<td><em>Current Markdown count (45): the 29 from Phases 1–3, plus <code>docs/engineering-standards/README.md</code> and 15 standards documents (Python, SQL, Jupyter, FastAPI, Docker, Machine Learning, MLOps, Git/GitHub workflow, Testing, Logging, Documentation, Naming Conventions, Folder Structure, Security, Performance &amp; Scalability — together covering all 19 originally named standard areas).</em></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>=======</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><em>Current Markdown count (29): the 17 from Phases 1–2, plus <code>docs/operating-system/README.md</code> and its 11 operating-system documents (daily, weekly, monthly, quarterly, annual, sprint planning, knowledge management, task prioritization, time blocking, deep work, revision strategy, reflection system).</em></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>=======</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>=======</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><em>Current Markdown count (111): the 45 from Phases 1–4, plus 50 templates + <code>templates/README.md</code> (51) + 14 trackers + <code>trackers/README.md</code> (15) = 45 + 51 + 15 = 111.</em></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>=======</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>=======</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Markdown documents</td>
+<td>~100</td>
+<td>111</td>
+<td>111% (target exceeded — see note)</td>
+</tr>
+<tr>
+<td>=======</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Markdown documents</td>
+<td>~100</td>
+<td>216</td>
+<td>216% (target exceeded — see note)</td>
+</tr>
+<tr>
+<td>Production-grade projects</td>
+<td>25</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>=======</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Markdown documents</td>
+<td>~100</td>
+<td>249</td>
+<td>249% (target exceeded — see note)</td>
+</tr>
+<tr>
+<td>Production-grade projects</td>
+<td>25</td>
+<td>25 blueprints (3 with substantial real work, 20 blueprint-only, 2 scoped)</td>
+<td>100% blueprinted / ~12% implemented — see note</td>
+</tr>
+<tr>
+<td>Reusable templates</td>
+<td>50</td>
+<td>50</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>Prompt library files</td>
+<td>100+</td>
+<td>104</td>
+<td>104%</td>
+</tr>
+<tr>
+<td>Documentation site</td>
+<td>Deployed (MkDocs)</td>
+<td>Config scaffolded, pushed to GitHub, not yet Pages-deployed</td>
+<td>~20%</td>
+</tr>
+</tbody>
+</table>
+<h1 id="current-markdown-count-249-the-216-from-phases-16-plus-projectsreadmemd-3-tier-readmes-25-project-readmes-29-216-33-249"><em>Current Markdown count (249): the 216 from Phases 1–6, plus <code>projects/README.md</code> + 3 tier READMEs + 25 project READMEs (29) = 216 + 33 = 249.</em><a class="headerlink" href="#current-markdown-count-249-the-216-from-phases-16-plus-projectsreadmemd-3-tier-readmes-25-project-readmes-29-216-33-249" title="Permanent link">&para;</a></h1>
+<h1 id="markdown-documents-100-111-111-target-exceeded-see-note">| Markdown documents | ~100 | 111 | 111% (target exceeded — see note) |<a class="headerlink" href="#markdown-documents-100-111-111-target-exceeded-see-note" title="Permanent link">&para;</a></h1>
+<p>| Markdown documents | ~100 | 216 | 216% (target exceeded — see note) |
+| Production-grade projects | 25 | 0 | 0% |
+=======
+| Markdown documents | ~100 | 249 | 249% (target exceeded — see note) |
+=======
+| Markdown documents | ~100 | 257 | 257% (target exceeded — see note) |
+| Production-grade projects | 25 | 25 blueprints (3 with substantial real work, 20 blueprint-only, 2 scoped) | 100% blueprinted / ~12% implemented — see note |
+| Reusable templates | 50 | 50 | 100% |
+| Prompt library files | 100+ | 104 | 104% |
+| Documentation site | Deployed (MkDocs) | Config scaffolded, pushed to GitHub, not yet Pages-deployed | ~20% |
+=======
+| Markdown documents | ~100 | 111 | 111% (target exceeded — see note) |
+=======
+| Markdown documents | ~100 | 216 | 216% (target exceeded — see note) |
+| Production-grade projects | 25 | 0 | 0% |
+=======
+| Markdown documents | ~100 | 249 | 249% (target exceeded — see note) |
+=======
+| Markdown documents | ~100 | 257 | 257% (target exceeded — see note) |
+=======
+| Markdown documents | ~100 | 258 | 258% (target exceeded — see note) |
+| Production-grade projects | 25 | 25 blueprints (3 with substantial real work, 20 blueprint-only, 2 scoped) | 100% blueprinted / ~12% implemented — see note |
+| Reusable templates | 50 | 50 | 100% |
+| Prompt library files | 100+ | 104 | 104% |
+| Documentation site | Deployed (MkDocs) | <strong>Build tested and verified working (exit 0, zero warnings, 51 pages); scoped to docs/ only; GitHub Pages enablement unconfirmed</strong> | ~80% |</p>
+<p><em>Current Markdown count (258): the 257 from Phases 1–8, plus <code>docs/documentation-site.md</code> (1) = 258. (<code>docs/index.md</code> was created then removed during this phase once <code>docs/README.md</code> was confirmed to auto-serve as the site homepage — net one new file overall, not two.)</em></p>
+<p><em>Documentation site jumped from ~20% to ~80%, but the path there matters: the first attempt (<code>docs_dir: .</code>) was untested and wrong — MkDocs hard-errors when <code>docs_dir</code> equals the config file's own directory. A follow-up attempt reached for a plugin (<code>mkdocs-same-dir</code>) that turned out to be for an unrelated tool, not real MkDocs — also caught by testing, not assumed. The actual fix, <code>docs_dir: docs</code> (MkDocs' real default), was verified with three real local builds until <code>mkdocs build --strict</code> returned exit code 0 with zero warnings across 51 built pages. The full account, including the false starts, is in <code>docs/documentation-site.md</code> — this is intentional: a fix that isn't verified is a claim, not a fix, and the record should show the difference. The scope tradeoff (site covers <code>docs/</code> only; templates/trackers/prompts/projects stay GitHub-only) is real and documented, not hidden. The remaining ~20% is the one manual step: confirming GitHub Pages is enabled and the site is reachable at a live URL.</em></p>
+<p><em>Note on the "25 projects" target: as scoped explicitly in <code>projects/README.md</code>, Phase 7 delivered 25 fully-specified project blueprints (business problem, architecture, tech stack, honest status), not 25 fully-implemented production systems. 3 projects carry substantial real prior work (Project 01 backfilled from a completed engagement, Project 21 has a working prototype, Project 22 is a substantially-built package); 2 more (Projects 18–19) are the existing flagship projects with real architecture already scoped. The remaining 20 are blueprint-only, pending actual implementation.</em></p>
+<p><em>Current Markdown count (257): the 249 from Phases 1–7, plus <code>docs/career-system/README.md</code> + 7 strategy documents (8) = 249 + 8 = 257.</em></p>
+<p><em>Note on the "25 projects" target: as scoped explicitly in <code>projects/README.md</code>, Phase 7 delivered 25 fully-specified project blueprints (business problem, architecture, tech stack, honest status), not 25 fully-implemented production systems. 3 projects carry substantial real prior work (Project 01 backfilled from a completed engagement, Project 21 has a working prototype, Project 22 is a substantially-built package); 2 more (Projects 18–19) are the existing flagship projects with real architecture already scoped. The remaining 20 are blueprint-only, pending actual implementation.</em></p>
+<p><em>Note on the "25 projects" target: as scoped explicitly in <code>projects/README.md</code>, this phase delivered 25 fully-specified project blueprints (business problem, architecture, tech stack, honest status), not 25 fully-implemented production systems. 3 projects carry substantial real prior work (Project 01 backfilled from a completed engagement, Project 21 has a working prototype, Project 22 is a substantially-built package); 2 more (Projects 18–19) are the existing flagship projects with real architecture already scoped. The remaining 20 are blueprint-only, pending actual implementation — tracked honestly rather than marked "done" prematurely, consistent with the honest-reporting standard the repo itself enforces (<code>docs/engineering-standards/machine-learning.md</code>).</em></p>
+<p><em>Current Markdown count (216): the 111 from Phases 1–5, plus <code>prompts/README.md</code> + 104 prompts (105) = 111 + 105 = 216.</em></p>
+<p><em>Note on the ~100 target: as flagged in Phase 5, templates/trackers/prompts are individually short by design, so raw document count is a poor single-number proxy for "how done" DSOS is. The five v1.0 targets collectively define done, per AGENTS.md Section 2 — with this phase, 2 of the 5 (templates, prompts) are now fully met.</em></p>
+<h1 id="phase-5-templates-50-trackers-14">(Phase 5: Templates (50) + Trackers (14))<a class="headerlink" href="#phase-5-templates-50-trackers-14" title="Permanent link">&para;</a></h1>
+<h2 id="breakdown-by-category">Breakdown by Category<a class="headerlink" href="#breakdown-by-category" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Folder</th>
+<th>Files present</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Root</td>
+<td>2 (<code>AGENTS.md</code>, <code>README.md</code>)</td>
+<td>Plus <code>mkdocs.yml</code> (non-Markdown)</td>
+</tr>
+<tr>
+<td><code>docs/</code></td>
+<td>40</td>
+<td>24 from Phases 1–3, plus <code>engineering-standards/README.md</code> + 15 standards docs</td>
+</tr>
+<tr>
+<td>=======</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>docs/</code></td>
+<td>24</td>
+<td>12 from Phases 1–2, plus <code>operating-system/README.md</code> + 11 operating-system docs</td>
+</tr>
+<tr>
+<td><code>prompts/</code></td>
+<td>0</td>
+<td>Not started</td>
+</tr>
+<tr>
+<td>=======</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>prompts/</code></td>
+<td>105</td>
+<td><code>README.md</code> + 104 prompts across 12 categories — <strong>target exceeded (104/100+)</strong></td>
+</tr>
+<tr>
+<td>=======</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>=======</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>prompts/</code></td>
+<td>105</td>
+<td><code>README.md</code> + 104 prompts across 12 categories — <strong>target exceeded (104/100+)</strong></td>
+</tr>
+<tr>
+<td>=======</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>=======</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>=======</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>docs/</code></td>
+<td>48</td>
+<td>40 from Phases 1–4, plus <code>career-system/README.md</code> + 7 strategy docs</td>
+</tr>
+<tr>
+<td><code>prompts/</code></td>
+<td>105</td>
+<td><code>README.md</code> + 104 prompts across 12 categories — <strong>target exceeded (104/100+)</strong></td>
+</tr>
+<tr>
+<td>=======</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>=======</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>=======</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>docs/</code></td>
+<td>48</td>
+<td>40 from Phases 1–4, plus <code>career-system/README.md</code> + 7 strategy docs</td>
+</tr>
+<tr>
+<td>=======</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>docs/</code></td>
+<td>49</td>
+<td>48 from Phases 1–8, plus <code>documentation-site.md</code></td>
+</tr>
+<tr>
+<td><code>prompts/</code></td>
+<td>105</td>
+<td><code>README.md</code> + 104 prompts across 12 categories — <strong>target exceeded (104/100+)</strong></td>
+</tr>
+<tr>
+<td><code>templates/</code></td>
+<td>51</td>
+<td><code>README.md</code> + 50 templates across 7 categories — <strong>target met (50/50)</strong></td>
+</tr>
+<tr>
+<td><code>trackers/</code></td>
+<td>15</td>
+<td><code>README.md</code> + 14 trackers matching the original scope's Trackers list exactly</td>
+</tr>
+<tr>
+<td><code>playbooks/</code></td>
+<td>0</td>
+<td>Not started</td>
+</tr>
+<tr>
+<td><code>projects/</code></td>
+<td>29</td>
+<td><code>README.md</code> + 3 tier READMEs + 25 project blueprints — <strong>25/25 blueprinted, implementation ongoing</strong></td>
+</tr>
+<tr>
+<td><code>resources/</code></td>
+<td>2</td>
+<td><code>README.md</code>, <code>glossary.md</code> (abbreviation guide + reference library still open)</td>
+</tr>
+<tr>
+<td><code>journal/</code></td>
+<td>0</td>
+<td>Not started</td>
+</tr>
+<tr>
+<td><code>assets/</code></td>
+<td>0</td>
+<td>Not started</td>
+</tr>
+<tr>
+<td><code>.github/</code></td>
+<td>1</td>
+<td><code>README.md</code>, plus <code>workflows/deploy-docs.yml</code> (non-Markdown); issue/PR templates still open</td>
+</tr>
+</tbody>
+</table>
+<h2 id="phase-status">Phase Status<a class="headerlink" href="#phase-status" title="Permanent link">&para;</a></h2>
+<p>Phases per <code>AGENTS.md</code> Section 10.</p>
+<table>
+<thead>
+<tr>
+<th>Phase</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Foundation</td>
+<td><strong>Complete</strong> — AGENTS.md, README.md, docs/README.md, master-index.md, document-map.md, CHANGELOG.md, progress tracking, resources/glossary.md skeleton, mkdocs.yml, and doc-site deploy workflow all in place</td>
+</tr>
+<tr>
+<td>2. Departments</td>
+<td><strong>Complete</strong> — all 5 department specs drafted (Learning Mentor, Enterprise Project Architect, Technical Interviewer, Career &amp; Personal Brand Coach, CTO), each with mission, responsibilities, KPIs, workflows, decision/escalation rules</td>
+</tr>
+<tr>
+<td>3. Operating System</td>
+<td><strong>Complete</strong> — all 11 documents drafted (daily, weekly, monthly, quarterly, annual, sprint planning, knowledge management, task prioritization, time blocking, deep work, revision strategy, reflection system), cross-referenced to the departments they serve</td>
+</tr>
+<tr>
+<td>4. Engineering Standards</td>
+<td><strong>Complete</strong> — 15 standards documents covering all 19 originally named areas (Python, Git, GitHub, SQL, Jupyter, FastAPI, Docker, ML, MLOps, Logging, Testing, Documentation, Naming Conventions, Folder Structure, Code Review, Branch Strategy, Commit Messages, Security, Performance, Scalability), enforced by the Enterprise Project Architect department</td>
+</tr>
+<tr>
+<td>=======</td>
+<td></td>
+</tr>
+<tr>
+<td>4. Engineering Standards</td>
+<td>Not started</td>
+</tr>
+<tr>
+<td>5. Templates (50)</td>
+<td>Not started</td>
+</tr>
+<tr>
+<td>=======</td>
+<td></td>
+</tr>
+<tr>
+<td>5. Templates (50)</td>
+<td><strong>Complete</strong> — 50/50 templates across 7 categories, plus 14 trackers (a related deliverable pulled forward since so many earlier documents forward-referenced both)</td>
+</tr>
+<tr>
+<td>(Phase 5: Templates (50) + Trackers (14))</td>
+<td></td>
+</tr>
+<tr>
+<td>=======</td>
+<td></td>
+</tr>
+<tr>
+<td>5. Templates (50)</td>
+<td><strong>Complete</strong> — 50/50 templates across 7 categories, plus 14 trackers (a related deliverable pulled forward since so many earlier documents forward-referenced both)</td>
+</tr>
+<tr>
+<td>6. Prompt Library (100+)</td>
+<td><strong>Complete</strong> — 104 prompts across 12 categories (Learning, Projects, Code Reviews, Architecture Reviews, Mock Interviews, Debugging, System Design, Technical Writing, Career Planning, Research, Documentation, Repository Maintenance)</td>
+</tr>
+<tr>
+<td>=======</td>
+<td></td>
+</tr>
+<tr>
+<td>5. Templates (50)</td>
+<td><strong>Complete</strong> — 50/50 templates across 7 categories, plus 14 trackers (a related deliverable pulled forward since so many earlier documents forward-referenced both)</td>
+</tr>
+<tr>
+<td>6. Prompt Library (100+)</td>
+<td><strong>Complete</strong> — 104 prompts across 12 categories (Learning, Projects, Code Reviews, Architecture Reviews, Mock Interviews, Debugging, System Design, Technical Writing, Career Planning, Research, Documentation, Repository Maintenance)</td>
+</tr>
+<tr>
+<td>7. Project Library (25)</td>
+<td><strong>Blueprints complete, implementation ongoing</strong> — all 25 projects scoped and documented across 3 tiers; 3 carry substantial prior real-world work, 2 are the existing flagship projects, 20 remain to be implemented</td>
+</tr>
+<tr>
+<td>=======</td>
+<td></td>
+</tr>
+<tr>
+<td>5. Templates (50)</td>
+<td><strong>Complete</strong> — 50/50 templates across 7 categories, plus 14 trackers (a related deliverable pulled forward since so many earlier documents forward-referenced both)</td>
+</tr>
+<tr>
+<td>6. Prompt Library (100+)</td>
+<td><strong>Complete</strong> — 104 prompts across 12 categories (Learning, Projects, Code Reviews, Architecture Reviews, Mock Interviews, Debugging, System Design, Technical Writing, Career Planning, Research, Documentation, Repository Maintenance)</td>
+</tr>
+<tr>
+<td>7. Project Library (25)</td>
+<td><strong>Blueprints complete, implementation ongoing</strong> — all 25 projects scoped and documented across 3 tiers; 3 carry substantial prior real-world work, 2 are the existing flagship projects, 20 remain to be implemented</td>
+</tr>
+<tr>
+<td>8. Career System</td>
+<td><strong>Complete</strong> — 7 strategy documents (Resume Framework, LinkedIn Strategy, GitHub Strategy, Portfolio Strategy, Networking Plan, Conference Preparation, Technical Writing Guide), explicitly layered above the templates/trackers already built in Phase 5</td>
+</tr>
+<tr>
+<td>=======</td>
+<td></td>
+</tr>
+<tr>
+<td>5. Templates (50)</td>
+<td><strong>Complete</strong> — 50/50 templates across 7 categories, plus 14 trackers (a related deliverable pulled forward since so many earlier documents forward-referenced both)</td>
+</tr>
+<tr>
+<td>6. Prompt Library (100+)</td>
+<td><strong>Complete</strong> — 104 prompts across 12 categories (Learning, Projects, Code Reviews, Architecture Reviews, Mock Interviews, Debugging, System Design, Technical Writing, Career Planning, Research, Documentation, Repository Maintenance)</td>
+</tr>
+<tr>
+<td>7. Project Library (25)</td>
+<td><strong>Blueprints complete, implementation ongoing</strong> — all 25 projects scoped and documented across 3 tiers; 3 carry substantial prior real-world work, 2 are the existing flagship projects, 20 remain to be implemented</td>
+</tr>
+<tr>
+<td>8. Career System</td>
+<td><strong>Complete</strong> — 7 strategy documents (Resume Framework, LinkedIn Strategy, GitHub Strategy, Portfolio Strategy, Networking Plan, Conference Preparation, Technical Writing Guide), explicitly layered above the templates/trackers already built in Phase 5</td>
+</tr>
+<tr>
+<td>9. Documentation Site</td>
+<td><strong>Complete, tested</strong> — after two wrong turns (an invalid <code>docs_dir: .</code> config, then a plugin for an unrelated tool), the actual fix (<code>docs_dir: docs</code>) was verified with a real local build: exit 0, zero warnings, 51 pages. Site scoped to <code>docs/</code>; templates/trackers/prompts/projects remain GitHub-only, documented clearly. Only GitHub Pages enablement (a one-time manual step) is unconfirmed</td>
+</tr>
+<tr>
+<td>10. v1.0 Hardening</td>
+<td>Not started</td>
+</tr>
+</tbody>
+</table>
+<h2 id="gaps-known-risks">Gaps / Known Risks<a class="headerlink" href="#gaps-known-risks" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Multiple engineering-standards docs reference templates (<code>pyproject.toml</code>, Dockerfile, FastAPI scaffold, project README/ADR, PR template) that don't exist yet — expected, Phase 5 dependency, and now the largest concentration of forward-references in the repo.</li>
+<li>
+<h1 id="git-github-workflowmd-deliberately-combined-5-originally-separate-named-areas-git-github-branch-strategy-commit-messages-code-review-and-performance-and-scalabilitymd-combined-2-performance-scalability-documented-as-an-intentional-grouping-in-docsengineering-standardsreadmemd-not-a-scope-gap-but-worth-confirming-this-reads-clearly-once-reviewed"><code>git-github-workflow.md</code> deliberately combined 5 originally-separate named areas (Git, GitHub, Branch Strategy, Commit Messages, Code Review) and <code>performance-and-scalability.md</code> combined 2 (Performance, Scalability) — documented as an intentional grouping in <code>docs/engineering-standards/README.md</code>, not a scope gap, but worth confirming this reads clearly once reviewed.<a class="headerlink" href="#git-github-workflowmd-deliberately-combined-5-originally-separate-named-areas-git-github-branch-strategy-commit-messages-code-review-and-performance-and-scalabilitymd-combined-2-performance-scalability-documented-as-an-intentional-grouping-in-docsengineering-standardsreadmemd-not-a-scope-gap-but-worth-confirming-this-reads-clearly-once-reviewed" title="Permanent link">&para;</a></h1>
+</li>
+<li><code>docs/operating-system/monthly-board-meeting.md</code> names a <code>docs/operating-system/board-minutes/</code> folder to be created on first real use — intentionally deferred, not a defect.</li>
+<li><code>journal/README.md</code> is referenced by <code>reflection-system.md</code> as creatable "anytime" — still open, low priority.</li>
+<li>Several operating-system docs reference <code>templates/</code> (Weekly Review, Monthly Board Meeting, Quarterly Review, Sprint Planning templates) that don't exist yet — expected, Phase 5 dependency.</li>
+<li>The MkDocs site is configured and the repo is pushed to GitHub, but Pages deployment status hasn't been confirmed.</li>
+</ul>
+<h2 id="next-steps">Next Steps<a class="headerlink" href="#next-steps" title="Permanent link">&para;</a></h2>
+<h1 id="phase-4-engineering-standards-is-complete-move-to-phase-5-templates-50-the-reusable-markdown-templates-that-nearly-every-document-created-so-far-departments-operating-system-engineering-standards-has-been-forward-referencing">Phase 4: Engineering Standards is complete. Move to <strong>Phase 5: Templates (50)</strong> — the reusable Markdown templates that nearly every document created so far (departments, operating system, engineering standards) has been forward-referencing.<a class="headerlink" href="#phase-4-engineering-standards-is-complete-move-to-phase-5-templates-50-the-reusable-markdown-templates-that-nearly-every-document-created-so-far-departments-operating-system-engineering-standards-has-been-forward-referencing" title="Permanent link">&para;</a></h1>
+<h1 id="phase-3-operating-system-is-complete-move-to-phase-4-engineering-standards-python-git-sql-mlops-testing-security-and-related-standards-in-docsengineering-standards-which-the-enterprise-project-architect-department-depends-on-for-its-decision-rules-and-checklists">Phase 3: Operating System is complete. Move to <strong>Phase 4: Engineering Standards</strong> — Python, Git, SQL, MLOps, testing, security, and related standards in <code>docs/engineering-standards/</code>, which the Enterprise Project Architect department depends on for its "Decision Rules" and "Checklists."<a class="headerlink" href="#phase-3-operating-system-is-complete-move-to-phase-4-engineering-standards-python-git-sql-mlops-testing-security-and-related-standards-in-docsengineering-standards-which-the-enterprise-project-architect-department-depends-on-for-its-decision-rules-and-checklists" title="Permanent link">&para;</a></h1>
+<p>=======
+- The Markdown document count (111) now exceeds the informal "~100" target — flagged above as expected and not a problem, since the five v1.0 targets collectively define done, not document count alone.
+- No templates have been used yet (no real project, review, or tracker has been instantiated from a copy) — usefulness is unverified until Phase 7 (projects) and ongoing operating-system use put them to work.
+- <code>templates/README.md</code> and <code>trackers/README.md</code> are the two largest single-file indexes in the repo now — worth checking they stay accurate as templates are added/removed in later phases.
+=======
+- Markdown document count (216) continues to climb past the informal ~100 target — third consecutive phase to flag this; treat it as confirmed expected behavior at this point, not a recurring surprise.
+- No prompts have real usage data yet — like Phase 5's templates, their usefulness is unverified until they're actually used in practice (Phase 7 projects, ongoing operating-system cadence).
+- Two Vaagai-specific prompts exist (<code>research/market-research-elder-care.md</code>, <code>research/competitor-analysis-vaagai.md</code>, <code>projects/vaagai-technical-poc.md</code>) — worth confirming at the next Quarterly Review whether Vaagai warrants its own prompt subfolder as that venture grows, per <code>docs/operating-system/quarterly-review.md</code>'s system-check agenda item.
+=======</p>
+<ul>
+<li><strong>The most important gap in the whole repo right now:</strong> 20 of 25 projects are blueprint-only with no real implementation. This phase should not be read as "projects done" — see <code>projects/README.md</code>'s explicit scope note. Real implementation is a separate, much larger, ongoing effort.</li>
+<li>Projects 21 (multi-agent QA POC) and 22 (<code>nhecf</code> package) exist as real, substantial work outside this repository and haven't been migrated in yet — this is low-effort, high-value work worth prioritizing before writing new code elsewhere.</li>
+<li>
+<h1 id="markdown-document-count-249-continues-to-climb-past-the-informal-100-target-now-clearly-established-as-expected-not-a-recurring-surprise-this-is-the-fourth-consecutive-phase-to-note-it">Markdown document count (249) continues to climb past the informal ~100 target — now clearly established as expected, not a recurring surprise; this is the fourth consecutive phase to note it.<a class="headerlink" href="#markdown-document-count-249-continues-to-climb-past-the-informal-100-target-now-clearly-established-as-expected-not-a-recurring-surprise-this-is-the-fourth-consecutive-phase-to-note-it" title="Permanent link">&para;</a></h1>
+</li>
+<li>
+<p>The most important gap remains the one flagged in Phase 7: 20 of 25 projects are blueprint-only. Phase 8's career-system documents already account for this (e.g. <code>resume-framework.md</code> explicitly warns against listing unimplemented projects as shipped) — but the underlying gap itself is unchanged by this phase.</p>
+</li>
+<li><code>docs/career-system/README.md</code> notes that Case Study Template, Recruiter Tracker, and Interview Tracker were already delivered in Phase 5 rather than duplicated here — worth double-checking this doesn't read as a missing deliverable to a future reviewer skimming only Phase 8's file list.</li>
+<li>
+<h1 id="markdown-document-count-257-continues-to-climb-past-the-informal-100-target-fifth-consecutive-phase-to-note-it-this-pattern-is-now-fully-established-as-expected">Markdown document count (257) continues to climb past the informal ~100 target — fifth consecutive phase to note it; this pattern is now fully established as expected.<a class="headerlink" href="#markdown-document-count-257-continues-to-climb-past-the-informal-100-target-fifth-consecutive-phase-to-note-it-this-pattern-is-now-fully-established-as-expected" title="Permanent link">&para;</a></h1>
+</li>
+<li>
+<p><strong>GitHub Pages enablement is unconfirmed</strong> — the single largest remaining item for the Documentation Site target. Requires repo admin action (Settings → Pages) that can't be done or verified from this environment.</p>
+</li>
+<li>The site is scoped to <code>docs/</code> only — <code>AGENTS.md</code>, root <code>README.md</code>, <code>templates/</code>, <code>trackers/</code>, <code>prompts/</code>, <code>projects/</code>, and <code>resources/</code> are GitHub-only, not part of the generated site. This is a real, deliberate, documented tradeoff (see <code>docs/documentation-site.md</code>), not a temporary gap — reversing it would mean restructuring the repo's top-level folder layout, a Quarterly-Review-level decision, not a quick fix.</li>
+<li>20 of 25 projects remain blueprint-only (unchanged from Phase 7/8's flag — still the largest non-documentation gap in the repo).</li>
+<li>Markdown document count (258) — sixth consecutive phase past the informal ~100 target; fully expected at this point.</li>
+</ul>
+<h2 id="next-steps_1">Next Steps<a class="headerlink" href="#next-steps_1" title="Permanent link">&para;</a></h2>
+<h1 id="phase-5-templates-and-the-pulled-forward-trackers-deliverable-is-complete-move-to-phase-6-prompt-library-100-reusable-prompts-across-learning-projects-code-reviews-architecture-reviews-mock-interviews-debugging-system-design-technical-writing-career-planning-research-documentation-and-repository-maintenance">Phase 5: Templates (and the pulled-forward Trackers deliverable) is complete. Move to <strong>Phase 6: Prompt Library (100+)</strong> — reusable prompts across learning, projects, code reviews, architecture reviews, mock interviews, debugging, system design, technical writing, career planning, research, documentation, and repository maintenance.<a class="headerlink" href="#phase-5-templates-and-the-pulled-forward-trackers-deliverable-is-complete-move-to-phase-6-prompt-library-100-reusable-prompts-across-learning-projects-code-reviews-architecture-reviews-mock-interviews-debugging-system-design-technical-writing-career-planning-research-documentation-and-repository-maintenance" title="Permanent link">&para;</a></h1>
+<p>=======
+Phase 6: Prompt Library is complete — two of five v1.0 targets now fully met (templates, prompts). Move to <strong>Phase 7: Project Library (25)</strong> — the largest remaining phase, and the one every other phase has been building toward (engineering standards, templates, and prompts all exist specifically to support it).
+=======
+Phase 5: Templates (and the pulled-forward Trackers deliverable) is complete. Move to <strong>Phase 6: Prompt Library (100+)</strong> — reusable prompts across learning, projects, code reviews, architecture reviews, mock interviews, debugging, system design, technical writing, career planning, research, documentation, and repository maintenance.
+=======
+Phase 7: Project Library blueprints are complete; a large amount of real implementation work remains open-ended (not phase-gated the way documentation phases were). Reasonable next moves, in rough priority order:
+1. Migrate Projects 21 and 22 (existing real work) into the new <code>projects/</code> structure — fastest path to a second and third genuinely "complete" project.
+2. Implement Project 02 (Credit Card Fraud Detection) — it's a dependency for Projects 09 and 20.
+3. Move to <strong>Phase 8: Career System</strong> (resume framework, LinkedIn strategy, recruiter tracker) in parallel, since it doesn't block on project implementation the way Phase 9 (Documentation Site) navigation does.
+=======
+Phase 5: Templates (and the pulled-forward Trackers deliverable) is complete. Move to <strong>Phase 6: Prompt Library (100+)</strong> — reusable prompts across learning, projects, code reviews, architecture reviews, mock interviews, debugging, system design, technical writing, career planning, research, documentation, and repository maintenance.
+=======
+Phase 6: Prompt Library is complete — two of five v1.0 targets now fully met (templates, prompts). Move to <strong>Phase 7: Project Library (25)</strong> — the largest remaining phase, and the one every other phase has been building toward (engineering standards, templates, and prompts all exist specifically to support it).</p>
+<p>=======
+Phase 7: Project Library blueprints are complete; a large amount of real implementation work remains open-ended (not phase-gated the way documentation phases were). Reasonable next moves, in rough priority order:
+1. Migrate Projects 21 and 22 (existing real work) into the new <code>projects/</code> structure — fastest path to a second and third genuinely "complete" project.
+2. Implement Project 02 (Credit Card Fraud Detection) — it's a dependency for Projects 09 and 20.
+3. Move to <strong>Phase 8: Career System</strong> (resume framework, LinkedIn strategy, recruiter tracker) in parallel, since it doesn't block on project implementation the way Phase 9 (Documentation Site) navigation does.
+=======
+Phase 8: Career System is complete. Per <code>AGENTS.md</code> Section 10, the remaining phases are <strong>9: Documentation Site</strong> (wire the growing nav into <code>mkdocs.yml</code>, confirm GitHub Pages deployment) and <strong>10: v1.0 Hardening</strong> (full quality-gate sweep). Real project implementation (flagged repeatedly since Phase 7) remains the largest open-ended item outside the phase sequence itself.
+=======
+Phase 5: Templates (and the pulled-forward Trackers deliverable) is complete. Move to <strong>Phase 6: Prompt Library (100+)</strong> — reusable prompts across learning, projects, code reviews, architecture reviews, mock interviews, debugging, system design, technical writing, career planning, research, documentation, and repository maintenance.
+=======</p>
+<p>Phase 9: Documentation Site is complete and tested, pending the one manual GitHub Pages step. Only <strong>Phase 10: v1.0 Hardening</strong> remains on the roadmap — a full quality-gate sweep (per <code>AGENTS.md</code> Section 7) across all 258 documents before tagging v1.0. Real project implementation (Projects 02, 21, 22 as the highest-priority candidates) remains the largest open-ended item outside the phase sequence.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tabs", "navigation.top", "navigation.sections", "search.suggest", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
