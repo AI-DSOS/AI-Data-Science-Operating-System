@@ -17,26 +17,26 @@ last_updated: 2026-07-02
 
 ## Overview
 
-`trackers/` is a sibling to `templates/` (per `AGENTS.md` Section 3) and holds the specific tracker formats named in the original DSOS scope. Like templates, these are meant to be copied and filled in repeatedly (e.g. a new `project-tracker.md` copy per quarter, or one `interview-tracker.md` kept running and appended to).
+`trackers/` is a sibling to `templates/` (per [`AGENTS.md`](../AGENTS.md) Section 3) and holds the specific tracker formats named in the original DSOS scope. Like templates, these are meant to be copied and filled in repeatedly (e.g. a new [`project-tracker.md`](project-tracker.md) copy per quarter, or one [`interview-tracker.md`](interview-tracker.md) kept running and appended to).
 
 ## The 14 Trackers
 
 | File | Owned by |
 |---|---|
-| `daily-tracker.md` | All departments (daily rhythm) |
-| `weekly-tracker.md` | CTO |
-| `monthly-tracker.md` | CTO |
-| `learning-tracker.md` | Learning Mentor |
-| `coding-tracker.md` | Learning Mentor / Enterprise Project Architect |
-| `project-tracker.md` | Enterprise Project Architect |
-| `git-tracker.md` | Enterprise Project Architect |
-| `github-tracker.md` | Career & Personal Brand Coach |
-| `reading-tracker.md` | All departments |
-| `portfolio-tracker.md` | Career & Personal Brand Coach |
-| `interview-tracker.md` | Career & Personal Brand Coach / Technical Interviewer |
-| `confidence-tracker.md` | Learning Mentor |
-| `habit-tracker.md` | CTO (reflection system) |
-| `kpi-dashboard.md` | CTO |
+| [`daily-tracker.md`](daily-tracker.md) | All departments (daily rhythm) |
+| [`weekly-tracker.md`](weekly-tracker.md) | CTO |
+| [`monthly-tracker.md`](monthly-tracker.md) | CTO |
+| [`learning-tracker.md`](learning-tracker.md) | Learning Mentor |
+| [`coding-tracker.md`](coding-tracker.md) | Learning Mentor / Enterprise Project Architect |
+| [`project-tracker.md`](project-tracker.md) | Enterprise Project Architect |
+| [`git-tracker.md`](git-tracker.md) | Enterprise Project Architect |
+| [`github-tracker.md`](github-tracker.md) | Career & Personal Brand Coach |
+| [`reading-tracker.md`](reading-tracker.md) | All departments |
+| [`portfolio-tracker.md`](portfolio-tracker.md) | Career & Personal Brand Coach |
+| [`interview-tracker.md`](interview-tracker.md) | Career & Personal Brand Coach / Technical Interviewer |
+| [`confidence-tracker.md`](confidence-tracker.md) | Learning Mentor |
+| [`habit-tracker.md`](habit-tracker.md) | CTO (reflection system) |
+| [`kpi-dashboard.md`](kpi-dashboard.md) | CTO |
 
 ## Trackers vs. Templates
 
@@ -44,4 +44,4 @@ last_updated: 2026-07-02
 
 ## Next Steps
 
-- Instantiate real copies (e.g. `project-tracker.md` → an actual running tracker) once Phase 7 projects exist to populate them.
+- Instantiate real copies (e.g. [`project-tracker.md`](project-tracker.md) → an actual running tracker) once Phase 7 projects exist to populate them.

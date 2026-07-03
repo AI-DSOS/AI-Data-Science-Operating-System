@@ -14,12 +14,12 @@ Tier 2 projects require a served API, at minimum, and explicit IB/FinTech domain
 ## Projects
 | # | Project | Status | Builds On |
 |---|---|---|---|
-| 09 | Real-Time Transaction Fraud Detection API | Blueprint only | Project 02 |
-| 10 | AML Transaction Monitoring & Alert Triage | Blueprint only | — |
-| 11 | Credit Risk Scoring Model with Explainability | Blueprint only | Project 03 |
-| 12 | Anomaly Detection in Trading Data | Blueprint only | — |
-| 13 | Customer Segmentation for Wealth Management | Blueprint only | — |
-| 14 | Document Classification for KYC Onboarding | Blueprint only | — |
-| 15 | Time-Series Forecasting for Cash Flow | Blueprint only | — |
-| 16 | NLP-Based Contract Clause Extraction | Blueprint only | `nhecf` package (Project 22) |
-| 17 | Recommendation System for Investment Products | Blueprint only | — |
+| 09 | [Real-Time Transaction Fraud Detection API](09-realtime-transaction-fraud-api/README.md) | Blueprint only | Project 02 |
+| 10 | [AML Transaction Monitoring & Alert Triage](10-aml-transaction-monitoring/README.md) | Blueprint only | — |
+| 11 | [Credit Risk Scoring Model with Explainability](11-credit-risk-scoring-explainable/README.md) | Blueprint only | Project 03 |
+| 12 | [Anomaly Detection in Trading Data](12-trading-data-anomaly-detection/README.md) | Blueprint only | — |
+| 13 | [Customer Segmentation for Wealth Management](13-wealth-management-customer-segmentation/README.md) | Blueprint only | — |
+| 14 | [Document Classification for KYC Onboarding](14-kyc-document-classification/README.md) | Blueprint only | — |
+| 15 | [Time-Series Forecasting for Cash Flow](15-cashflow-time-series-forecasting/README.md) | Blueprint only | — |
+| 16 | [NLP-Based Contract Clause Extraction](16-contract-clause-extraction-nlp/README.md) | Blueprint only | `nhecf` package (Project 22) |
+| 17 | [Recommendation System for Investment Products](17-investment-product-recommender/README.md) | Blueprint only | — |

@@ -23,35 +23,35 @@ last_updated: 2026-07-02
 
 ## Overview
 
-These 50 files satisfy the v1.0 "reusable templates" target. Each is compact by design — meant to be copied into a working document and filled in, not read as documentation. Every template still declares `title`, `purpose`, and `related_documents` per `AGENTS.md` Section 6, with other frontmatter fields compressed since templates are copied repeatedly.
+These 50 files satisfy the v1.0 "reusable templates" target. Each is compact by design — meant to be copied into a working document and filled in, not read as documentation. Every template still declares `title`, `purpose`, and `related_documents` per [`AGENTS.md`](../AGENTS.md) Section 6, with other frontmatter fields compressed since templates are copied repeatedly.
 
 ## Project Blueprint Templates (15)
 
-Match the "every project must include" list from the original DSOS scope: `business-problem-template.md`, `requirements-template.md`, `architecture-template.md`, `tech-stack-template.md`, `database-design-template.md`, `api-design-template.md`, `ml-pipeline-template.md`, `deployment-template.md`, `monitoring-template.md`, `testing-plan-template.md`, `cicd-template.md`, `project-readme-template.md`, `production-checklist-template.md`, `postmortem-template.md`, `project-folder-structure-template.md`.
+Match the "every project must include" list from the original DSOS scope: [`business-problem-template.md`](business-problem-template.md), [`requirements-template.md`](requirements-template.md), [`architecture-template.md`](architecture-template.md), [`tech-stack-template.md`](tech-stack-template.md), [`database-design-template.md`](database-design-template.md), [`api-design-template.md`](api-design-template.md), [`ml-pipeline-template.md`](ml-pipeline-template.md), [`deployment-template.md`](deployment-template.md), [`monitoring-template.md`](monitoring-template.md), [`testing-plan-template.md`](testing-plan-template.md), [`cicd-template.md`](cicd-template.md), [`project-readme-template.md`](project-readme-template.md), [`production-checklist-template.md`](production-checklist-template.md), [`postmortem-template.md`](postmortem-template.md), [`project-folder-structure-template.md`](project-folder-structure-template.md).
 
 ## Learning System Templates (5)
 
-`learning-journal-entry-template.md`, `mastery-rubric-template.md`, `concept-map-template.md`, `weekly-learning-plan-template.md`, `revision-quiz-template.md`.
+[`learning-journal-entry-template.md`](learning-journal-entry-template.md), [`mastery-rubric-template.md`](mastery-rubric-template.md), [`concept-map-template.md`](concept-map-template.md), [`weekly-learning-plan-template.md`](weekly-learning-plan-template.md), [`revision-quiz-template.md`](revision-quiz-template.md).
 
 ## Interview / Assessment Templates (4)
 
-`mock-interview-session-template.md`, `readiness-scoring-rubric-template.md`, `assessment-rubric-template.md`, `interview-question-template.md`.
+[`mock-interview-session-template.md`](mock-interview-session-template.md), [`readiness-scoring-rubric-template.md`](readiness-scoring-rubric-template.md), [`assessment-rubric-template.md`](assessment-rubric-template.md), [`interview-question-template.md`](interview-question-template.md).
 
 ## Career System Templates (8)
 
-Match the original CAREER SYSTEM list: `resume-template.md`, `linkedin-post-template.md`, `github-strategy-template.md`, `portfolio-strategy-template.md`, `networking-plan-template.md`, `conference-preparation-template.md`, `technical-writing-guide-template.md`, `case-study-template.md`.
+Match the original CAREER SYSTEM list: [`resume-template.md`](resume-template.md), [`linkedin-post-template.md`](linkedin-post-template.md), [`github-strategy-template.md`](github-strategy-template.md), [`portfolio-strategy-template.md`](portfolio-strategy-template.md), [`networking-plan-template.md`](networking-plan-template.md), [`conference-preparation-template.md`](conference-preparation-template.md), [`technical-writing-guide-template.md`](technical-writing-guide-template.md), [`case-study-template.md`](case-study-template.md).
 
 ## Operating System / Review Templates (5)
 
-`weekly-review-template.md`, `monthly-board-meeting-template.md`, `quarterly-review-template.md`, `annual-review-template.md`, `sprint-definition-template.md`.
+[`weekly-review-template.md`](weekly-review-template.md), [`monthly-board-meeting-template.md`](monthly-board-meeting-template.md), [`quarterly-review-template.md`](quarterly-review-template.md), [`annual-review-template.md`](annual-review-template.md), [`sprint-definition-template.md`](sprint-definition-template.md).
 
 ## Engineering / Code Templates (8)
 
-`pyproject-toml-template.md`, `dockerfile-fastapi-template.md`, `dockerfile-ml-training-template.md`, `fastapi-service-scaffold-template.md`, `adr-template.md`, `model-evaluation-report-template.md`, `code-review-checklist-template.md`, `ci-workflow-template.md`.
+[`pyproject-toml-template.md`](pyproject-toml-template.md), [`dockerfile-fastapi-template.md`](dockerfile-fastapi-template.md), [`dockerfile-ml-training-template.md`](dockerfile-ml-training-template.md), [`fastapi-service-scaffold-template.md`](fastapi-service-scaffold-template.md), [`adr-template.md`](adr-template.md), [`model-evaluation-report-template.md`](model-evaluation-report-template.md), [`code-review-checklist-template.md`](code-review-checklist-template.md), [`ci-workflow-template.md`](ci-workflow-template.md).
 
 ## Governance Templates (5)
 
-`pr-description-template.md`, `issue-template.md`, `changelog-entry-template.md`, `glossary-entry-template.md`, `onboarding-template.md`.
+[`pr-description-template.md`](pr-description-template.md), [`issue-template.md`](issue-template.md), [`changelog-entry-template.md`](changelog-entry-template.md), [`glossary-entry-template.md`](glossary-entry-template.md), [`onboarding-template.md`](onboarding-template.md).
 
 ## How to Use a Template
 

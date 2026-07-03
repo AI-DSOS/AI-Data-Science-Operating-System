@@ -14,11 +14,11 @@ Tier 1 projects are scoped to fit a single model type and a manageable dataset â
 ## Projects
 | # | Project | Status |
 |---|---|---|
-| 01 | Car Insurance Claim Prediction | Complete (backfilled) |
-| 02 | Credit Card Fraud Detection | Blueprint only |
-| 03 | Loan Default Prediction | Blueprint only |
-| 04 | Customer Churn Prediction | Blueprint only |
-| 05 | Stock Price Movement Classification | Blueprint only |
-| 06 | Financial News Sentiment Analysis | Blueprint only |
-| 07 | Phishing Email Classifier | Blueprint only |
-| 08 | Property Price Regression | Blueprint only |
+| 01 | [Car Insurance Claim Prediction](01-car-insurance-claim-prediction/README.md) | Complete (backfilled) |
+| 02 | [Credit Card Fraud Detection](02-credit-card-fraud-detection/README.md) | Blueprint only |
+| 03 | [Loan Default Prediction](03-loan-default-prediction/README.md) | Blueprint only |
+| 04 | [Customer Churn Prediction](04-customer-churn-prediction/README.md) | Blueprint only |
+| 05 | [Stock Price Movement Classification](05-stock-price-movement-classification/README.md) | Blueprint only |
+| 06 | [Financial News Sentiment Analysis](06-financial-news-sentiment-analysis/README.md) | Blueprint only |
+| 07 | [Phishing Email Classifier](07-phishing-email-classifier/README.md) | Blueprint only |
+| 08 | [Property Price Regression](08-property-price-regression/README.md) | Blueprint only |

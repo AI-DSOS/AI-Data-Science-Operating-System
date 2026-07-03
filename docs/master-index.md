@@ -48,6 +48,7 @@ Every Markdown file in the repository must have a line here. This is a flat list
 | `docs/documentation-site.md` | How the MkDocs site builds, nav curation policy, GitHub Pages setup |
 | `docs/progress/README.md` | Index and purpose of the `docs/progress/` folder |
 | `docs/progress/v1-scorecard.md` | Running progress count against v1.0 targets |
+| `docs/progress/v1-hardening-report.md` | Phase 10 quality-gate sweep results — real checks, real findings, real fixes |
 | `docs/departments/README.md` | Index and shared context for the 5 departments |
 | `docs/departments/learning-mentor.md` | Department spec — teaching, roadmaps, bootcamp tracking |
 | `docs/departments/enterprise-project-architect.md` | Department spec — the 25-project portfolio, architecture |

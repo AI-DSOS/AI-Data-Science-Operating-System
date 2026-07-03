@@ -37,6 +37,8 @@ graph TD
     DocsReadme --> Changelog[docs/CHANGELOG.md]
 
     ProgressReadme --> Scorecard
+    ProgressReadme --> HardeningReport[docs/progress/v1-hardening-report.md]
+    Scorecard -.reconciled by.-> HardeningReport
 
     MasterIndex --> DocMap
     MasterIndex --> Scorecard

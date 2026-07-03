@@ -53,31 +53,31 @@ Three projects already have substantial real work behind them (Project 01, backf
 
 | # | Project | Tier | Status |
 |---|---|---|---|
-| 01 | Car Insurance Claim Prediction | 1 | Complete (backfilled) |
-| 02 | Credit Card Fraud Detection | 1 | Blueprint only |
-| 03 | Loan Default Prediction | 1 | Blueprint only |
-| 04 | Customer Churn Prediction | 1 | Blueprint only |
-| 05 | Stock Price Movement Classification | 1 | Blueprint only |
-| 06 | Financial News Sentiment Analysis | 1 | Blueprint only |
-| 07 | Phishing Email Classifier | 1 | Blueprint only |
-| 08 | Property Price Regression | 1 | Blueprint only |
-| 09 | Real-Time Transaction Fraud Detection API | 2 | Blueprint only |
-| 10 | AML Transaction Monitoring & Alert Triage | 2 | Blueprint only |
-| 11 | Credit Risk Scoring Model with Explainability | 2 | Blueprint only |
-| 12 | Anomaly Detection in Trading Data | 2 | Blueprint only |
-| 13 | Customer Segmentation for Wealth Management | 2 | Blueprint only |
-| 14 | Document Classification for KYC Onboarding | 2 | Blueprint only |
-| 15 | Time-Series Forecasting for Cash Flow | 2 | Blueprint only |
-| 16 | NLP-Based Contract Clause Extraction | 2 | Blueprint only |
-| 17 | Recommendation System for Investment Products | 2 | Blueprint only |
-| 18 | AI-Powered Data Quality Monitoring and Anomaly Detection Platform | 3 | Scoped (flagship) |
-| 19 | Intelligent Defect Classification and Root Cause Prediction | 3 | Scoped (flagship) |
-| 20 | End-to-End MLOps Fraud Detection Platform | 3 | Blueprint only |
-| 21 | Multi-Agent QA Automation Orchestrator | 3 | Prototype exists |
-| 22 | Regulatory Reporting Automation | 3 | Substantially built |
-| 23 | Conversational AI Risk Assistant | 3 | Blueprint only |
-| 24 | Real-Time Market Risk Dashboard with Streaming Data | 3 | Blueprint only |
-| 25 | Federated Learning Proof-of-Concept for Multi-Bank Fraud Detection | 3 | Blueprint only |
+| 01 | [Car Insurance Claim Prediction](tier-1-foundational/01-car-insurance-claim-prediction/README.md) | 1 | Complete (backfilled) |
+| 02 | [Credit Card Fraud Detection](tier-1-foundational/02-credit-card-fraud-detection/README.md) | 1 | Blueprint only |
+| 03 | [Loan Default Prediction](tier-1-foundational/03-loan-default-prediction/README.md) | 1 | Blueprint only |
+| 04 | [Customer Churn Prediction](tier-1-foundational/04-customer-churn-prediction/README.md) | 1 | Blueprint only |
+| 05 | [Stock Price Movement Classification](tier-1-foundational/05-stock-price-movement-classification/README.md) | 1 | Blueprint only |
+| 06 | [Financial News Sentiment Analysis](tier-1-foundational/06-financial-news-sentiment-analysis/README.md) | 1 | Blueprint only |
+| 07 | [Phishing Email Classifier](tier-1-foundational/07-phishing-email-classifier/README.md) | 1 | Blueprint only |
+| 08 | [Property Price Regression](tier-1-foundational/08-property-price-regression/README.md) | 1 | Blueprint only |
+| 09 | [Real-Time Transaction Fraud Detection API](tier-2-intermediate/09-realtime-transaction-fraud-api/README.md) | 2 | Blueprint only |
+| 10 | [AML Transaction Monitoring & Alert Triage](tier-2-intermediate/10-aml-transaction-monitoring/README.md) | 2 | Blueprint only |
+| 11 | [Credit Risk Scoring Model with Explainability](tier-2-intermediate/11-credit-risk-scoring-explainable/README.md) | 2 | Blueprint only |
+| 12 | [Anomaly Detection in Trading Data](tier-2-intermediate/12-trading-data-anomaly-detection/README.md) | 2 | Blueprint only |
+| 13 | [Customer Segmentation for Wealth Management](tier-2-intermediate/13-wealth-management-customer-segmentation/README.md) | 2 | Blueprint only |
+| 14 | [Document Classification for KYC Onboarding](tier-2-intermediate/14-kyc-document-classification/README.md) | 2 | Blueprint only |
+| 15 | [Time-Series Forecasting for Cash Flow](tier-2-intermediate/15-cashflow-time-series-forecasting/README.md) | 2 | Blueprint only |
+| 16 | [NLP-Based Contract Clause Extraction](tier-2-intermediate/16-contract-clause-extraction-nlp/README.md) | 2 | Blueprint only |
+| 17 | [Recommendation System for Investment Products](tier-2-intermediate/17-investment-product-recommender/README.md) | 2 | Blueprint only |
+| 18 | [AI-Powered Data Quality Monitoring and Anomaly Detection Platform](tier-3-advanced/18-data-quality-monitoring-platform/README.md) | 3 | Scoped (flagship) |
+| 19 | [Intelligent Defect Classification and Root Cause Prediction](tier-3-advanced/19-defect-classification-root-cause/README.md) | 3 | Scoped (flagship) |
+| 20 | [End-to-End MLOps Fraud Detection Platform](tier-3-advanced/20-mlops-fraud-detection-platform/README.md) | 3 | Blueprint only |
+| 21 | [Multi-Agent QA Automation Orchestrator](tier-3-advanced/21-multi-agent-qa-orchestrator/README.md) | 3 | Prototype exists |
+| 22 | [Regulatory Reporting Automation](tier-3-advanced/22-regulatory-reporting-automation/README.md) | 3 | Substantially built |
+| 23 | [Conversational AI Risk Assistant](tier-3-advanced/23-conversational-risk-assistant/README.md) | 3 | Blueprint only |
+| 24 | [Real-Time Market Risk Dashboard with Streaming Data](tier-3-advanced/24-realtime-market-risk-dashboard/README.md) | 3 | Blueprint only |
+| 25 | [Federated Learning Proof-of-Concept for Multi-Bank Fraud Detection](tier-3-advanced/25-federated-learning-fraud-poc/README.md) | 3 | Blueprint only |
 
 ## How a Project Graduates
 

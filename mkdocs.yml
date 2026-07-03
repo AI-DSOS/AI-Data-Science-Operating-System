@@ -101,6 +101,7 @@ nav:
   - Progress:
       - Overview: progress/README.md
       - v1.0 Scorecard: progress/v1-scorecard.md
+      - v1.0 Hardening Report: progress/v1-hardening-report.md
   - About This Site: documentation-site.md
 =======
       - Agent Rules (AGENTS.md): AGENTS.md

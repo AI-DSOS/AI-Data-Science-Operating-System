@@ -4,8 +4,8 @@ purpose: Single running record of progress toward the v1.0 targets defined in AG
 owner: Arulkumaran
 dependencies: [AGENTS.md]
 related_documents: [docs/master-index.md, docs/CHANGELOG.md, docs/progress/README.md]
-version: 0.1.0
-last_updated: 2026-07-02
+version: 1.0.0
+last_updated: 2026-07-03
 ---
 
 ## Table of Contents
@@ -23,7 +23,7 @@ v1.0 is defined in `AGENTS.md` Section 2 as reaching **all five** targets below 
 
 ## Headline Scorecard
 
-| Asset | Target | Current | % Complete |
+| Asset | Target | Current (verified) | % Complete |
 |---|---|---|---|
 | Markdown documents | ~100 | 45 | 45% |
 =======
@@ -99,13 +99,14 @@ v1.0 is defined in `AGENTS.md` Section 2 as reaching **all five** targets below 
 =======
 | Markdown documents | ~100 | 258 | 258% (target exceeded — see note) |
 | Production-grade projects | 25 | 25 blueprints (3 with substantial real work, 20 blueprint-only, 2 scoped) | 100% blueprinted / ~12% implemented — see note |
+=======
+| Markdown documents | ~100 | 256 | 256% (target exceeded — see note) |
+| Production-grade projects | 25 | 25 blueprints (3–5 with substantial real work, ~20 blueprint-only) | 100% blueprinted / ~15% implemented — see note |
 | Reusable templates | 50 | 50 | 100% |
 | Prompt library files | 100+ | 104 | 104% |
-| Documentation site | Deployed (MkDocs) | **Build tested and verified working (exit 0, zero warnings, 51 pages); scoped to docs/ only; GitHub Pages enablement unconfirmed** | ~80% |
+| Documentation site | Deployed (MkDocs) | Build verified working (exit 0, zero warnings, re-confirmed after hardening fixes); GitHub Pages enablement unconfirmed | ~80% |
 
-*Current Markdown count (258): the 257 from Phases 1–8, plus `docs/documentation-site.md` (1) = 258. (`docs/index.md` was created then removed during this phase once `docs/README.md` was confirmed to auto-serve as the site homepage — net one new file overall, not two.)*
-
-*Documentation site jumped from ~20% to ~80%, but the path there matters: the first attempt (`docs_dir: .`) was untested and wrong — MkDocs hard-errors when `docs_dir` equals the config file's own directory. A follow-up attempt reached for a plugin (`mkdocs-same-dir`) that turned out to be for an unrelated tool, not real MkDocs — also caught by testing, not assumed. The actual fix, `docs_dir: docs` (MkDocs' real default), was verified with three real local builds until `mkdocs build --strict` returned exit code 0 with zero warnings across 51 built pages. The full account, including the false starts, is in `docs/documentation-site.md` — this is intentional: a fix that isn't verified is a claim, not a fix, and the record should show the difference. The scope tradeoff (site covers `docs/` only; templates/trackers/prompts/projects stay GitHub-only) is real and documented, not hidden. The remaining ~20% is the one manual step: confirming GitHub Pages is enabled and the site is reachable at a live URL.*
+*All numbers on this line are from `docs/progress/v1-hardening-report.md`'s actual sweep. The sweep itself found 255 files; this scorecard update and the hardening report file (`docs/progress/v1-hardening-report.md`, created by this same sweep) bring the true current total to 256 — the report counting its own existence is intentional, not an error: `find . -name "*.md" | wc -l` run fresh from the final repo state gives 256. The previous running total (258) had drifted from reality by several — caught and corrected here. See the hardening report for the full account, including the two real defects it found and fixed (unlinked file listings in `templates/README.md`, `trackers/README.md`, and `projects/README.md`; the scorecard's own arithmetic drift).*
 
 *Note on the "25 projects" target: as scoped explicitly in `projects/README.md`, Phase 7 delivered 25 fully-specified project blueprints (business problem, architecture, tech stack, honest status), not 25 fully-implemented production systems. 3 projects carry substantial real prior work (Project 01 backfilled from a completed engagement, Project 21 has a working prototype, Project 22 is a substantially-built package); 2 more (Projects 18–19) are the existing flagship projects with real architecture already scoped. The remaining 20 are blueprint-only, pending actual implementation.*
 
@@ -160,6 +161,8 @@ v1.0 is defined in `AGENTS.md` Section 2 as reaching **all five** targets below 
 | `docs/` | 48 | 40 from Phases 1–4, plus `career-system/README.md` + 7 strategy docs |
 =======
 | `docs/` | 49 | 48 from Phases 1–8, plus `documentation-site.md` |
+=======
+| `docs/` | 51 (verified) | Was undercounted at 49; sweep found 50, then this hardening report itself brought it to 51 |
 | `prompts/` | 105 | `README.md` + 104 prompts across 12 categories — **target exceeded (104/100+)** |
 | `templates/` | 51 | `README.md` + 50 templates across 7 categories — **target met (50/50)** |
 | `trackers/` | 15 | `README.md` + 14 trackers matching the original scope's Trackers list exactly |
@@ -204,7 +207,7 @@ Phases per `AGENTS.md` Section 10.
 | 7. Project Library (25) | **Blueprints complete, implementation ongoing** — all 25 projects scoped and documented across 3 tiers; 3 carry substantial prior real-world work, 2 are the existing flagship projects, 20 remain to be implemented |
 | 8. Career System | **Complete** — 7 strategy documents (Resume Framework, LinkedIn Strategy, GitHub Strategy, Portfolio Strategy, Networking Plan, Conference Preparation, Technical Writing Guide), explicitly layered above the templates/trackers already built in Phase 5 |
 | 9. Documentation Site | **Complete, tested** — after two wrong turns (an invalid `docs_dir: .` config, then a plugin for an unrelated tool), the actual fix (`docs_dir: docs`) was verified with a real local build: exit 0, zero warnings, 51 pages. Site scoped to `docs/`; templates/trackers/prompts/projects remain GitHub-only, documented clearly. Only GitHub Pages enablement (a one-time manual step) is unconfirmed |
-| 10. v1.0 Hardening | Not started |
+| 10. v1.0 Hardening | **Complete, tested** — full quality-gate sweep run with real scripts against 255 files (see `docs/progress/v1-hardening-report.md`). Found and fixed 2 real defects: unlinked file listings in 4 index files, and a 3-4 document arithmetic drift in this scorecard. Flagged 1 real gap not fixed: the Playbooks module was never built across any phase |
 
 ## Gaps / Known Risks
 - Multiple engineering-standards docs reference templates (`pyproject.toml`, Dockerfile, FastAPI scaffold, project README/ADR, PR template) that don't exist yet — expected, Phase 5 dependency, and now the largest concentration of forward-references in the repo.
@@ -220,7 +223,6 @@ Phases per `AGENTS.md` Section 10.
 | 8. Career System | **Complete** — 7 strategy documents (Resume Framework, LinkedIn Strategy, GitHub Strategy, Portfolio Strategy, Networking Plan, Conference Preparation, Technical Writing Guide), explicitly layered above the templates/trackers already built in Phase 5 |
 | 9. Documentation Site | **Complete, tested** — after two wrong turns (an invalid `docs_dir: .` config, then a plugin for an unrelated tool), the actual fix (`docs_dir: docs`) was verified with a real local build: exit 0, zero warnings, 51 pages. Site scoped to `docs/`; templates/trackers/prompts/projects remain GitHub-only, documented clearly. Only GitHub Pages enablement (a one-time manual step) is unconfirmed |
 | 10. v1.0 Hardening | Not started |
-
 ## Gaps / Known Risks
 - The most important gap remains the one flagged in Phase 7: 20 of 25 projects are blueprint-only. Phase 8's career-system documents already account for this (e.g. `resume-framework.md` explicitly warns against listing unimplemented projects as shipped) — but the underlying gap itself is unchanged by this phase.
 - `docs/career-system/README.md` notes that Case Study Template, Recruiter Tracker, and Interview Tracker were already delivered in Phase 5 rather than duplicated here — worth double-checking this doesn't read as a missing deliverable to a future reviewer skimming only Phase 8's file list.
@@ -262,7 +264,11 @@ Phase 3: Operating System is complete. Move to **Phase 4: Engineering Standards*
 - The site is scoped to `docs/` only — `AGENTS.md`, root `README.md`, `templates/`, `trackers/`, `prompts/`, `projects/`, and `resources/` are GitHub-only, not part of the generated site. This is a real, deliberate, documented tradeoff (see `docs/documentation-site.md`), not a temporary gap — reversing it would mean restructuring the repo's top-level folder layout, a Quarterly-Review-level decision, not a quick fix.
 - 20 of 25 projects remain blueprint-only (unchanged from Phase 7/8's flag — still the largest non-documentation gap in the repo).
 - Markdown document count (258) — sixth consecutive phase past the informal ~100 target; fully expected at this point.
-
+=======
+- **Playbooks module was never built.** Named in `AGENTS.md` Section 3 and the original master prompt's scope, but no phase in the Section 10 roadmap explicitly targeted it, and it fell through across all 10 phases. Documented in `docs/progress/v1-hardening-report.md` as real, known scope not covered by v1.0 as delivered — recommended for v1.1.
+- 20 of 25 projects remain blueprint-only — unchanged since Phase 7, the single largest implementation gap in the repo.
+- GitHub Pages enablement is unconfirmed — requires repo admin action this environment can't perform or verify.
+- The scorecard itself had a real, multi-phase arithmetic drift (claimed 258, actual 255 at time of sweep) — found and corrected in this phase. Worth normalizing "reconcile the scorecard against `find` output, not cumulative addition" as a standing Monthly Board Meeting practice going forward, per `docs/operating-system/monthly-board-meeting.md`.
 ## Next Steps
 Phase 5: Templates (and the pulled-forward Trackers deliverable) is complete. Move to **Phase 6: Prompt Library (100+)** — reusable prompts across learning, projects, code reviews, architecture reviews, mock interviews, debugging, system design, technical writing, career planning, research, documentation, and repository maintenance.
 =======
@@ -295,4 +301,4 @@ Phase 9: Documentation Site is complete and tested, pending the one manual GitHu
 Phase 5: Templates (and the pulled-forward Trackers deliverable) is complete. Move to **Phase 6: Prompt Library (100+)** — reusable prompts across learning, projects, code reviews, architecture reviews, mock interviews, debugging, system design, technical writing, career planning, research, documentation, and repository maintenance.
 =======
 
-Phase 9: Documentation Site is complete and tested, pending the one manual GitHub Pages step. Only **Phase 10: v1.0 Hardening** remains on the roadmap — a full quality-gate sweep (per `AGENTS.md` Section 7) across all 258 documents before tagging v1.0. Real project implementation (Projects 02, 21, 22 as the highest-priority candidates) remains the largest open-ended item outside the phase sequence.
+**All 10 phases of the `AGENTS.md` Section 10 roadmap are now complete.** v1.0 is ready to tag, with two caveats stated openly in `docs/progress/v1-hardening-report.md` rather than hidden: most of the 25 projects are blueprints, not implementations, and the Playbooks module doesn't exist yet. Recommended v1.1 priorities, in order: (1) build the Playbooks module, (2) implement Projects 02, 21, and 22 (the highest-value/lowest-effort project implementations), (3) confirm GitHub Pages deployment.
