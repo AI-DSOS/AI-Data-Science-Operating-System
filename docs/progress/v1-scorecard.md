@@ -66,14 +66,16 @@ v1.0 is defined in `AGENTS.md` Section 2 as reaching **all five** targets below 
 | Production-grade projects | 25 | 0 | 0% |
 =======
 | Markdown documents | ~100 | 249 | 249% (target exceeded — see note) |
+=======
+| Markdown documents | ~100 | 257 | 257% (target exceeded — see note) |
 | Production-grade projects | 25 | 25 blueprints (3 with substantial real work, 20 blueprint-only, 2 scoped) | 100% blueprinted / ~12% implemented — see note |
 | Reusable templates | 50 | 50 | 100% |
 | Prompt library files | 100+ | 104 | 104% |
 | Documentation site | Deployed (MkDocs) | Config scaffolded, pushed to GitHub, not yet Pages-deployed | ~20% |
 
-*Current Markdown count (249): the 216 from Phases 1–6, plus `projects/README.md` + 3 tier READMEs + 25 project READMEs (29) = 216 + 33 = 249.*
+*Current Markdown count (257): the 249 from Phases 1–7, plus `docs/career-system/README.md` + 7 strategy documents (8) = 249 + 8 = 257.*
 
-*Note on the "25 projects" target: as scoped explicitly in `projects/README.md`, this phase delivered 25 fully-specified project blueprints (business problem, architecture, tech stack, honest status), not 25 fully-implemented production systems. 3 projects carry substantial real prior work (Project 01 backfilled from a completed engagement, Project 21 has a working prototype, Project 22 is a substantially-built package); 2 more (Projects 18–19) are the existing flagship projects with real architecture already scoped. The remaining 20 are blueprint-only, pending actual implementation — tracked honestly rather than marked "done" prematurely, consistent with the honest-reporting standard the repo itself enforces (`docs/engineering-standards/machine-learning.md`).*
+*Note on the "25 projects" target: as scoped explicitly in `projects/README.md`, Phase 7 delivered 25 fully-specified project blueprints (business problem, architecture, tech stack, honest status), not 25 fully-implemented production systems. 3 projects carry substantial real prior work (Project 01 backfilled from a completed engagement, Project 21 has a working prototype, Project 22 is a substantially-built package); 2 more (Projects 18–19) are the existing flagship projects with real architecture already scoped. The remaining 20 are blueprint-only, pending actual implementation.*
 
 *Note on the "25 projects" target: as scoped explicitly in `projects/README.md`, this phase delivered 25 fully-specified project blueprints (business problem, architecture, tech stack, honest status), not 25 fully-implemented production systems. 3 projects carry substantial real prior work (Project 01 backfilled from a completed engagement, Project 21 has a working prototype, Project 22 is a substantially-built package); 2 more (Projects 18–19) are the existing flagship projects with real architecture already scoped. The remaining 20 are blueprint-only, pending actual implementation — tracked honestly rather than marked "done" prematurely, consistent with the honest-reporting standard the repo itself enforces (`docs/engineering-standards/machine-learning.md`).*
 
@@ -99,6 +101,8 @@ v1.0 is defined in `AGENTS.md` Section 2 as reaching **all five** targets below 
 | `prompts/` | 105 | `README.md` + 104 prompts across 12 categories — **target exceeded (104/100+)** |
 =======
 =======
+=======
+| `docs/` | 48 | 40 from Phases 1–4, plus `career-system/README.md` + 7 strategy docs |
 | `prompts/` | 105 | `README.md` + 104 prompts across 12 categories — **target exceeded (104/100+)** |
 | `templates/` | 51 | `README.md` + 50 templates across 7 categories — **target met (50/50)** |
 | `trackers/` | 15 | `README.md` + 14 trackers matching the original scope's Trackers list exactly |
@@ -136,7 +140,7 @@ Phases per `AGENTS.md` Section 10.
 | 5. Templates (50) | **Complete** — 50/50 templates across 7 categories, plus 14 trackers (a related deliverable pulled forward since so many earlier documents forward-referenced both) |
 | 6. Prompt Library (100+) | **Complete** — 104 prompts across 12 categories (Learning, Projects, Code Reviews, Architecture Reviews, Mock Interviews, Debugging, System Design, Technical Writing, Career Planning, Research, Documentation, Repository Maintenance) |
 | 7. Project Library (25) | **Blueprints complete, implementation ongoing** — all 25 projects scoped and documented across 3 tiers; 3 carry substantial prior real-world work, 2 are the existing flagship projects, 20 remain to be implemented |
-| 8. Career System | Not started |
+| 8. Career System | **Complete** — 7 strategy documents (Resume Framework, LinkedIn Strategy, GitHub Strategy, Portfolio Strategy, Networking Plan, Conference Preparation, Technical Writing Guide), explicitly layered above the templates/trackers already built in Phase 5 |
 | 9. Documentation Site | Not started |
 | 10. v1.0 Hardening | Not started |
 
@@ -168,9 +172,9 @@ Phase 3: Operating System is complete. Move to **Phase 4: Engineering Standards*
 - Markdown document count (249) continues to climb past the informal ~100 target — now clearly established as expected, not a recurring surprise; this is the fourth consecutive phase to note it.
 =======
 
-- **The most important gap in the whole repo right now:** 20 of 25 projects are blueprint-only with no real implementation. This phase should not be read as "projects done" — see `projects/README.md`'s explicit scope note. Real implementation is a separate, much larger, ongoing effort.
-- Projects 21 (multi-agent QA POC) and 22 (`nhecf` package) exist as real, substantial work outside this repository and haven't been migrated in yet — this is low-effort, high-value work worth prioritizing before writing new code elsewhere.
-- Markdown document count (249) continues to climb past the informal ~100 target — now clearly established as expected, not a recurring surprise; this is the fourth consecutive phase to note it.
+- The most important gap remains the one flagged in Phase 7: 20 of 25 projects are blueprint-only. Phase 8's career-system documents already account for this (e.g. `resume-framework.md` explicitly warns against listing unimplemented projects as shipped) — but the underlying gap itself is unchanged by this phase.
+- `docs/career-system/README.md` notes that Case Study Template, Recruiter Tracker, and Interview Tracker were already delivered in Phase 5 rather than duplicated here — worth double-checking this doesn't read as a missing deliverable to a future reviewer skimming only Phase 8's file list.
+- Markdown document count (257) continues to climb past the informal ~100 target — fifth consecutive phase to note it; this pattern is now fully established as expected.
 - The MkDocs site is configured and the repo is pushed to GitHub, but Pages deployment status hasn't been confirmed.
 
 ## Next Steps
@@ -181,7 +185,6 @@ Phase 6: Prompt Library is complete — two of five v1.0 targets now fully met (
 =======
 Phase 5: Templates (and the pulled-forward Trackers deliverable) is complete. Move to **Phase 6: Prompt Library (100+)** — reusable prompts across learning, projects, code reviews, architecture reviews, mock interviews, debugging, system design, technical writing, career planning, research, documentation, and repository maintenance.
 =======
-
 Phase 7: Project Library blueprints are complete; a large amount of real implementation work remains open-ended (not phase-gated the way documentation phases were). Reasonable next moves, in rough priority order:
 1. Migrate Projects 21 and 22 (existing real work) into the new `projects/` structure — fastest path to a second and third genuinely "complete" project.
 2. Implement Project 02 (Credit Card Fraud Detection) — it's a dependency for Projects 09 and 20.
@@ -196,3 +199,6 @@ Phase 7: Project Library blueprints are complete; a large amount of real impleme
 1. Migrate Projects 21 and 22 (existing real work) into the new `projects/` structure — fastest path to a second and third genuinely "complete" project.
 2. Implement Project 02 (Credit Card Fraud Detection) — it's a dependency for Projects 09 and 20.
 3. Move to **Phase 8: Career System** (resume framework, LinkedIn strategy, recruiter tracker) in parallel, since it doesn't block on project implementation the way Phase 9 (Documentation Site) navigation does.
+=======
+Phase 8: Career System is complete. Per `AGENTS.md` Section 10, the remaining phases are **9: Documentation Site** (wire the growing nav into `mkdocs.yml`, confirm GitHub Pages deployment) and **10: v1.0 Hardening** (full quality-gate sweep). Real project implementation (flagged repeatedly since Phase 7) remains the largest open-ended item outside the phase sequence itself.
+

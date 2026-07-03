@@ -66,6 +66,14 @@ Every Markdown file in the repository must have a line here. This is a flat list
 | `docs/operating-system/deep-work.md` | What qualifies as protected deep-focus time and why |
 | `docs/operating-system/revision-strategy.md` | How mastered concepts get revisited so they don't decay |
 | `docs/operating-system/reflection-system.md` | Lightweight sustainability/fit checks on the system itself |
+| `docs/career-system/README.md` | Index and layer distinction for the 7 career strategy docs |
+| `docs/career-system/resume-framework.md` | Positioning strategy, version strategy per target role type |
+| `docs/career-system/linkedin-strategy.md` | Content pillars, cadence, voice |
+| `docs/career-system/github-strategy.md` | Pinned repos strategy, README standard |
+| `docs/career-system/portfolio-strategy.md` | Cross-channel consistency, anchor projects |
+| `docs/career-system/networking-plan.md` | Target contacts, outreach principles, Chennai/IB context |
+| `docs/career-system/conference-preparation.md` | Event selection, preparation discipline |
+| `docs/career-system/technical-writing-guide.md` | Article selection, structure, honest-results emphasis |
 | `docs/engineering-standards/README.md` | Index of the 15 engineering standards documents |
 | `docs/engineering-standards/python.md` | Python style, typing, dependency management |
 | `docs/engineering-standards/sql.md` | SQL formatting, naming, migrations |

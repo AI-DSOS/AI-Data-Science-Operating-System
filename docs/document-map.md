@@ -106,6 +106,25 @@ graph TD
 
 *(The CTO department governs this whole module — see the cross-module link below.)*
 
+### Career System
+
+```mermaid
+graph TD
+    CSReadme[career-system/README.md] --> Resume[resume-framework.md]
+    CSReadme --> LinkedIn[linkedin-strategy.md]
+    CSReadme --> GitHub[github-strategy.md]
+    CSReadme --> Portfolio[portfolio-strategy.md]
+    CSReadme --> Networking[networking-plan.md]
+    CSReadme --> Conference[conference-preparation.md]
+    CSReadme --> TechWriting[technical-writing-guide.md]
+
+    Resume --> Portfolio
+    LinkedIn --> Portfolio
+    GitHub --> Portfolio
+    Networking --> Conference
+    TechWriting --> LinkedIn
+```
+
 ### Engineering Standards
 
 ```mermaid
@@ -147,6 +166,8 @@ graph TD
 graph LR
     CTO[departments/cto.md] -.governs.-> OS[operating-system/README.md]
     EPA[departments/enterprise-project-architect.md] -.enforces.-> ES[engineering-standards/README.md]
+    EPA -.owns.-> PL[projects/README.md]
+    CBC[departments/career-brand-coach.md] -.owns.-> CS[career-system/README.md]
     LM2[departments/learning-mentor.md] -.depends on.-> LSystem[learning-system/ - not yet created]
 ```
 
