@@ -102,7 +102,7 @@ Every Markdown file in the repository must have a line here. This is a flat list
 
 ## projects/
 
-*Not started. Target: 25 production-grade projects, tiered by difficulty.*
+**25 projects across 3 tiers, indexed in full in [`projects/README.md`](../projects/README.md).** Tier 1 — Foundational (01–08), Tier 2 — Intermediate (09–17), Tier 3 — Advanced (18–25). See that index for the important scope note: these are 25 fully-specified blueprints, not 25 fully-implemented systems — 3 projects have substantial prior work behind them (backfilled/prototype/substantially-built), the rest are blueprint-only pending implementation.
 
 ## resources/
 
