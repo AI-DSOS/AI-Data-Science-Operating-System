@@ -256,5 +256,7 @@ graph TD
 
 =======
 - `templates/` (50 files), `trackers/` (14 files), and now `prompts/` (104 files) are deliberately **not** diagrammed here — all three are flat, mutually-independent reusable-file collections better served by their own README indexes than an unreadable 168-node combined graph. This is a considered, repeated exception to the "every module gets a diagram" pattern, not an oversight.
+=======
+- `templates/` (50 files), `trackers/` (14 files), and `prompts/` (104 files) are deliberately **not** diagrammed here — all three are flat, mutually-independent reusable-file collections better served by their own README indexes than an unreadable 168-node combined graph. This is a considered, repeated exception to the "every module gets a diagram" pattern, not an oversight.
 - Add a diagram for `docs/learning-system/`, `docs/career-system/` once those are created (deferred — not part of the original 10-phase roadmap's explicit folder list, revisit if department docs' forward-references to them turn into real content).
-- Add a diagram for the Project Library once Phase 7 completes — unlike templates/trackers/prompts, projects have real internal structure (dependencies between components, tiering) worth diagramming.
+- The Project Library diagram above shows blueprint-stage dependencies only — revisit and expand once real implementation work creates actual code-level dependencies between projects.
