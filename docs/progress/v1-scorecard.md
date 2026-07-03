@@ -96,12 +96,16 @@ v1.0 is defined in `AGENTS.md` Section 2 as reaching **all five** targets below 
 | Markdown documents | ~100 | 249 | 249% (target exceeded — see note) |
 =======
 | Markdown documents | ~100 | 257 | 257% (target exceeded — see note) |
+=======
+| Markdown documents | ~100 | 258 | 258% (target exceeded — see note) |
 | Production-grade projects | 25 | 25 blueprints (3 with substantial real work, 20 blueprint-only, 2 scoped) | 100% blueprinted / ~12% implemented — see note |
 | Reusable templates | 50 | 50 | 100% |
 | Prompt library files | 100+ | 104 | 104% |
-| Documentation site | Deployed (MkDocs) | Config scaffolded, pushed to GitHub, not yet Pages-deployed | ~20% |
+| Documentation site | Deployed (MkDocs) | **Build config fixed and complete; GitHub Pages enablement unconfirmed** | ~70% |
 
-*Current Markdown count (257): the 249 from Phases 1–7, plus `docs/career-system/README.md` + 7 strategy documents (8) = 249 + 8 = 257.*
+*Current Markdown count (258): the 257 from Phases 1–8, plus `docs/documentation-site.md` (1) = 258.*
+
+*Documentation site jumped from ~20% to ~70%: Phase 9 fixed a real bug (missing `docs_dir`, which would have failed the build entirely), populated the full nav across all documentation-heavy phases, added a considered nav-curation policy for the large flat collections (templates/trackers/prompts/projects), and documented the setup in `docs/documentation-site.md`. The remaining ~30% is entirely the one manual step described there: confirming GitHub Pages is enabled and the site is actually reachable at a live URL — something that can't be verified without repo admin access to check Settings → Pages.*
 
 *Note on the "25 projects" target: as scoped explicitly in `projects/README.md`, Phase 7 delivered 25 fully-specified project blueprints (business problem, architecture, tech stack, honest status), not 25 fully-implemented production systems. 3 projects carry substantial real prior work (Project 01 backfilled from a completed engagement, Project 21 has a working prototype, Project 22 is a substantially-built package); 2 more (Projects 18–19) are the existing flagship projects with real architecture already scoped. The remaining 20 are blueprint-only, pending actual implementation.*
 
@@ -154,6 +158,8 @@ v1.0 is defined in `AGENTS.md` Section 2 as reaching **all five** targets below 
 =======
 =======
 | `docs/` | 48 | 40 from Phases 1–4, plus `career-system/README.md` + 7 strategy docs |
+=======
+| `docs/` | 49 | 48 from Phases 1–8, plus `documentation-site.md` |
 | `prompts/` | 105 | `README.md` + 104 prompts across 12 categories — **target exceeded (104/100+)** |
 | `templates/` | 51 | `README.md` + 50 templates across 7 categories — **target met (50/50)** |
 | `trackers/` | 15 | `README.md` + 14 trackers matching the original scope's Trackers list exactly |
@@ -212,7 +218,7 @@ Phases per `AGENTS.md` Section 10.
 | 6. Prompt Library (100+) | **Complete** — 104 prompts across 12 categories (Learning, Projects, Code Reviews, Architecture Reviews, Mock Interviews, Debugging, System Design, Technical Writing, Career Planning, Research, Documentation, Repository Maintenance) |
 | 7. Project Library (25) | **Blueprints complete, implementation ongoing** — all 25 projects scoped and documented across 3 tiers; 3 carry substantial prior real-world work, 2 are the existing flagship projects, 20 remain to be implemented |
 | 8. Career System | **Complete** — 7 strategy documents (Resume Framework, LinkedIn Strategy, GitHub Strategy, Portfolio Strategy, Networking Plan, Conference Preparation, Technical Writing Guide), explicitly layered above the templates/trackers already built in Phase 5 |
-| 9. Documentation Site | Not started |
+| 9. Documentation Site | **Complete** — fixed a Phase 1 `docs_dir` bug that would have broken the build entirely, populated full nav, added a considered nav-curation policy, documented setup in `docs/documentation-site.md`. Only GitHub Pages enablement (a one-time manual step) is unconfirmed |
 | 10. v1.0 Hardening | Not started |
 
 ## Gaps / Known Risks
@@ -248,6 +254,10 @@ Phase 3: Operating System is complete. Move to **Phase 4: Engineering Standards*
 
 - **GitHub Pages enablement is unconfirmed** — the single largest remaining item for the Documentation Site target. Requires repo admin action (Settings → Pages) that can't be done or verified from this environment.
 - The site is scoped to `docs/` only — `AGENTS.md`, root `README.md`, `templates/`, `trackers/`, `prompts/`, `projects/`, and `resources/` are GitHub-only, not part of the generated site. This is a real, deliberate, documented tradeoff (see `docs/documentation-site.md`), not a temporary gap — reversing it would mean restructuring the repo's top-level folder layout, a Quarterly-Review-level decision, not a quick fix.
+=======
+- **GitHub Pages enablement is unconfirmed** — the single largest remaining item for the Documentation Site target. This requires repo admin action (Settings → Pages) that can't be done or verified from this environment. See `docs/documentation-site.md`'s "The One Manual Step Left."
+- The nav curation policy (full detail for docs-heavy phases, index-only for templates/trackers/prompts/projects) is a judgment call, not a certainty — flagged in `docs/documentation-site.md` as worth revisiting once real usage data exists.
+- The Phase 1 `docs_dir` bug went unnoticed for 8 phases before this one caught it — worth a brief note at the next Quarterly Review's system-check about whether other early-phase scaffolding deserves a fresh look now that more of the repo exists to test it against.
 - 20 of 25 projects remain blueprint-only (unchanged from Phase 7/8's flag — still the largest non-documentation gap in the repo).
 - Markdown document count (258) — sixth consecutive phase past the informal ~100 target; fully expected at this point.
 
@@ -283,4 +293,4 @@ Phase 9: Documentation Site is complete and tested, pending the one manual GitHu
 Phase 5: Templates (and the pulled-forward Trackers deliverable) is complete. Move to **Phase 6: Prompt Library (100+)** — reusable prompts across learning, projects, code reviews, architecture reviews, mock interviews, debugging, system design, technical writing, career planning, research, documentation, and repository maintenance.
 =======
 
-Phase 8: Career System is complete. Per `AGENTS.md` Section 10, the remaining phases are **9: Documentation Site** (wire the growing nav into `mkdocs.yml`, confirm GitHub Pages deployment) and **10: v1.0 Hardening** (full quality-gate sweep). Real project implementation (flagged repeatedly since Phase 7) remains the largest open-ended item outside the phase sequence itself.
+Phase 9: Documentation Site is complete pending the one manual GitHub Pages step. Only **Phase 10: v1.0 Hardening** remains on the roadmap — a full quality-gate sweep (per `AGENTS.md` Section 7) across all 258 documents before tagging v1.0. Real project implementation (Projects 02, 21, 22 as the highest-priority candidates) remains the largest open-ended item outside the phase sequence.
