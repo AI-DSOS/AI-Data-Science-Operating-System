@@ -45,6 +45,7 @@ Every Markdown file in the repository must have a line here. This is a flat list
 | `docs/master-index.md` | This file |
 | `docs/document-map.md` | Mermaid relationship graph of documents |
 | `docs/CHANGELOG.md` | Dated log of module-by-module changes |
+| `docs/documentation-site.md` | How the MkDocs site builds, nav curation policy, GitHub Pages setup |
 | `docs/progress/README.md` | Index and purpose of the `docs/progress/` folder |
 | `docs/progress/v1-scorecard.md` | Running progress count against v1.0 targets |
 | `docs/departments/README.md` | Index and shared context for the 5 departments |

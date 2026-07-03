@@ -41,6 +41,8 @@ graph TD
     MasterIndex --> DocMap
     MasterIndex --> Scorecard
     MasterIndex --> Changelog
+    DocsReadme --> DocSite[docs/documentation-site.md]
+    DocSite -.configures.-> MkdocsYml[mkdocs.yml]
 
     README --> MasterIndex
     README --> Scorecard

@@ -2,6 +2,20 @@ site_name: AI Data Science Operating System (DSOS)
 site_description: A single source of truth for a complete Data Science / ML / AI Engineering career transformation.
 site_author: Arulkumaran
 
+# docs_dir is repo root, not the MkDocs default ("docs/") — this repo's content
+# spans multiple top-level folders (docs/, templates/, trackers/, prompts/,
+# projects/, resources/, plus root README.md and AGENTS.md). This was missing
+# in the Phase 1 version of this file, which would have failed to build since
+# nav paths like "README.md" and "AGENTS.md" don't exist under the default
+# docs/ directory. Fixed in Phase 9.
+docs_dir: .
+
+# Files/folders MkDocs should never scan, regardless of docs_dir.
+exclude_docs: |
+  .git/
+  *.zip
+  site/
+
 theme:
   name: material
   palette:
@@ -12,29 +26,86 @@ theme:
     - navigation.instant
     - navigation.tabs
     - navigation.top
+    - navigation.sections
     - search.suggest
     - content.code.copy
 
+# Nav curation policy: templates/, trackers/, and prompts/ are large, flat,
+# mutually-independent file collections (50 + 14 + 104 files) — the same
+# reasoning docs/document-map.md uses for not diagramming them applies here:
+# a nav entry per file would be noise, not signal. Each gets ONE nav entry
+# pointing at its README.md index, which lists every file with a description.
+# Individual projects (25) get one entry per TIER, not per project, for the
+# same reason — projects/README.md's full table is the real index.
+# All excluded-from-nav files are still built and searchable via the site's
+# built-in search — they're just not in the sidebar.
 nav:
   - Home: README.md
   - Governance:
       - Agent Rules (AGENTS.md): AGENTS.md
-  - Docs:
-      - Overview: docs/README.md
       - Master Index: docs/master-index.md
       - Document Map: docs/document-map.md
       - Changelog: docs/CHANGELOG.md
-      - Progress:
-          - Overview: docs/progress/README.md
-          - v1.0 Scorecard: docs/progress/v1-scorecard.md
+      - v1.0 Scorecard: docs/progress/v1-scorecard.md
+  - Departments:
+      - Overview: docs/departments/README.md
+      - Learning Mentor: docs/departments/learning-mentor.md
+      - Enterprise Project Architect: docs/departments/enterprise-project-architect.md
+      - Technical Interviewer: docs/departments/technical-interviewer.md
+      - Career & Personal Brand Coach: docs/departments/career-brand-coach.md
+      - CTO: docs/departments/cto.md
+  - Operating System:
+      - Overview: docs/operating-system/README.md
+      - Daily Operating System: docs/operating-system/daily-operating-system.md
+      - Weekly Review: docs/operating-system/weekly-review.md
+      - Monthly Board Meeting: docs/operating-system/monthly-board-meeting.md
+      - Quarterly Review: docs/operating-system/quarterly-review.md
+      - Annual Review: docs/operating-system/annual-review.md
+      - Sprint Planning: docs/operating-system/sprint-planning.md
+      - Knowledge Management: docs/operating-system/knowledge-management.md
+      - Task Prioritization: docs/operating-system/task-prioritization.md
+      - Time Blocking: docs/operating-system/time-blocking.md
+      - Deep Work: docs/operating-system/deep-work.md
+      - Revision Strategy: docs/operating-system/revision-strategy.md
+      - Reflection System: docs/operating-system/reflection-system.md
+  - Engineering Standards:
+      - Overview: docs/engineering-standards/README.md
+      - Python: docs/engineering-standards/python.md
+      - SQL: docs/engineering-standards/sql.md
+      - Jupyter: docs/engineering-standards/jupyter.md
+      - FastAPI: docs/engineering-standards/fastapi.md
+      - Docker: docs/engineering-standards/docker.md
+      - Machine Learning: docs/engineering-standards/machine-learning.md
+      - MLOps: docs/engineering-standards/mlops.md
+      - Git, GitHub & Code Review: docs/engineering-standards/git-github-workflow.md
+      - Testing: docs/engineering-standards/testing.md
+      - Logging: docs/engineering-standards/logging.md
+      - Documentation: docs/engineering-standards/documentation.md
+      - Naming Conventions: docs/engineering-standards/naming-conventions.md
+      - Folder Structure: docs/engineering-standards/folder-structure.md
+      - Security: docs/engineering-standards/security.md
+      - Performance & Scalability: docs/engineering-standards/performance-and-scalability.md
+  - Career System:
+      - Overview: docs/career-system/README.md
+      - Resume Framework: docs/career-system/resume-framework.md
+      - LinkedIn Strategy: docs/career-system/linkedin-strategy.md
+      - GitHub Strategy: docs/career-system/github-strategy.md
+      - Portfolio Strategy: docs/career-system/portfolio-strategy.md
+      - Networking Plan: docs/career-system/networking-plan.md
+      - Conference Preparation: docs/career-system/conference-preparation.md
+      - Technical Writing Guide: docs/career-system/technical-writing-guide.md
+  - Projects:
+      - Overview: projects/README.md
+      - Tier 1 — Foundational: projects/tier-1-foundational/README.md
+      - Tier 2 — Intermediate: projects/tier-2-intermediate/README.md
+      - Tier 3 — Advanced: projects/tier-3-advanced/README.md
+  - Templates: templates/README.md
+  - Trackers: trackers/README.md
+  - Prompts: prompts/README.md
   - Resources:
       - Overview: resources/README.md
       - Glossary: resources/glossary.md
-
-# Additional nav sections (Departments, Operating System, Engineering Standards,
-# Templates, Prompts, Trackers, Playbooks, Projects, Career System) are added
-# here as each Phase in AGENTS.md Section 10 completes. Keep this file in sync
-# with docs/master-index.md.
+  - About This Site: docs/documentation-site.md
 
 markdown_extensions:
   - tables
@@ -46,3 +117,17 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+
+# Controls what --strict treats as a hard failure. Explicit here rather than
+# left at defaults, because with 250+ Markdown files and a deliberately
+# curated (not exhaustive) nav, "file exists but isn't in nav" is expected
+# and should not fail CI — but a genuinely broken cross-reference link should
+# still be caught, since that's a real AGENTS.md Section 7 quality-gate issue.
+validation:
+  nav:
+    omitted_files: ignore
+    not_found: warn
+  links:
+    not_found: warn
+    absolute_links: ignore
+    unrecognized_links: warn
