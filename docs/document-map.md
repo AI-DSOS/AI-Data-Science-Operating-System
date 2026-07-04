@@ -129,6 +129,45 @@ graph TD
     TechWriting --> LinkedIn
 ```
 
+### Learning System (v1.1)
+
+```mermaid
+graph TD
+    LSReadme[learning-system/README.md] --> Roadmap[roadmap.md]
+    LSReadme --> KnowledgeMap[knowledge-map.md]
+    LSReadme --> DailyPlan[daily-learning-plan.md]
+    LSReadme --> WeeklyPlan[weekly-learning-plan.md]
+    LSReadme --> RevisionPlan[revision-plan.md]
+    LSReadme --> MasteryMethod[mastery-rubric-methodology.md]
+    LSReadme --> ProgressTrack[progress-tracking.md]
+    LSReadme --> AssessGuide[assessment-guide.md]
+
+    Roadmap --> KnowledgeMap
+    Roadmap --> DailyPlan --> WeeklyPlan
+    RevisionPlan --> MasteryMethod
+    ProgressTrack --> AssessGuide
+    AssessGuide -.hands off to.-> TI2[departments/technical-interviewer.md]
+```
+
+### Playbooks (v1.1)
+
+```mermaid
+graph TD
+    PBReadme[playbooks/README.md] --> Learn[learning-new-topic.md]
+    PBReadme --> StartProj[starting-new-project.md]
+    PBReadme --> Debug[debugging-production-issues.md]
+    PBReadme --> Interview[preparing-for-interviews.md]
+    PBReadme --> Publish[publishing-github-repository.md]
+    PBReadme --> WriteArticle[writing-technical-articles.md]
+    PBReadme --> BuildPortfolio[building-a-portfolio.md]
+    PBReadme --> Sprint[planning-a-sprint.md]
+    PBReadme --> WeeklyPB[weekly-review.md]
+    PBReadme --> MonthlyPB[monthly-board-meeting.md]
+
+    WeeklyPB -.compresses.-> WeeklyOS[operating-system/weekly-review.md]
+    MonthlyPB -.compresses.-> MonthlyOS[operating-system/monthly-board-meeting.md]
+```
+
 ### Engineering Standards
 
 ```mermaid
@@ -273,5 +312,6 @@ graph TD
 - `templates/` (50 files), `trackers/` (14 files), and now `prompts/` (104 files) are deliberately **not** diagrammed here — all three are flat, mutually-independent reusable-file collections better served by their own README indexes than an unreadable 168-node combined graph. This is a considered, repeated exception to the "every module gets a diagram" pattern, not an oversight.
 =======
 - `templates/` (50 files), `trackers/` (14 files), and `prompts/` (104 files) are deliberately **not** diagrammed here — all three are flat, mutually-independent reusable-file collections better served by their own README indexes than an unreadable 168-node combined graph. This is a considered, repeated exception to the "every module gets a diagram" pattern, not an oversight.
-- Add a diagram for `docs/learning-system/`, `docs/career-system/` once those are created (deferred — not part of the original 10-phase roadmap's explicit folder list, revisit if department docs' forward-references to them turn into real content).
+- `journal/` and `assets/` (v1.1) are single-file convention folders, also not diagrammed for the same reason — nothing to show a relationship between yet.
 - The Project Library diagram above shows blueprint-stage dependencies only — revisit and expand once real implementation work creates actual code-level dependencies between projects.
+- **Lesson from v1.1:** this document's own diagrams only cover what was built, not what the original master prompt asked for — the missing Playbooks/Journal/Assets/Learning System gaps weren't visible here until they were built. A document map can't catch what was never created; it's a map of the territory, not a check against the original ask. That check has to happen separately (as it did when producing the audit that led to v1.1).

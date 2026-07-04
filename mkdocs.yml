@@ -58,6 +58,16 @@ nav:
       - Technical Interviewer: departments/technical-interviewer.md
       - Career & Personal Brand Coach: departments/career-brand-coach.md
       - CTO: departments/cto.md
+  - Learning System:
+      - Overview: learning-system/README.md
+      - Roadmap: learning-system/roadmap.md
+      - Knowledge Map: learning-system/knowledge-map.md
+      - Daily Learning Plan: learning-system/daily-learning-plan.md
+      - Weekly Learning Plan: learning-system/weekly-learning-plan.md
+      - Revision Plan: learning-system/revision-plan.md
+      - Mastery Rubric Methodology: learning-system/mastery-rubric-methodology.md
+      - Progress Tracking: learning-system/progress-tracking.md
+      - Assessment Guide: learning-system/assessment-guide.md
   - Operating System:
       - Overview: operating-system/README.md
       - Daily Operating System: operating-system/daily-operating-system.md

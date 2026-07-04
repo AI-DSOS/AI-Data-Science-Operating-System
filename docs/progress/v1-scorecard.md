@@ -101,12 +101,14 @@ v1.0 is defined in `AGENTS.md` Section 2 as reaching **all five** targets below 
 | Production-grade projects | 25 | 25 blueprints (3 with substantial real work, 20 blueprint-only, 2 scoped) | 100% blueprinted / ~12% implemented — see note |
 =======
 | Markdown documents | ~100 | 256 | 256% (target exceeded — see note) |
+=======
+| Markdown documents | ~100 | 278 | 278% (target exceeded — see note) |
 | Production-grade projects | 25 | 25 blueprints (3–5 with substantial real work, ~20 blueprint-only) | 100% blueprinted / ~15% implemented — see note |
 | Reusable templates | 50 | 50 | 100% |
 | Prompt library files | 100+ | 104 | 104% |
-| Documentation site | Deployed (MkDocs) | Build verified working (exit 0, zero warnings, re-confirmed after hardening fixes); GitHub Pages enablement unconfirmed | ~80% |
+| Documentation site | Deployed (MkDocs) | Build verified working (exit 0, zero warnings, re-confirmed after v1.1 additions) | ~80% |
 
-*All numbers on this line are from `docs/progress/v1-hardening-report.md`'s actual sweep. The sweep itself found 255 files; this scorecard update and the hardening report file (`docs/progress/v1-hardening-report.md`, created by this same sweep) bring the true current total to 256 — the report counting its own existence is intentional, not an error: `find . -name "*.md" | wc -l` run fresh from the final repo state gives 256. The previous running total (258) had drifted from reality by several — caught and corrected here. See the hardening report for the full account, including the two real defects it found and fixed (unlinked file listings in `templates/README.md`, `trackers/README.md`, and `projects/README.md`; the scorecard's own arithmetic drift).*
+*All numbers verified via `find . -name "*.md" | wc -l` = 278, run fresh against the actual repo state after the v1.1 module (Playbooks, Journal, Assets, Learning System). Breakdown: docs/ 60, prompts/ 105, templates/ 51, trackers/ 15, playbooks/ 11, projects/ 29, resources/ 2, journal/ 1, assets/ 1, .github/ 1, root 2 = 278.*
 
 *Note on the "25 projects" target: as scoped explicitly in `projects/README.md`, Phase 7 delivered 25 fully-specified project blueprints (business problem, architecture, tech stack, honest status), not 25 fully-implemented production systems. 3 projects carry substantial real prior work (Project 01 backfilled from a completed engagement, Project 21 has a working prototype, Project 22 is a substantially-built package); 2 more (Projects 18–19) are the existing flagship projects with real architecture already scoped. The remaining 20 are blueprint-only, pending actual implementation.*
 
@@ -172,7 +174,18 @@ v1.0 is defined in `AGENTS.md` Section 2 as reaching **all five** targets below 
 | `journal/` | 0 | Not started |
 | `assets/` | 0 | Not started |
 | `.github/` | 1 | `README.md`, plus `workflows/deploy-docs.yml` (non-Markdown); issue/PR templates still open |
-
+=======
+| `docs/` | 60 (verified) | 51 through Phase 10, plus `learning-system/README.md` + 8 docs (9) = 60 |
+| `prompts/` | 105 (verified) | Unchanged since Phase 6 |
+| `templates/` | 51 (verified) | Unchanged since Phase 5 |
+| `trackers/` | 15 (verified) | Unchanged since Phase 5 |
+| `playbooks/` | 11 (verified) | `README.md` + 10 playbooks — **built in v1.1, was 0/Not started through Phase 10** |
+| `projects/` | 29 (verified) | Unchanged since Phase 7 |
+| `resources/` | 2 (verified) | Unchanged since Phase 1 |
+| `journal/` | 1 (verified) | `README.md` only (convention, no fabricated entries) — **built in v1.1, was Missing through Phase 10** |
+| `assets/` | 1 (verified) | `README.md` only (convention, no fabricated files) — **built in v1.1, was Missing through Phase 10** |
+| `.github/` | 1 (verified) | Unchanged since Phase 1 |
+| Root | 2 (verified) | `AGENTS.md`, `README.md` |
 ## Phase Status
 
 Phases per `AGENTS.md` Section 10.
@@ -208,6 +221,7 @@ Phases per `AGENTS.md` Section 10.
 | 8. Career System | **Complete** — 7 strategy documents (Resume Framework, LinkedIn Strategy, GitHub Strategy, Portfolio Strategy, Networking Plan, Conference Preparation, Technical Writing Guide), explicitly layered above the templates/trackers already built in Phase 5 |
 | 9. Documentation Site | **Complete, tested** — after two wrong turns (an invalid `docs_dir: .` config, then a plugin for an unrelated tool), the actual fix (`docs_dir: docs`) was verified with a real local build: exit 0, zero warnings, 51 pages. Site scoped to `docs/`; templates/trackers/prompts/projects remain GitHub-only, documented clearly. Only GitHub Pages enablement (a one-time manual step) is unconfirmed |
 | 10. v1.0 Hardening | **Complete, tested** — full quality-gate sweep run with real scripts against 255 files (see `docs/progress/v1-hardening-report.md`). Found and fixed 2 real defects: unlinked file listings in 4 index files, and a 3-4 document arithmetic drift in this scorecard. Flagged 1 real gap not fixed: the Playbooks module was never built across any phase |
+| v1.1: Missing-Module Audit | **Complete, tested** — a direct re-check against the original master prompt (not just the 5 numeric targets) found 3 more structural gaps the Phase 10 sweep had missed: `journal/`, `assets/`, and `docs/learning-system/` were all named in the original scope but never built. All 4 gaps (including Playbooks) closed this module; re-verified with the same gate suite (0 broken links, 0 missing frontmatter, 0 naming violations, 0 duplicate titles, clean `mkdocs build --strict`) |
 
 ## Gaps / Known Risks
 - Multiple engineering-standards docs reference templates (`pyproject.toml`, Dockerfile, FastAPI scaffold, project README/ADR, PR template) that don't exist yet — expected, Phase 5 dependency, and now the largest concentration of forward-references in the repo.
@@ -242,7 +256,6 @@ Phase 3: Operating System is complete. Move to **Phase 4: Engineering Standards*
 - No prompts have real usage data yet — like Phase 5's templates, their usefulness is unverified until they're actually used in practice (Phase 7 projects, ongoing operating-system cadence).
 - Two Vaagai-specific prompts exist (`research/market-research-elder-care.md`, `research/competitor-analysis-vaagai.md`, `projects/vaagai-technical-poc.md`) — worth confirming at the next Quarterly Review whether Vaagai warrants its own prompt subfolder as that venture grows, per `docs/operating-system/quarterly-review.md`'s system-check agenda item.
 =======
-
 - **The most important gap in the whole repo right now:** 20 of 25 projects are blueprint-only with no real implementation. This phase should not be read as "projects done" — see `projects/README.md`'s explicit scope note. Real implementation is a separate, much larger, ongoing effort.
 - Projects 21 (multi-agent QA POC) and 22 (`nhecf` package) exist as real, substantial work outside this repository and haven't been migrated in yet — this is low-effort, high-value work worth prioritizing before writing new code elsewhere.
 - Markdown document count (249) continues to climb past the informal ~100 target — now clearly established as expected, not a recurring surprise; this is the fourth consecutive phase to note it.
@@ -269,6 +282,12 @@ Phase 3: Operating System is complete. Move to **Phase 4: Engineering Standards*
 - 20 of 25 projects remain blueprint-only — unchanged since Phase 7, the single largest implementation gap in the repo.
 - GitHub Pages enablement is unconfirmed — requires repo admin action this environment can't perform or verify.
 - The scorecard itself had a real, multi-phase arithmetic drift (claimed 258, actual 255 at time of sweep) — found and corrected in this phase. Worth normalizing "reconcile the scorecard against `find` output, not cumulative addition" as a standing Monthly Board Meeting practice going forward, per `docs/operating-system/monthly-board-meeting.md`.
+=======
+- **v1.0 Hardening's own quality-gate sweep was incomplete.** It caught the Playbooks gap but missed `journal/`, `assets/`, and `docs/learning-system/` — all three were named in the original master prompt but not checked for by the Phase 10 script, which focused on link/naming/frontmatter/duplicate checks rather than a structural re-read of the original scope. This is itself worth noting: automated checks catch what they're programmed to check, not everything — a periodic manual re-read against the original ask is still needed alongside scripted gates. Now closed, all 4 gaps built in v1.1.
+- 20 of 25 projects remain blueprint-only — unchanged since Phase 7, the single largest implementation gap in the repo.
+- GitHub Pages enablement is unconfirmed — requires repo admin action this environment can't perform or verify.
+- `journal/` and `assets/` are deliberately near-empty (README/convention only, no fabricated content) — this is correct and honest, but means they'll look "unused" until real entries/exports accumulate. Worth a note at the first post-v1.1 Monthly Board Meeting so it isn't mistaken for an oversight later.
+- Several `docs/learning-system/` documents (the roadmap's phase dates and status, the revision plan's live queue) will drift out of date quickly if not updated at every real phase transition — flagged in each document's own "Next Steps," but worth reiterating here since this is now the most likely near-term source of scorecard-style drift.
 ## Next Steps
 Phase 5: Templates (and the pulled-forward Trackers deliverable) is complete. Move to **Phase 6: Prompt Library (100+)** — reusable prompts across learning, projects, code reviews, architecture reviews, mock interviews, debugging, system design, technical writing, career planning, research, documentation, and repository maintenance.
 =======
@@ -301,4 +320,4 @@ Phase 9: Documentation Site is complete and tested, pending the one manual GitHu
 Phase 5: Templates (and the pulled-forward Trackers deliverable) is complete. Move to **Phase 6: Prompt Library (100+)** — reusable prompts across learning, projects, code reviews, architecture reviews, mock interviews, debugging, system design, technical writing, career planning, research, documentation, and repository maintenance.
 =======
 
-**All 10 phases of the `AGENTS.md` Section 10 roadmap are now complete.** v1.0 is ready to tag, with two caveats stated openly in `docs/progress/v1-hardening-report.md` rather than hidden: most of the 25 projects are blueprints, not implementations, and the Playbooks module doesn't exist yet. Recommended v1.1 priorities, in order: (1) build the Playbooks module, (2) implement Projects 02, 21, and 22 (the highest-value/lowest-effort project implementations), (3) confirm GitHub Pages deployment.
+**All 10 phases of the `AGENTS.md` Section 10 roadmap, plus the v1.1 missing-module audit, are now complete.** The repository, as delivered, now covers the full original master prompt scope — not just the five numeric v1.0 targets. Remaining open items are genuinely ongoing work, not missing modules: (1) implement Projects 02, 21, and 22 (highest-value/lowest-effort), (2) confirm GitHub Pages deployment, (3) populate `journal/` and `assets/` with real content as it naturally accumulates, (4) keep `docs/learning-system/roadmap.md` current at every phase transition.

@@ -55,6 +55,15 @@ Every Markdown file in the repository must have a line here. This is a flat list
 | `docs/departments/technical-interviewer.md` | Department spec — mock interviews, readiness scoring |
 | `docs/departments/career-brand-coach.md` | Department spec — resume, LinkedIn, GitHub, recruiter tracking |
 | `docs/departments/cto.md` | Department spec — governance, prioritization, quality gates |
+| `docs/learning-system/README.md` | Index and layer distinction for the learning-system content |
+| `docs/learning-system/roadmap.md` | The real 62-day, six-phase bootcamp roadmap |
+| `docs/learning-system/knowledge-map.md` | Domain-wide DS/ML/AI Engineering concept map |
+| `docs/learning-system/daily-learning-plan.md` | Daily content structure |
+| `docs/learning-system/weekly-learning-plan.md` | Weekly content structure |
+| `docs/learning-system/revision-plan.md` | What gets revised, by phase |
+| `docs/learning-system/mastery-rubric-methodology.md` | The 5-level mastery scoring methodology |
+| `docs/learning-system/progress-tracking.md` | How learning progress rolls up across trackers |
+| `docs/learning-system/assessment-guide.md` | How learning connects to formal assessment |
 | `docs/operating-system/README.md` | Index and cadence map for the 11 operating-system documents |
 | `docs/operating-system/daily-operating-system.md` | Weekday/Sunday time structure and daily logging |
 | `docs/operating-system/weekly-review.md` | Weekly CTO-run checkpoint across all departments |
@@ -108,7 +117,7 @@ Every Markdown file in the repository must have a line here. This is a flat list
 
 ## playbooks/
 
-*Not started. Target categories: learning a new topic, starting a new project, debugging production issues, preparing for interviews, publishing a GitHub repository, writing technical articles, building a portfolio, sprint planning, weekly review, monthly board meeting.*
+**10 playbooks + README, indexed in full in [`playbooks/README.md`](../playbooks/README.md).** Learning a New Topic, Starting a New Project, Debugging Production Issues, Preparing for Interviews, Publishing a GitHub Repository, Writing Technical Articles, Building a Portfolio, Planning a Sprint, Running a Weekly Review, Running a Monthly Board Meeting — built in v1.1 after being flagged missing in `docs/progress/v1-hardening-report.md`.
 
 ## projects/
 
@@ -125,11 +134,11 @@ Every Markdown file in the repository must have a line here. This is a flat list
 
 ## journal/
 
-*Not started.*
+**`README.md`** — folder convention and naming scheme for daily learning entries and reflection notes. Deliberately contains no fabricated entries — see the README for why. Built in v1.1.
 
 ## assets/
 
-*Not started.*
+**`README.md`** — convention for binary/exported assets (diagrams, screenshots). Empty of actual files by design — every diagram so far is inline Mermaid, not an export. Built in v1.1.
 
 ## .github/
 
